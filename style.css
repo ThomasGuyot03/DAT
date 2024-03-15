@@ -12,10 +12,10 @@
 }
 
 :root{
---bg-color: #331f17;
+--bg-color: #041C31;
 --second-bg-color:#363636;
 --text-color: #ededed;
---main-color: #f4c685;
+--main-color: #008ADE;
 }
 
 html{
@@ -292,4 +292,70 @@ span {
   background: var(--second-bg-color);
 }
 
+/* CSS pour la nouvelle section de la boîte de l'image */
+.image-box {
+  flex-shrink: 0; /* Pour éviter que cette section réduise la taille du contenu */
+  margin-left: auto; /* Positionner à droite */
+  width: 30%; /* Largeur de la section (ajustez selon vos besoins) */
+  box-shadow: #041C31;
+}
 
+/* CSS pour le conteneur de l'image */
+.image-container {
+  width: 100%; /* Assurez-vous que le conteneur occupe toute la largeur de la section */
+  border-radius: 8px; /* Bord arrondi selon vos préférences */
+  overflow: hidden; /* Pour cacher le dépassement de l'image */
+}
+
+/* CSS pour l'image à l'intérieur de la boîte */
+.image-container img {
+  width: 100%; /* Assurez-vous que l'image occupe toute la largeur du conteneur */
+}
+
+/* Nouvelle section CAROUSSEL  */ 
+.new-section {
+  position: relative;
+  margin-top: 4rem; /* Ajustez selon l'espace nécessaire */
+  background: var(--second-bg-color);
+}
+
+.new-section ul {
+  position: absolute;
+  top: 50%;
+  width: 800px;
+  height: 200px;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: -130px;
+}
+
+.new-section ul li {
+  width: 25%;
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  height: 200px;
+  opacity: 0;
+  padding-top: 40px;
+  text-align: center;
+  transition: 1s opacity;
+}
+
+.new-section ul .active {
+  opacity: 1;
+}
+
+.new-section p {
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #0069d3;
+  line-height: 1.5em;
+}
+
+.new-section strong {
+  color: #fff;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100px;
+}
