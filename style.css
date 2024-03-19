@@ -339,7 +339,7 @@ span {
   opacity: 0;
   padding-top: 40px;
   text-align: center;
-  transition: 1s opacity;
+  transition: 3s opacity;
 }
 
 .new-section ul .active {
@@ -358,4 +358,20 @@ span {
   font-weight: 700;
   font-size: 60px;
   line-height: 100px;
+}
+
+#c li p {
+  font-size: 20px; /* Changer la taille de la police selon vos préférences */
+}
+
+
+.concerto {
+  width: 200px;
+  height: auto;
+}
+
+.concerto-touch {
+  width: 180px;
+  height: auto;
+  margin-top: 25PX;
 }
