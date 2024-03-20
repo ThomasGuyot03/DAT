@@ -47,7 +47,7 @@ body{
 }
 
 .logo {
-  font-size: 2.5rem;
+  font-size: 5.5rem;
   color: var(--text-color);
   font-weight: 600;
 }
@@ -310,6 +310,7 @@ span {
 /* CSS pour l'image à l'intérieur de la boîte */
 .image-container img {
   width: 100%; /* Assurez-vous que l'image occupe toute la largeur du conteneur */
+  backdrop-filter: blur;
 }
 
 /* Nouvelle section CAROUSSEL  */ 
@@ -322,9 +323,9 @@ span {
 .new-section ul {
   position: absolute;
   top: 50%;
-  width: 800px;
+  width: 1500px;
   height: 200px;
-  left: 50%;
+  left: 35%;
   margin-left: -400px;
   margin-top: -130px;
 }
@@ -361,12 +362,12 @@ span {
 }
 
 #c li p {
-  font-size: 20px; /* Changer la taille de la police selon vos préférences */
+  font-size: 30px; /* Changer la taille de la police selon vos préférences */
+  font-family: 'Times New Roman', Times, serif;
 }
 
-
 .concerto {
-  width: 200px;
+  width: 230px;
   height: auto;
 }
 
@@ -375,3 +376,4 @@ span {
   height: auto;
   margin-top: 25PX;
 }
+
