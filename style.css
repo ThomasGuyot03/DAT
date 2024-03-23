@@ -94,6 +94,7 @@ line-height: 1.3;
 
 .home-content h1 span {
 color: var(--text-color);
+width: 1500px;
 }
 
 .home-content p {
@@ -313,28 +314,28 @@ width: 100%; /* Assurez-vous que l'image occupe toute la largeur du conteneur */
 backdrop-filter: blur;
 }
 
-
-
-
-.container{
+/*----------------------------------------------------------------------------------------------*/
+.container {
   display: flex;
   justify-content: center;
+  background: rgb(27, 27, 27);
+  width: 100%;
+  padding: 20px; /* Ajoute un peu d'espace autour des cartes */
 }
 
 .cards-container {
-display: flex;
-justify-content: space-between; /* Vous pouvez ajuster cela selon vos préférences */
-max-width: 1200px; /* Ajustez la largeur maximale selon vos besoins */
-margin: 5rem auto;
-flex-direction: row;
-cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Quatre colonnes pour la première ligne */
+  grid-gap: 20px; /* Ajoute un peu d'espace entre les cartes */
+  max-width: 1100px;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .nft{
   user-select:none;
-  max-width: 800px;
-  height: 350px;
-  margin: 5rem 5rem auto;
+  max-width: 500px;
+  height: 340px;
   border: 1px solid #ffffff22;
   background-color: #282c34;
   background: linear-gradient(0deg, rgba(40,44,52,1) 0%, rgba(17,0,32,.5) 100%);
@@ -343,76 +344,82 @@ cursor: pointer;
   overflow: hidden;
   transition: .5s all;
   flex: 1;
-  hr{
+}
+
+.nft a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none; /* Supprime la décoration de lien par défaut */
+  color: inherit; /* Hérite de la couleur du texte parent */
+}
+
+.nft hr{
   width: 100%;
   border: none;
   border-bottom: 1px solid #88888855;
   margin-top: 0;
 }
 
-ins{
+.nft ins{
   text-decoration: none;
 }
 
-.main{
+.nft .main {
   display: flex;
   flex-direction: column;
   width: 90%;
   padding: 1rem;
-  .tokenImage{
+}
+
+.nft .main .tokenImage {
   border-radius: .5rem;
   max-width: 100%;
   object-fit: cover;
 }
 
-.main .h2 {
+.nft .main h2 {
   margin-bottom: 10px;
 }
 
-.description{
+.nft .main .description {
   margin: .5rem 0;
   color: #a89ec9;
 }
 
-.tokenInfo{
+.nft .main .tokenInfo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .price{
+}
+
+.nft .main .tokenInfo .price {
   display: flex;
   align-items: center;
   color: #ee83e5;
   font-weight: 700;
-
-ins{
-  margin-left: -.3rem;
-  margin-right: .5rem;
 }
 
-}
-
-.duration{
+.nft .main .tokenInfo .duration {
   display: flex;
   align-items: center;
   color: #a89ec9;
   margin-right: .2rem;
-ins{
-  margin: .5rem;
-  margin-bottom: .4rem;
-}
-}
 }
 
-.creator{
+.nft .main .creator {
   display: flex;
   align-items: center;
   margin-top: .2rem;
   margin-bottom: -.3rem;
-ins{
+}
+
+.nft .main .creator ins {
   color: #a89ec9;
   text-decoration: none;
 }
-.wrapper{
+
+.nft .main .creator .wrapper {
   display: flex;
   align-items: center;
   border: 1px solid #ffffff22;
@@ -421,52 +428,41 @@ ins{
   margin-right: .5rem;
   border-radius: 100%;
   box-shadow: inset 0 0 0 4px #000000aa;
-  img{
+}
+
+.nft .main .creator .wrapper img {
   border-radius: 100%;
   border: 1px solid #ffffff22;
   width: 2rem;
   height: 2rem;
   object-fit: cover;
-  margin: 0;
-}
-}
-}
 }
 
-::before{
-  position: fixed;
-  content: "";
-  box-shadow: 0 0 100px 40px #ffffff08;
-  top: -10%;
-  left: -100%;
-  transform: rotate(-45deg);
-  height: 60rem;
-  transition: .7s all;
-}
-
-&:hover{
+.nft:hover {
   border: 1px solid #ffffff44;
   box-shadow: 0 7px 50px 10px #000000aa;
   transform: scale(1.015);
   filter: brightness(1.3);
-::before{
+}
+
+.nft:hover::before {
   filter: brightness(.5);
   top: -100%;
   left: 200%;
 }
-}
-}
 
-.bg{
+.bg {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  h1{
+}
+
+.bg h1 {
   font-size: 20rem;
   filter: opacity(0.5);
 }
-}
+
 
 
 
@@ -610,13 +606,15 @@ border-radius: 5px;
 padding: 2rem;
 margin: 1rem 0;
 }
+
 .footer {
 position: relative;
 display: flex;
 align-items: center;
-min-height: 100vh;
+min-height: 40vh;
 }
-.container {
+
+.container-footer {
 max-width: 1200px;
 width: 100%;
 margin: 0 auto;
