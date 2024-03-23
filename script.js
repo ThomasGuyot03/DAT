@@ -32,3 +32,13 @@ var max = $('#c > li').length;
 		$("#c > li").eq(i + 3).css('left','75%').addClass('active').css('transition-delay','2s');
 	
 	}, timer);
+
+
+
+
+
+
+
+
+
+	
