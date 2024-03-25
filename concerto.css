@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    :root{
+    --bg-color: #041C31;
+    --second-bg-color:#363636;
+    --text-color: #ededed;
+    --main-color: #008ADE;
+    }
+    
+    html{
+      font-size: 62.5%;
+      overflow-x: hidden;
+    }
+    
+    body{
+      background: var(--bg-color);
+      color: var(--text-color);
+    }
+    
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 2rem 9%;
+      background: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;  
+      z-index: 100;
+      transition: .3s;
+    }
+    
+    .header.stycky {
+      background: yellowgreen;
+    }
+    
+    .logo {
+      font-size: 5.5rem;
+      color: var(--bg-color);
+      font-weight: 600;
+    }
+    
+    .navbar a {
+      font-size: 1.7rem;
+      color: var(--bg-color);
+      font-weight: 500;
+      margin-left: 3.5rem;
+    }
+    
+    .navbar a:hover,
+    .navbar a.active {
+      color: var(--main-color);
+    }
+
+
+
+
+.machine-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 150px;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.photo-container {
+  width: 30%;
+  background-color: #f0f0f0;
+}
+
+.photo-container img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;    
+  margin-top: 300px;
+}
+
+.info-container {
+  width: 70%;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.info-container h2 {
+  margin-top: 15%;
+  margin-left: 20%;
+  font-size: 70px;
+  color: #008ADE;
+  margin-bottom: 80px;
+}
+
+.info-container p {
+  color: black;
+  font-size: 18px;
+  margin-left: 20px;
+  font-family: 'Roboto Condensed';
+  margin-left: 20%;
+  text-align: center;
+  max-width: 600px;
+  font-weight: 600;
+}
+
+.machine-section hr {
+  border: none; /* Retire la bordure par défaut */
+  height: 2px; /* Définit la hauteur de la ligne */
+  width: 45%;
+  background-color: #518eff; /* Couleur de la ligne */
+  margin: 20px 20px 20px 20%; /* Marge supérieure et inférieure pour espacement */
+}
+
+.machine-section h3 {
+  margin-left: 20%;
+  font-size: 25px;
+  color: #000000;
+  text-align: center;
+  max-width: 600px;
+  font-weight: 600;
+}
+
+
+/* Bouton découvrir*/ 
+
+.svg-wrapper {
+  position: relative;
+  top: 10%;
+  transform: translateY(-50%);
+  margin-left: 30%;  
+  width: 320px;  
+}
+
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke:var(--bg-color);
+  border-bottom: 10px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+.text {
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  color:var(--bg-color);
+  top: -48px;
+  position: relative;
+  margin-left: 60px;
+}
+
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
