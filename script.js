@@ -36,7 +36,31 @@ var max = $('#c > li').length;
 
 
 
-
+	document.addEventListener("DOMContentLoaded", function() {
+		const filterButtons = document.querySelectorAll(".filter-button");
+		const items = document.querySelectorAll(".item");
+	
+		// Par défaut, n'affiche que les éléments de la première catégorie
+		items.forEach(function(item) {
+			if (!item.classList.contains("filter1")) {
+				item.style.display = "none";
+			}
+		});
+	
+		filterButtons.forEach(function(button) {
+			button.addEventListener("click", function() {
+				const filter = this.getAttribute("data-filter");
+	
+				items.forEach(function(item) {
+					if (item.classList.contains(filter)) {
+						item.style.display = "block";
+					} else {
+						item.style.display = "none";
+					}
+				});
+			});
+		});
+	});
 
 
 
