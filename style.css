@@ -377,6 +377,28 @@ backdrop-filter: blur;
 
 
 /* Styles pour les boutons */
+.home-title {
+  text-align: center;
+  margin-bottom: 20px; /* Espacement entre le titre et les filtres */
+}
+
+.home-title h2 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.home-title p {
+  font-size: 2rem;
+  color: #ffffff; /* Couleur du texte */
+}
+
+
+
+
+
+
+
+
 .section {
   position: relative; /* Assure que les éléments à l'intérieur soient positionnés relativement */
 }
@@ -428,20 +450,20 @@ background: #282c34;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
+margin-top: -100px;
 }
 
 .item {
 width: calc(25% - 20px); /* Largeur de chaque carte, avec un espace de 20px entre elles */
-margin-bottom: 20px; /* Espacement entre les lignes de cartes */
+margin-bottom: -50px; /* Espacement entre les lignes de cartes */
 }
 
 .nft{
 user-select:none;
 max-width: 500px;
-height: 600px;
+height: 480px;
 margin:  auto;
 border: 1px solid #ffffff22;
-background-color: #282c34;
 background: linear-gradient(0deg, rgba(40,44,52,1) 0%, rgba(17,0,32,.5) 100%);
 box-shadow: 0 7px 20px 5px #00000088;
 border-radius: .7rem;
@@ -470,9 +492,19 @@ ins{
     object-fit: cover;
   }
   .description{
-    margin: .5rem 0;
     color: #a89ec9;
+    margin-top: 20px;
   }
+
+  .titre-cartes {
+    /* Vos styles CSS pour l'élément h3 vont ici */
+    font-size: 1.5rem; /* Taille de la police */
+    color: #ffffff; /* Couleur du texte */
+    font-weight: bold; /* Gras */
+    text-transform: uppercase; /* Mettre en majuscules */
+    margin-top: -70px;
+}
+
   
   .creator{
     display: flex;
