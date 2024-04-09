@@ -50,18 +50,44 @@
       font-weight: 600;
     }
     
-    .navbar a {
-      font-size: 1.7rem;
-      color: var(--bg-color);
-      font-weight: 500;
-      margin-left: 3.5rem;
-    }
     
-    .navbar a:hover,
-    .navbar a.active {
-      color: var(--main-color);
-    }
+.menu-dropdown {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+}
 
+.menu-dropdown i {
+  color: rgb(83, 83, 83);
+  font-size: 35px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 140px;
+  min-height: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(247, 246, 246, 0.2);
+  z-index: 1;
+  border-radius: 15px;
+}
+
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  padding: 12px 50px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.menu-dropdown:hover .dropdown-content {
+  display: block;
+}
 
 
 
@@ -80,15 +106,14 @@
 }
 
 .photo-container {
-  width: 32.5%;
+  width: 31.7%;
   background-color: #f0f0f0;
 }
 
 .photo-container img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;    
-  margin-top: 300px;
+  width: 800px;
+  margin-top: 138px;
+  margin-left: -120px;
 }
 
 .info-container {
@@ -227,6 +252,107 @@
 .info-container p {
   margin-bottom: 0; /* Aucune marge en bas du paragraphe */
 }
+
+
+.info-container-1 h3 {
+  /* Styles pour le titre */
+  /* Par exemple : */
+  font-size: 25px;
+  color: var(--main-color);
+  margin-bottom: 25px;
+}
+
+.info-container-2 h3 {
+  /* Styles pour le titre */
+  font-size: 25px;
+  color: var(--main-color);
+  margin-bottom: 25px;
+  margin-top: 10%;
+}
+
+.info-container-2 .description-data p {
+  font-size: 15px;
+  display: block; /* Change la disposition des paragraphes */
+  margin-bottom: 10px; /* Ajoute un espace entre les paragraphes */
+  margin-top: 20px;
+  color: var(--text-color);
+}
+
+.info-container-2 .description-data p:last-child {
+  margin-bottom: 0; /* Supprime l'espace en bas du dernier paragraphe */
+}
+
+.info-container-2 .description-data {
+  margin-bottom: 20px; /* Ajoute un espace entre les paires description-donnée */
+  text-align: center;
+}
+
+.info-container-2 hr {
+  border: none; /* Supprime le style par défaut de la ligne horizontale */
+  border-top: 2px solid #ccc; /* Ajoute une ligne horizontale personnalisée */
+  margin: 20px 40px 0 0px;
+}
+
+.info-container-2 .description-data .description {
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.info-container-2 .description-data .description-info {
+  font-weight: 800;
+}
+
+.info-container-3{
+  width: 30%;
+}
+
+.info-container-3 .description-data p {
+  font-size: 15px;
+  display: block; /* Change la disposition des paragraphes */
+  margin-bottom: 10px; /* Ajoute un espace entre les paragraphes */
+  margin-top: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.info-container-3 .description-data p:last-child {
+  margin-bottom: 0; /* Supprime l'espace en bas du dernier paragraphe */
+}
+
+.info-container-3 .description-data {
+  margin-bottom: 20px; /* Ajoute un espace entre les paires description-donnée */
+  text-align: center;
+}
+
+.info-container-3 hr {
+  border: none; /* Supprime le style par défaut de la ligne horizontale */
+  border-top: 2px solid #ccc; /* Ajoute une ligne horizontale personnalisée */
+  margin: 20px 40px 0 0px;
+}
+
+.info-container-3 .description-data .description {
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.info-container-3 .description-data .description-info {
+  font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
