@@ -72,6 +72,7 @@
   box-shadow: 0px 8px 16px 0px rgba(247, 246, 246, 0.2);
   z-index: 1;
   border-radius: 15px;
+  border: solid 2px black;
 }
 
 .dropdown-content a {
@@ -79,6 +80,8 @@
   padding: 12px 50px;
   text-decoration: none;
   display: block;
+  text-align: center;
+  font-size: 18px;
 }
 
 .dropdown-content a:hover {
@@ -88,8 +91,6 @@
 .menu-dropdown:hover .dropdown-content {
   display: block;
 }
-
-
 
 .machine-section {
   height: 100vh;
@@ -251,6 +252,7 @@
 
 .info-container p {
   margin-bottom: 0; /* Aucune marge en bas du paragraphe */
+  line-height: 25px;
 }
 
 
