@@ -1,0 +1,37 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    h1 {
+    color: #333;
+    }
+    
+    form {
+    margin-bottom: 20px;
+    }
+    
+    input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    }
+    
+    button {
+    padding: 10px 20px;
+    background-color: #008ADE;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    }
+    
+    button:hover {
+    background-color: #005f87;
+    }
+    
+    #resultat {
+    font-weight: bold;
+    }
+    
