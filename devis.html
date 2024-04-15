@@ -1,37 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formulaire Devis</title>
-<link rel="stylesheet" href="devis.css">
-<link rel="stylesheet" href="script.js">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Devis</title>
+    <link rel="stylesheet" href="devis.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+
+<header class="header">        
+    <a href="index.html" class="logo">DAT.</a>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <div class="menu-dropdown" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+        <div class="dropdown-content" id="dropdownContent">
+            <!-- Contenu du menu déroulant -->
+            <a href="#">Accueil</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+        </div>
+    </div>
+</header>
 <div class="container">
-<h1>Formulaire Devis</h1>
-<form id="devisForm">
-<label for="entreprise">Nom de l'entreprise :</label>
-<input type="text" id="entreprise" name="entreprise" required><br><br>
+    <h1>Formulaire Devis</h1>
+    <form id="devisForm">
+        <label for="entreprise">Nom de l'entreprise :</label>
+        <input type="text" id="entreprise" name="entreprise" required><br><br>
 
-<label for="lieu">Lieu de l'entreprise :</label>
-<input type="text" id="lieu" name="lieu" required><br><br>
+        <label for="lieu">Lieu de l'entreprise :</label>
+        <input type="text" id="lieu" name="lieu" required><br><br>
 
-<label for="employes">Nombre d'employés :</label>
-<input type="number" id="employes" name="employes" required><br><br>
+        <label for="employes">Nombre d'employés :</label>
+        <input type="number" id="employes" name="employes" required><br><br>
 
-<label for="prestataire">Avez-vous un prestataire ?</label>
-<select id="prestataire" name="prestataire">
-<option value="oui">Oui</option>
-<option value="non">Non</option>
-</select><br><br>
+        <label for="prestataire">Avez-vous un prestataire ?</label>
+        <select id="prestataire" name="prestataire">
+            <option value="oui">Oui</option>
+            <option value="non">Non</option>
+        </select><br><br>
 
-<button type="submit">Obtenir le devis</button>
-</form>
+        <button type="button" onclick="envoyerEmail()">Envoyer par e-mail</button>
+    </form>
 
-<div id="resultat"></div>
+    <div id="resultat"></div>
 </div>
 
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script src="devis.js"></script>
 </body>
 </html>
