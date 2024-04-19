@@ -8,20 +8,23 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
+:root{
+  --bg-color: #041C31;
+  --second-bg-color:#363636;
+  --text-color: #ededed;
+  --main-color: #008ADE;
+  }
 
 .logo {
   font-size: 2.5rem;
   color: var(--bg-color);
   font-weight: 600;
-  margin-top: 10%;
+  margin-top: 50px;
   margin-left: 10%;
 }
 
 .menu-dropdown {
-  position: absolute;
-  top: 30px;
-  left: 30px;
+ margin-left: 1%;
   cursor: pointer;
 }
 

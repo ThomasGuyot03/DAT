@@ -576,7 +576,10 @@ h1{
 }
 
 
-
+.main .tokenImage {
+  max-width: 200px; /* Set a specific maximum width */
+  height: auto; /* Allow the height to adjust automatically */
+}
 
 .section-3 {
   display: flex;
