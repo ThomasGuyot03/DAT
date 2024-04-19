@@ -446,7 +446,8 @@ span {
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
   height: 1300px; /* Hauteur de l'écran */
-  background: #282c34;
+  background: linear-gradient(to bottom, #282c34, #4b4b4b); /* Dégradé de #282c34 à #ffffff */
+  
 }
 
 .items{
