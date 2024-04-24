@@ -106,12 +106,48 @@
   width: 31.7%;
   background-color: #f0f0f0;
 }
-
+/* Photo  concerto*/
 .photo-container img {
   width: 800px;
-  margin-top: 138px;
   margin-left: -120px;
+  margin-bottom: 10%;
+  margin-top: 15%;
 }
+
+/* Photo Inovy Mini */ 
+.photo-container-mini img {
+  width: 800px;
+  margin-left: -120px;
+  margin-bottom: 20%;
+  background-color: #f0f0f0;
+}
+
+.photo-container-mini  {
+  background-color: #f0f0f0;
+}
+
+/*Photo Inovy Compact */
+.photo-container-compact img {
+  width: 800px;
+  margin-left: -120px;
+  margin-bottom: 30%;
+  background-color: #f0f0f0;
+}
+
+/*Photo Inovy  */
+.photo-container-inovy img {
+  width: 500px;
+  margin-left: -10px;
+  margin-bottom: 30%;
+  margin-top: 60%;
+  background-color: #f0f0f0;
+}
+.photo-container-inovy {
+  width: 31.7%;
+  background-color: #f0f0f0;
+}
+
+
 
 .info-container {
   width: 70%;
@@ -121,10 +157,10 @@
 
 .info-container h2 {
   margin-top: 15%;
-  margin-left: 20%;
   font-size: 70px;
   color: #008ADE;
   margin-bottom: 80px;
+  text-align: center;
 }
 
 .info-container p {
@@ -136,14 +172,16 @@
   text-align: center;
   max-width: 580px;
   font-weight: 600;
+  text-align: center;
 }
 
 .machine-section hr {
   border: none; /* Retire la bordure par défaut */
   height: 2px; /* Définit la hauteur de la ligne */
-  width: 45%;
+  width: 50%;
   background-color: #4e4e4e; /* Couleur de la ligne */
   margin: 20px 20px 20px 20%; /* Marge supérieure et inférieure pour espacement */
+  text-align: center;
 }
 
 .machine-section h3 {
@@ -258,6 +296,7 @@
   font-size: 25px;
   color: var(--main-color);
   margin-bottom: 25px;
+  margin-top: 10%;
 }
 
 .info-container-2 h3 {
