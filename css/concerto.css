@@ -247,7 +247,7 @@
   overflow: hidden; /* Empêche le contenu de déborder de la zone */
 }
 
-.zone:not(:last-child) {
+.zone-2:not(:last-child) {
   border-right: 2px solid #ccc; /* Bordure de 2 pixels à droite, sauf pour la dernière zone */
   padding-right: 15px; /* Espacement à droite de la bordure */
 }
@@ -445,6 +445,7 @@
 
 .footer-logo h4{
   color: white;
+  font-size: 24px;
 }
 
 .footer-logo-link {

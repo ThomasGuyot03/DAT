@@ -5,24 +5,29 @@
 
 /* Réinitialisation des styles */
 .header {
-    padding: 1.5rem; /* Réduire le rembourrage */
-}
+    flex-direction: column; /* Afficher les éléments en colonne */
+    justify-content: flex-start; /* Aligner les éléments en haut */
+    align-items: flex-start; /* Aligner les éléments à gauche */
+  }
 
-.logo {
-    font-size: 3.5rem; /* Réduire la taille du logo */
-}
+  .logo {
+    margin-bottom: 10px; /* Ajouter une marge en bas du logo */
+    font-size: 34px;
+    margin-left: -10%;
+    margin-top: -3%;
+  }
 
-.menu-dropdown {
-    top: 20px; /* Ajuster la position du menu déroulant */
-    left: 20px;
-}
+  .menu-dropdown {
+    position: static; /* Annuler la position absolue */
+    margin-top: -50px; /* Ajouter une marge en haut du menu */
+    margin-left: 98%; /* Ajouter une marge à gauche du menu */
+  }
 
-.dropdown-content {
-    top: 50px; /* Ajuster la position du contenu du menu déroulant */
-    left: 0;
-    min-width: 120px; /* Réduire la largeur minimale */
-    padding: 10px; /* Ajuster le rembourrage */
-}
+  .dropdown-content {
+    top: 100%; /* Positionner le contenu du menu en dessous du menu */
+    left: 0; /* Aligner le contenu du menu à gauche */
+  }
+
 
 .container {
     flex-direction: column; /* Afficher les éléments en colonne */
@@ -30,7 +35,7 @@
 
     .photo-container{
     width: 100%;
-    height: 50%;
+    height: 100%;
     }
 
 .photo-container img {
@@ -81,12 +86,51 @@
 }
 
 .second-section{
-    margin-top: 80%;
+    margin-top: 100%;
 }
+
+.photo-container-deux{
+    display: none;
+}
+
+.zone{
+    display: none;
+}
+
+.zone-2 {
+    display: flex; /* Utiliser un affichage flex pour les enfants */
+    flex-direction: column; /* Afficher les enfants en colonne */
+  }
+
+  .info-container-2,
+  .info-container-3 {
+    text-align: center;
+  }
+
+  .description-data {
+    justify-content: space-between; /* Espace équitablement les éléments horizontalement */
+    align-items: center; /* Centrer les éléments verticalement */
+  }
+
+  .container-deux {
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 
 .footer-content {
     padding: 40px 15px 150px; /* Réduire le rembourrage */
+    text-align: center;
 }
 
 .footer-menu-name,
@@ -123,8 +167,8 @@
     padding: 15px; /* Ajuster le rembourrage */
 }
 
+
 }
-  
 
 
 
