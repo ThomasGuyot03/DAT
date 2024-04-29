@@ -156,7 +156,7 @@
 }
 
 .info-container h2 {
-  margin-top: 15%;
+  margin-top: 12%;
   font-size: 70px;
   color: #008ADE;
   margin-bottom: 80px;
@@ -440,6 +440,11 @@
 .footer-content-column ul li a {
   color: #fff;
   text-decoration: none;
+}
+
+
+.footer-logo h4{
+  color: white;
 }
 
 .footer-logo-link {
