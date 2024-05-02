@@ -114,6 +114,19 @@
   margin-top: 15%;
 }
 
+.photo-container-maestro {
+  width: 31.7%;
+  background-color: #f0f0f0;
+}
+
+/* Photo Maestro*/ 
+.photo-container-maestro img {
+  width: 400px;
+  margin-left: 3%;
+  margin-top: 20%;
+  background-color: #f0f0f0;
+}
+
 /* Photo Inovy Mini */ 
 .photo-container-mini img {
   width: 800px;
@@ -160,19 +173,16 @@
   font-size: 70px;
   color: #008ADE;
   margin-bottom: 80px;
-  text-align: center;
-}
+  margin-left: 35%;}
 
 .info-container p {
   color: black;
   font-size: 18px;
-  margin-left: 20px;
   font-family: 'Roboto Condensed';
-  margin-left: 20%;
+  margin-left: 25%;
   text-align: center;
   max-width: 580px;
   font-weight: 600;
-  text-align: center;
 }
 
 .machine-section hr {
@@ -200,7 +210,7 @@
   position: relative;
   top: 10%;
   transform: translateY(-50%);
-  margin-left: 30%;  
+  margin-left: 33%;  
   width: 320px;  
 }
 
@@ -272,6 +282,13 @@
   width: 100%; /* La largeur de l'image s'adapte à la taille de son conteneur */
   height: auto; /* Garantit que l'image conserve son ratio hauteur/largeur */
 }
+
+.photo-container-deux-maestro img {
+  width: 50%; /* La largeur de l'image s'adapte à la taille de son conteneur */
+  height: auto; /* Garantit que l'image conserve son ratio hauteur/largeur */
+  margin-left: -20%;
+}
+
 
 .info-container-2{
   color:var(--main-color);
