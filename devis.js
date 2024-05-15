@@ -21,6 +21,7 @@ function envoyerEmail() {
 
     // Initialisation de EmailJS 
     emailjs.init('JOTvNGFjrUQfQG57r');
+    console.log(emailjs)
 
     // Envoi des données par e-mail via EmailJS
     emailjs.send("Test0307", "template_ozppsop", {

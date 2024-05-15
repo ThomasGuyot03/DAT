@@ -6,6 +6,7 @@
     <title>Contact D.A.T</title>
     <link rel="stylesheet" href="/css/contact.css">
     <link rel="icon" href="/Photo/Logo DAT.png" type="image/x-icon">
+    <script src="/contact.js"></script> 
 
 </head>
 <body>
@@ -39,13 +40,36 @@
     </div>
 </section>
 
+<section class="contact-form-section">
+    <div class="container">
+        <h2>Contactez-nous</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button class="bouton" type="button" onclick="envoyerEmail()">Envoyer par e-mail</button>
+        </form>
+        <div id="resultat"></div> <!-- Message de réponse -->
+    </div>
+</section>
 
 
 
-
-
-
-
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="/contact.js"></script>
 <script src="https://kit.fontawesome.com/d72f655667.js" crossorigin="anonymous"></script>    
 </body>
 </html>
