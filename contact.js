@@ -1,7 +1,14 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.getElementById('navbar');
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     document.getElementById('envoyer-btn').addEventListener('click', envoyerEmail());
-// });
+    if (menuIcon && navbar) {
+        menuIcon.addEventListener('click', function () {
+            navbar.classList.toggle('active');
+        });
+    }
+});
+
 
 function envoyerEmail() {
     console.log('salut')

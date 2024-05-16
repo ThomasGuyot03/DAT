@@ -1,3 +1,4 @@
+/* Styles globaux */
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +17,7 @@
   --main-color: #008ADE;
 }
 
+/* Header et navigation */
 .logo {
   font-size: 30px;
   font-weight: bold;
@@ -41,6 +43,13 @@
   transition: .3s;
 }
 
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--second-bg-color);
+  cursor: pointer;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -58,19 +67,20 @@
   color: var(--main-color);
 }
 
+/* Section contact */
 .blue-section {
-  height: 25vh; /* 30% de la hauteur de la fenêtre */
+  height: 25vh; 
   background-color: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--text-color); /* Couleur du texte */
+  color: var(--text-color);
   font-size: 2rem;
   margin-top: 5%;
 }
 
 .titre-contact {
-  text-align: center; /* Centre le texte */
+  text-align: center;
 }
 
 .contact-info {
@@ -89,6 +99,7 @@
   margin-right: 0.5rem;
 }
 
+/* Formulaire de contact */
 .contact-form-section {
   padding: 2rem 9%;
   background-color: var(--second-bg-color);
@@ -132,7 +143,7 @@
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   color: #fff;
-  background-color: var(--main-color); /* Vous devez définir la variable --main-color dans votre feuille de style */
+  background-color: var(--main-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -140,5 +151,135 @@
 }
 
 .bouton:hover {
-  background-color: darken(var(--main-color), 10%); /* Assombrir légèrement la couleur au survol */
+  background-color: darken(var(--main-color), 10%);
+}
+
+/* Media Queries pour rendre la page responsive */
+
+/* Pour les appareils de largeur maximale de 1024px (tablettes et plus petits) */
+@media (max-width: 1024px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .header {
+    color: var(--bg-color);
+    background-color: var(--bg-color);
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--bg-color);
+    position: absolute;
+    top: 60px; /* ajustez en fonction de la hauteur de votre header */
+    left: 0;
+    padding: 1rem;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar a {
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+
+  .contact-item {
+    margin: 1rem 3rem;
+  }
+
+  .blue-section {
+    height: 30vh;
+    font-size: 1.5rem;
+  }
+
+  .form-group label {
+    font-size: 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
+  }
+
+  .bouton {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Pour les appareils de largeur maximale de 768px (mobiles et plus petits) */
+@media (min-width: 320px) and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 5%;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+  }
+
+  .navbar {
+    display: none;
+    color: var(--bg-color);
+    width: 100%;
+  }
+
+  .navbar.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .blue-section {
+    height: 35vh;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .contact-item {
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .contact-form-section {
+    padding: 2rem 5%;
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  .form-group {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .bouton {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+  }
 }
