@@ -185,6 +185,7 @@
   .navbar a {
     margin: 1rem 0;
     font-size: 1rem;
+    color: var(--main-color);
   }
 
   .contact-item {
@@ -213,6 +214,7 @@
 
 /* Pour les appareils de largeur maximale de 768px (mobiles et plus petits) */
 @media (min-width: 320px) and (max-width: 768px) {
+
   .header {
     flex-direction: column;
     align-items: flex-start;
@@ -234,6 +236,13 @@
     width: 100%;
   }
 
+  .navbar a {
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: var(--main-color);
+    text-align: center;
+  }
+
   .navbar.active {
     display: flex;
     flex-direction: column;
@@ -249,7 +258,7 @@
   }
 
   .contact-item {
-    margin: 1rem 0;
+    margin: 1rem 5%;
     width: 100%;
   }
 
@@ -282,4 +291,6 @@
     font-size: 0.8rem;
     padding: 0.5rem 0.75rem;
   }
+
+  
 }
