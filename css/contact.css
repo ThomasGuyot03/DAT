@@ -10,6 +10,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 :root {
   --bg-color: #041C31;
   --second-bg-color: #363636;
@@ -33,7 +37,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw; /* Assurez-vous que l'élément couvre toute la largeur de la fenêtre */
   padding: 1rem 9%;
   background: transparent;
   display: flex;
@@ -77,6 +81,7 @@
   color: var(--text-color);
   font-size: 2rem;
   margin-top: 5%;
+  width: 100vw;
 }
 
 .titre-contact {
@@ -103,6 +108,7 @@
 .contact-form-section {
   padding: 2rem 9%;
   background-color: var(--second-bg-color);
+  width: 100vw;
 }
 
 .container {
@@ -165,12 +171,13 @@
   .header {
     color: var(--bg-color);
     background-color: var(--bg-color);
+    width: 100vw;
   }
 
   .navbar {
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     background-color: var(--bg-color);
     position: absolute;
     top: 60px; /* ajustez en fonction de la hauteur de votre header */
@@ -195,6 +202,7 @@
   .blue-section {
     height: 30vh;
     font-size: 1.5rem;
+    width: 100vw;
   }
 
   .form-group label {
@@ -219,7 +227,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem 5%;
-    width: 100%;
+    width: 100vw;
   }
 
   .menu-icon {
@@ -233,7 +241,7 @@
   .navbar {
     display: none;
     color: var(--bg-color);
-    width: 100%;
+    width: 100vw;
   }
 
   .navbar a {
@@ -241,19 +249,20 @@
     font-size: 1rem;
     color: var(--main-color);
     text-align: center;
+    width: 100%;
   }
 
   .navbar.active {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: 100vw;
   }
 
   .blue-section {
     height: 35vh;
     font-size: 1.2rem;
-    width: 100%;
+    width: 100vw;
     padding: 1rem;
   }
 
@@ -264,7 +273,7 @@
 
   .contact-form-section {
     padding: 2rem 5%;
-    width: 100%;
+    width: 100vw;
   }
 
   .container {
@@ -291,6 +300,4 @@
     font-size: 0.8rem;
     padding: 0.5rem 0.75rem;
   }
-
-  
 }

@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function envoyerEmail() {
-    console.log('salut')
 
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;

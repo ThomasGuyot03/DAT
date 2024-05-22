@@ -89,11 +89,11 @@
 }
 
 .machine-section {
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 150px;
+  
 }
 
 .container {
@@ -215,6 +215,7 @@
   background-color: #4e4e4e; /* Couleur de la ligne */
   margin: 20px 20px 20px 20%; /* Marge supérieure et inférieure pour espacement */
   text-align: center;
+  width: 100%;
 }
 
 .machine-section h3 {
@@ -267,6 +268,7 @@
 
 .second-section {
   padding: 0px 0; /* Espace de remplissage haut et bas */
+  width: 100%;
 }
 
 .container-deux {
@@ -282,7 +284,7 @@
 
 .zone-2:not(:last-child) {
   border-right: 2px solid #ccc; /* Bordure de 2 pixels à droite, sauf pour la dernière zone */
-  padding-right: 15px; /* Espacement à droite de la bordure */
+  padding-right: 100px; /* Espacement à droite de la bordure */
 }
 
 /* La ligne sera positionnée à l'intérieur de la zone */
@@ -315,8 +317,6 @@
 
 .info-container-2{
   color:var(--main-color);
-  top: 50;
-  left: 50;
 }
 
 
@@ -360,23 +360,19 @@
 }
 
 .info-container-2 .description-data {
-  margin-bottom: 20px; /* Ajoute un espace entre les paires description-donnée */
+  margin-bottom: 0px; /* Ajoute un espace entre les paires description-donnée */
   text-align: center;
 }
 
-.info-container-2 hr {
-  border: none; /* Supprime le style par défaut de la ligne horizontale */
-  border-top: 2px solid #ccc; /* Ajoute une ligne horizontale personnalisée */
-  margin: 20px 40px 0 0px;
-}
+
 
 .info-container-2 .description-data .description {
-  font-weight: 200;
+  font-weight: 800;
   font-size: 14px;
 }
 
 .info-container-2 .description-data .description-info {
-  font-weight: 800;
+  font-weight: 200;
 }
 
 .info-container-3{
@@ -397,14 +393,8 @@
 }
 
 .info-container-3 .description-data {
-  margin-bottom: 20px; /* Ajoute un espace entre les paires description-donnée */
+  margin-bottom: 0px; /* Ajoute un espace entre les paires description-donnée */
   text-align: center;
-}
-
-.info-container-3 hr {
-  border: none; /* Supprime le style par défaut de la ligne horizontale */
-  border-top: 2px solid #ccc; /* Ajoute une ligne horizontale personnalisée */
-  margin: 20px 40px 0 0px;
 }
 
 .info-container-3 .description-data .description {
@@ -677,70 +667,6 @@
     text-decoration: none;
 }
 
-
-/* Media Query For different screens */
-@media (min-width:320px) and (max-width:479px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-  .footer-content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1230px;
-    padding: 40px 15px 1050px;
-    position: relative;
-  }
-}
-@media (min-width:480px) and (max-width:599px)  { /* smartphones, Android phones, landscape iPhone */
-  .footer-content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1230px;
-    padding: 40px 15px 1050px;
-    position: relative;
-  }
-}
-@media (min-width:600px) and (max-width: 800px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-  .footer-content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1230px;
-    padding: 40px 15px 1050px;
-    position: relative;
-  }
-}
-@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
-
-}
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
-
-}
-@media (min-width:1281px) { /* hi-res laptops and desktops */
-
-}
-
-
-
-
-@media (min-width: 760px) {
-  .footer-content {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 1230px;
-      padding: 40px 15px 450px;
-      position: relative;
-  }
-
-  .footer-wave-svg {
-      height: 50px;
-  }
-
-  .footer-content-column {
-      width: 24.99%;
-  }
-}
-@media (min-width: 568px) {
-  /* .footer-content-column {
-      width: 49.99%;
-  } */
-}
 
 
 

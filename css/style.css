@@ -746,7 +746,7 @@ h1{
   background-color: var(--second-bg-color);
   padding: 10px 0;
   text-align: center;
-  min-height: 100px; /* ou une autre valeur appropriée */
+  min-height: 80px; /* ou une autre valeur appropriée */
   width: 100%;
 }
 
@@ -1139,22 +1139,14 @@ h1{
     position: relative;
   }
 }
-@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
 
-}
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
 
-}
-@media (min-width:1281px) { /* hi-res laptops and desktops */
-
-}
-
-@media (min-width: 760px) {
   .footer-content {
+    height: 270px;
       margin-left: auto;
       margin-right: auto;
       max-width: 1230px;
-      padding: 40px 15px 450px;
+      padding: 0px 15px 0px;
       position: relative;
   }
 
@@ -1165,9 +1157,4 @@ h1{
   .footer-content-column {
       width: 24.99%;
   }
-}
-@media (min-width: 568px) {
-  /* .footer-content-column {
-      width: 49.99%;
-  } */
-}
+
