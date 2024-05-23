@@ -1,50 +1,50 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
-    }
-    
-    :root{
-    --bg-color: #041C31;
-    --second-bg-color:#363636;
-    --text-color: #ededed;
-    --main-color: #008ADE;
-    }
-    
-    html{
-      font-size: 62.5%;
-      overflow-x: hidden;
-    }
-    
-    body{
-      background: var(--bg-color);
-      color: var(--text-color);
-    }
-    
-    .header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 2rem 9%;
-      background: transparent;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;  
-      z-index: 100;
-      transition: .3s;
-    }
-     
-    .logo {
-      font-size: 5.5rem;
-      color: var(--second-bg-color);
-      font-weight: 600;
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --bg-color: #041C31;
+  --second-bg-color:#363636;
+  --text-color: #ededed;
+  --main-color: #008ADE;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body{
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  z-index: 100;
+  transition: .3s;
+}
+
+.logo {
+  font-size: 5.5rem;
+  color: var(--second-bg-color);
+  font-weight: 600;
+}
     
     
 .menu-dropdown {
@@ -93,7 +93,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .container {
@@ -106,6 +105,7 @@
   width: 31.7%;
   background-color: #f0f0f0;
 }
+
 /* Photo  concerto*/
 .photo-container img {
   width: 800px;
@@ -215,7 +215,7 @@
   background-color: #4e4e4e; /* Couleur de la ligne */
   margin: 20px 20px 20px 20%; /* Marge supérieure et inférieure pour espacement */
   text-align: center;
-  width: 100%;
+  width: 55%;
 }
 
 .machine-section h3 {
