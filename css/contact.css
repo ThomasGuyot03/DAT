@@ -271,6 +271,12 @@ html, body {
     width: 100%;
   }
 
+  .contact-info {
+    justify-content: center;
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+
   .contact-form-section {
     padding: 2rem 5%;
     width: 100vw;
