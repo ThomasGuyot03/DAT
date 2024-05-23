@@ -30,16 +30,16 @@ body{
 
 .header {
   position: fixed;
-  top: 0;
+  top: 50px;
   left: 0;
   width: 100%;
-  padding: 2rem 9%;
   background: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;  
   z-index: 100;
   transition: .3s;
+  padding: 0 5% 0 5% ;
 }
 
 .header nav a.active {
@@ -47,14 +47,21 @@ body{
   /* Autres styles de mise en surbrillance */
 }
 
-.logo img{
-  width: 22rem ;
+.logo {
+  font-size: 34px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  /* Ajoutez ces propriétés pour éviter que le texte du logo n'affecte la position de la navbar */
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .navbar {
   display: flex;
   margin-right: 0%;
-  margin-top: -10%;
+  margin-top: 0%;
+  display: inline-block;
 }
 
 .navbar a {
