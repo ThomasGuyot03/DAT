@@ -909,6 +909,7 @@ h1{
 .footer h4 {
   text-decoration: none;
   font-size: 25px;
+  color: var(--text-color);
 }
 
 .footer-wave-svg {
@@ -973,6 +974,7 @@ h1{
 
 .footer-menu-list li {
     margin-top: 5px;
+    font-size: 15px;
 }
 
 .footer-call-to-action-description {
