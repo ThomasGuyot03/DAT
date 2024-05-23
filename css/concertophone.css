@@ -16,7 +16,6 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   min-height: 100vh;
   font-family: Arial, sans-serif;
@@ -66,12 +65,16 @@ body {
 
 .photo-container {
   width: 100%;
+  height: auto; /* Ajuste la hauteur automatiquement pour les petits écrans */
 }
 
 .photo-container img {
-  width: 100%; /* Adapter la largeur de l'image à la taille de son conteneur */
-  height: auto;
-  margin: 0;
+  position: static; /* Réinitialise le positionnement pour les petits écrans */
+  width: 100%;      /* Adapter la largeur de l'image à la taille de son conteneur */
+  height: auto;     /* Maintient le ratio d'aspect de l'image */
+  transform: none;  /* Enlève la transformation pour les petits écrans */
+  object-fit: contain; /* Ajuste l'image pour qu'elle soit entièrement visible dans le conteneur */
+  margin: 0;        /* Supprime les marges */
 }
 
 .info-container {
@@ -125,22 +128,21 @@ body {
   text-align: left; /* Aligner le texte à gauche */
   width: 100%; /* Utiliser toute la largeur disponible */
   height: 100%;
-  padding: 0;
 }
 
 .info-container-concerto h2 {
   font-size: 4vh; /* Taille de police relative à la hauteur de l'écran */
-  margin: 40px 0 0 0; /* Supprimer les marges */
+  margin: 40px 0 10px 0; /* Ajuster les marges */
   font-weight: 600;
   position: relative;
-  top: 50%;
-  left: 65%;
-  transform: translate(-50%, -50%); /* Centrer le titre */
+  left: 50%;
+  transform: translateX(-50%); /* Centrer le titre horizontalement */
   white-space: nowrap; /* Empêche le titre de se diviser en plusieurs lignes */
 }
 
+
 .info-container-concerto hr {
-  margin-top: 20px; /* Réajuster la marge supérieure */
+  margin-top: 0px; /* Réajuster la marge supérieure */
   width: 80%;
 }
 
@@ -149,7 +151,7 @@ body {
   margin-left: 0;
   font-size: 14px; /* Réduire la taille du texte */
   line-height: 20px;
-  padding: 20px;
+  padding: 20px 30px 20px 30px ;
 }
 
 .description-data {

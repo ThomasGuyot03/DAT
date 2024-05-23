@@ -104,14 +104,19 @@ body{
 .photo-container {
   width: 31.7%;
   background-color: #f0f0f0;
+  position: relative; /* Important pour le positionnement absolu de l'image */
+  overflow: hidden;   /* Pour s'assurer que l'image ne dépasse pas du conteneur */
 }
 
-/* Photo  concerto*/
+/* Photo concerto */
 .photo-container img {
-  width: 800px;
-  margin-left: -120px;
-  margin-bottom: 10%;
-  margin-top: 15%;
+  position: absolute; /* Permet de positionner l'image par rapport au conteneur */
+  top: 50%;           /* Centre verticalement l'image */
+  left: 50%;          /* Centre horizontalement l'image */
+  width: 100%;        /* L'image prend toute la largeur du conteneur */
+  height: 600px;       /* Conserve le ratio d'aspect de l'image */
+  transform: translate(-50%, -50%); /* Déplace l'image pour qu'elle soit parfaitement centrée */
+  object-fit: cover;  /* Assure que l'image couvre bien tout le conteneur sans distorsion */
 }
 
 .photo-container-maestro {
@@ -164,6 +169,7 @@ body{
   width: 70%;
   padding: 20px;
   background-color: #ffffff;
+  margin: 0 auto; /* Centrer le conteneur lui-même si nécessaire */
 }
 
 .info-container-concerto h2 {
@@ -178,10 +184,10 @@ body{
   color: black;
   font-size: 18px;
   font-family: 'Roboto Condensed';
-  margin-left: 25%;
   text-align: center;
   max-width: 580px;
   font-weight: 600;
+  margin: 0 auto; /* Centrer le paragraphe horizontalement */
 }
 
 .info-container {
@@ -202,10 +208,10 @@ body{
   color: black;
   font-size: 18px;
   font-family: 'Roboto Condensed';
-  margin-left: 25%;
   text-align: center;
   max-width: 580px;
   font-weight: 600;
+  margin:  0 auto ;
 }
 
 .machine-section hr {
@@ -219,12 +225,12 @@ body{
 }
 
 .machine-section h3 {
-  margin-left: 20%;
   font-size: 25px;
   color: #000000;
   text-align: center;
   max-width: 600px;
   font-weight: 600;
+  margin: 0 auto;
 }
 
 
@@ -301,11 +307,17 @@ body{
 .photo-container-deux {
   margin-bottom: 20px; /* Marge en bas de la photo */
   height: 500px; /* Hauteur fixe de la zone de la photo */
+  position: relative;
 }
 
 .photo-container-deux img {
-  width: 100%; /* La largeur de l'image s'adapte à la taille de son conteneur */
-  height: auto; /* Garantit que l'image conserve son ratio hauteur/largeur */
+  height: 500px; /* Garantit que l'image conserve son ratio hauteur/largeur */
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
 }
 
 .photo-container-deux-maestro img {
@@ -327,16 +339,6 @@ body{
 .info-container p {
   margin-bottom: 0; /* Aucune marge en bas du paragraphe */
   line-height: 25px;
-}
-
-
-.info-container-1 h3 {
-  /* Styles pour le titre */
-  /* Par exemple : */
-  font-size: 25px;
-  color: var(--main-color);
-  margin-bottom: 25px;
-  margin-top: 10%;
 }
 
 .info-container-2 h3 {
@@ -421,6 +423,7 @@ body{
 .footer h4 {
   text-decoration: none;
   font-size: 25px;
+  color: white;
 }
 
 .footer-wave-svg {
