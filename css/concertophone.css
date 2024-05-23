@@ -208,6 +208,11 @@ body {
 .footer-copyright-wrapper{
   max-width: 100%;
 }
+
+.footer-content-column {
+  width: 100%;
+}
+
 }
 
 /* Media query pour les écrans de largeur maximale de 1024px (tablettes) */
@@ -292,7 +297,7 @@ body {
 
   .photo-container-deux,
   .zone {
-    display: block; /* Afficher les éléments non nécessaires sur les écrans mobiles */
+    display: none; 
   }
 
   .zone-2 {
