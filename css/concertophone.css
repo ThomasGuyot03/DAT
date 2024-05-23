@@ -102,7 +102,7 @@ body {
 
 .svg-wrapper {
   width: 100%; /* Adapter la largeur du bouton SVG */
-  max-width: 280px; /* Limiter la largeur maximale du bouton */
+  max-width: 319px; /* Limiter la largeur maximale du bouton */
   margin: 40px auto; /* Ajouter une marge en haut et en bas pour descendre le bouton */
   order: 2; /* Par défaut, le bouton est après le texte */
 }
@@ -308,7 +308,7 @@ body {
   }
 
   .zone-2:not(:last-child) {
-    width: 50%;
+    width: 100%;
     padding: 10px;
   }
 
