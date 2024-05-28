@@ -76,6 +76,18 @@ body {
   height: auto; /* Ajuste la hauteur automatiquement pour les petits écrans */
 }
 
+.photo-container-maestro {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.photo-container-maestro img {
+  max-width: 60%;
+  object-fit: contain;
+  width: 100%;
+}
+
 .photo-container img {
   position: static; /* Réinitialise le positionnement pour les petits écrans */
   width: 100%;      /* Adapter la largeur de l'image à la taille de son conteneur */
@@ -93,31 +105,46 @@ body {
 
 .info-container h2 {
   font-size: 20px; /* Réduire la taille du titre */
-  margin-top: 20px; /* Réajuster la marge supérieure */
-  margin-bottom: 20px; /* Réajuster la marge inférieure */
+  margin: 20px auto; /* Réajuster les marges */
 }
 
 .info-container p {
   font-size: 14px; /* Réduire la taille du texte */
-  margin: 0 10px;
-  text-align: justify;
+  margin: 0 auto 20px; /* Réajuster la marge inférieure */
+  max-width: 80%; /* Limiter la largeur du paragraphe pour éviter un texte trop large */
+  text-align: justify; /* Justifier le texte */
 }
 
 .machine-section hr {
-  width: 100%; /* Réduire la largeur de la ligne horizontale */
-  margin: 20px auto;
+  width: 80%; /* Réduire la largeur de la ligne horizontale */
+  margin: 20px auto; /* Centrer horizontalement */
 }
 
 .svg-wrapper {
   width: 100%; /* Adapter la largeur du bouton SVG */
-  max-width: 319px; /* Limiter la largeur maximale du bouton */
-  margin: 40px auto; /* Ajouter une marge en haut et en bas pour descendre le bouton */
-  order: 2; /* Par défaut, le bouton est après le texte */
+  max-width: 262px; /* Limiter la largeur maximale du bouton */
+  margin: 90px  25% 5% 10%; /* Ajouter une marge en haut et en bas pour descendre le bouton */
+  text-align: center; /* Centrer horizontalement le contenu */
 }
 
-.photo-container-deux,
+.zone-1{
+  display: none;
+}
+
 .zone {
-  display: none; /* Masquer les éléments non nécessaires sur les écrans mobiles */
+  flex-grow: 1; /* Les zones prennent autant d'espace que possible */
+  width: 100%;
+  display: flex; /* Utiliser flex pour aligner le contenu */
+  justify-content: center; /* Aligner le contenu horizontalement au centre */
+}
+
+.info-container-2,
+.info-container-3,
+.info-container-concerto {
+  text-align: center; /* Aligner le texte au centre */
+  width: 90%; /* Utiliser 90% de la largeur disponible pour éviter le débordement */
+  margin-left: auto; /* Centrer les zones horizontalement */
+  margin-right: auto;
 }
 
 .zone-2 {
@@ -321,9 +348,8 @@ text-align: left; /* Aligner le texte à gauche */
 .svg-wrapper {
   width: 100%;
   max-width: 280px;
-  margin: 40px auto 20px;
+  margin: 90px auto 20px;
 }
-
 
 .second-section {
   display: flex;

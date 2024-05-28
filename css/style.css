@@ -761,7 +761,8 @@ h1{
 
 .cercle p {
   color: white;
-  text-align: center;
+  text-align: left;
+  font-size: 14px;
 }
 
 
