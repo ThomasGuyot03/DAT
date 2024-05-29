@@ -120,6 +120,7 @@ body {
 .photo-container-deux,
 .zone {
   display: none; 
+}
 
 .zone-2 {
   display: flex;
@@ -423,5 +424,4 @@ body {
   .footer-copyright-wrapper {
     max-width: 100%;
   }
-}
 }
