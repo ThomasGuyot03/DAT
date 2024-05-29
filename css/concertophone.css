@@ -1,5 +1,3 @@
-
-/* Media query pour les écrans de largeur maximale de 767px (téléphones) */
 @media only screen and (max-width: 767px) {
 html, body {
   overflow-x: hidden; /* Empêche le défilement horizontal */
@@ -141,6 +139,10 @@ body {
   height: 100%;
 }
 
+.info-container-concerto{
+  width: 100%;
+}
+
 .info-container-concerto h2 {
   font-size: 4vh; 
   margin: 40px 0 10px 0; 
@@ -150,7 +152,6 @@ body {
   transform: translateX(-50%); 
   white-space: nowrap; 
 }
-
 
 .info-container-concerto hr {
   margin-top: 0px; 

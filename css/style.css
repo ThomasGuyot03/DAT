@@ -1007,15 +1007,7 @@ h1{
 }
 
 .btn-box {
-    flex-direction: column; /* Empiler les boutons verticalement */
-    align-items: center;
-    width: 100%;
-}
-
-.btn-box .btn {
-    width: 40%;
-    margin-bottom: 1rem; /* Ajouter un espace entre les boutons */
-    height: 100%;
+   display: none;
 }
 
 .image-box {
