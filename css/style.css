@@ -86,6 +86,7 @@ body{
 section{
   min-height: 100vh;
   padding: 0rem 2% 2rem;
+  position: relative; /* Assure que les éléments à l'intérieur soient positionnés relativement */
 }
 
 .home{
@@ -126,19 +127,6 @@ section{
 .home-content p {
   font-size: 1.6rem;
   margin: 2rem 0 4rem;
-}
-
-/* image graine de café  */
-
-.home-image {
-  flex-shrink: 0; /* Empêche l'image de réduire la taille du contenu */
-  margin-right: 44rem; /* Ajustez la marge selon vos besoins */
-}
-
-.home-image img {
-  width: 50%; /* Assurez-vous que l'image occupe toute la largeur de son conteneur */
-  border-radius: 8px; /* Ajustez la bordure selon vos préférences */
-  color: white;
 }
 
 .btn-box {
@@ -318,22 +306,6 @@ span {
   background: var(--second-bg-color);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CSS pour la nouvelle section de la boîte de l'image */
 .image-box {
   flex-shrink: 0; /* Pour éviter que cette section réduise la taille du contenu */
@@ -357,35 +329,6 @@ span {
   backdrop-filter: blur;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Styles pour les boutons */
 .home-title {
   text-align: center;
@@ -400,17 +343,6 @@ span {
 .home-title p {
   font-size: 2rem;
   color: #ffffff; /* Couleur du texte */
-}
-
-
-
-
-
-
-
-
-.section {
-  position: relative; /* Assure que les éléments à l'intérieur soient positionnés relativement */
 }
 
 .filters-container {
@@ -651,58 +583,6 @@ h1{
   max-width: 200px; /* Set a specific maximum width */
   height: auto; /* Allow the height to adjust automatically */
 }
-/* 
-.section-3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%; 
-}
-
-.side-by-side {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.left-box,
-.right-box {
-  width: 300px; 
-  height: 350px;
-  background-color: #ccc;
-  border-radius: 50px;
-  position: relative; 
-  box-shadow: 0 0 20px rgba(0, 162, 255, 0.5); 
-  border: 3px solid var(--main-color);
-}
-
-.left-box img,
-.right-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 49px;
-}
-
-.text-zone-une,
-.text-zone {
-  width: 35vw;
-  height: 7vw;
-  background-color: var(--bg-color);
-  margin: 30px;
-  padding: 10px;
-  border-radius: 10px;
-  border: white 1px solid;
-}
-
-.text-zone-une p,
-.text-zone p {
-  margin: 0;
-  padding: 10px;
-  font-size: 16px;
-} */
-
 
 .titre-apropos {
   width: 100%;
@@ -765,13 +645,6 @@ h1{
   font-size: 14px;
 }
 
-
-
-
-
-
-
-
 .equip-section {
   background-color: var(--second-bg-color);
   padding: 10px 0;
@@ -815,88 +688,6 @@ h1{
 .equip-button:hover {
   background-color: var(--bg-color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .pg-footer {
   font-family: 'Roboto', sans-serif;
@@ -1126,7 +917,7 @@ h1{
 .footer-copyright-wrapper {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1200px;
+    max-width: 100%;
 }
 
 .footer-copyright-text {
@@ -1177,7 +968,7 @@ h1{
     height: 270px;
       margin-left: auto;
       margin-right: auto;
-      max-width: 1230px;
+      max-width: 100%;
       padding: 0px 15px 0px;
       position: relative;
   }
@@ -1190,3 +981,209 @@ h1{
       width: 24.99%;
   }
 
+@media (max-width: 768px) {
+
+.header {
+    top: 0;
+    padding: 0 0%;
+    background-color: rgb(70, 70, 70);
+}
+
+.logo {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap; /* Permettre le passage à la ligne */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+}
+
+.navbar a {
+    font-size: 16px;
+    padding: 5px; /* Ajouter un peu de padding pour l'espace entre les éléments */
+}
+
+#menu-icon {
+    display: none; /* Afficher l'icône du menu hamburger */
+}
+
+.home {
+    flex-direction: column; /* Empiler les éléments verticalement */
+    padding: 0 0%;
+}
+
+.home-content {
+    width: 100%; /* Assurer que le conteneur occupe toute la largeur */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer le contenu horizontalement */
+    text-align: center; /* Centrer le texte à l'intérieur des éléments */
+    margin-top: 15%;
+}
+
+.home-content h1 {
+    font-size: 3.6rem; /* Taille du texte */
+    width: 90%;
+    margin: 5% 0 5% 0;
+}
+
+.home-content p {
+    font-size: 1.9rem;
+    width: 80%; /* Assurer que le paragraphe occupe toute la largeur */
+    margin: 1rem 0 3rem;
+}
+
+.btn-box {
+    flex-direction: column; /* Empiler les boutons verticalement */
+    align-items: center;
+    width: 100%;
+}
+
+.btn-box .btn {
+    width: 40%;
+    margin-bottom: 1rem; /* Ajouter un espace entre les boutons */
+    height: 100%;
+}
+
+.image-box {
+    margin: 10% 0 0 0;
+    width: 80%;
+}
+
+.home-sci {
+    position: static; /* Position statique pour éviter les chevauchements */
+    margin-top: 2rem; /* Ajouter un espace au-dessus des icônes sociales */
+    margin-bottom: 3%;
+}
+
+#filters {
+    margin-bottom: 30%;
+}
+
+.filter-button {
+    flex: 1 1 calc(50% - 10px); /* Chaque bouton prend environ 50% de la largeur disponible sur mobile */
+    max-width: calc(50% - -20px); /* Assure que chaque bouton ne dépasse pas 50% de la largeur */
+    margin: 0;
+    font-size: 14px;
+}
+
+.container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    padding-bottom: 6rem;
+    padding-top: 6rem; /* Ajout d'un padding en haut pour espacer la section */
+}
+
+.about-content {
+    text-align: center;
+    max-width: 80%; /* Ajustez cette valeur selon vos besoins */
+}
+
+.about-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem; /* Ajout d'un margin-bottom pour espacer l'image du texte */
+}
+
+.about-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .4rem solid var(--main-color);
+}
+
+.about-img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--second-bg-color);
+    border-bottom: .2rem solid var(--second-bg-color);
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.cercle {
+    width: 100%;
+}
+
+.cercles-container {
+    flex-direction: column;
+    width: 100%;
+}
+
+.container {
+    height: auto; /* Hauteur automatique pour s'adapter au contenu */
+}
+
+.items {
+    flex-direction: column; /* Empiler les éléments verticalement */
+    align-items: center;
+}
+
+.item {
+    width: 80%; /* Largeur des cartes */
+    margin-bottom: 2rem; /* Espacement entre les cartes */
+}
+
+.c1.c2.c3 {
+    width: 100%;
+}
+
+.equip-button {
+    margin: 0 5%;
+}
+
+.footer-wave-path {
+    color: var(--main-color);
+}
+
+.footer h4 {
+    font-size: 20px;
+}
+
+.footer-menu-list li {
+    font-size: 14px;
+}
+
+.footer-call-to-action-button {
+    font-size: 10px;
+    padding: 8px 20px;
+}
+
+.footer-wave-svg {
+    display: none;  
+}
+
+.footer-copyright{
+    width: 100%;
+    padding: 0;
+}
+
+.footer-copyright-wrapper{
+    margin: 10% 0 0 0;
+}
+
+}

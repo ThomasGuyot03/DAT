@@ -108,6 +108,22 @@ body{
   overflow: hidden;   /* Pour s'assurer que l'image ne dépasse pas du conteneur */
 }
 
+.photo-container-concerto-touch {
+  width: 31.7%;
+  background-color: #f0f0f0;
+  position: relative; /* Important pour le positionnement absolu de l'image */
+  overflow: hidden;   /* Pour s'assurer que l'image ne dépasse pas du conteneur */
+}
+
+.photo-container-concerto-touch img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+  max-height: 100%;
+}
+
 /* Photo concerto */
 .photo-container img {
   position: absolute; /* Permet de positionner l'image par rapport au conteneur */
@@ -313,11 +329,11 @@ body{
 .photo-container-deux img {
   height: 500px; /* Garantit que l'image conserve son ratio hauteur/largeur */
   position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 
 .photo-container-deux-maestro img {
@@ -326,6 +342,30 @@ body{
   margin-left: -20%;
 }
 
+.photo-container-deux-maestro-keyboard img {
+  width: 60%; /* La largeur de l'image s'adapte à la taille de son conteneur */
+  height: auto; /* Garantit que l'image conserve son ratio hauteur/largeur */
+  margin-left: 2%;
+}
+
+.photo-container-deux-touch{
+  margin-bottom: 20px; /* Marge en bas de la photo */
+  height: 500px; /* Hauteur fixe de la zone de la photo */
+  position: relative;
+}
+
+.photo-container-deux-touch img {
+  height: 380px; /* Garantit que l'image conserve son ratio hauteur/largeur */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.zone-1 {
+  width: 33%;
+}
 
 .info-container-2{
   color:var(--main-color);

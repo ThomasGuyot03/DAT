@@ -77,6 +77,20 @@ body {
   margin: 0;        /* Supprime les marges */
 }
 
+.photo-container-concerto-touch {
+  width: 100%;
+  height: auto; /* Ajuste la hauteur automatiquement pour les petits écrans */
+}
+
+.photo-container-concerto-touch img {
+  position: static; /* Réinitialise le positionnement pour les petits écrans */
+  width: 100%;      /* Adapter la largeur de l'image à la taille de son conteneur */
+  height: auto;     /* Maintient le ratio d'aspect de l'image */
+  transform: none;  /* Enlève la transformation pour les petits écrans */
+  object-fit: contain; /* Ajuste l'image pour qu'elle soit entièrement visible dans le conteneur */
+  margin: 0;        /* Supprime les marges */
+}
+
 .info-container {
   width: 100%; /* Réduire la largeur du conteneur d'informations */
   padding: 10px;
