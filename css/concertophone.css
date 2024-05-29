@@ -83,12 +83,11 @@ body {
 }
 
 .photo-container-concerto-touch img {
-  position: static; /* Réinitialise le positionnement pour les petits écrans */
-  width: 100%;      /* Adapter la largeur de l'image à la taille de son conteneur */
-  height: 500px;     /* Maintient le ratio d'aspect de l'image */
-  transform: none;  /* Enlève la transformation pour les petits écrans */
-  object-fit: contain; /* Ajuste l'image pour qu'elle soit entièrement visible dans le conteneur */
-  margin: 0 0 0 20%;        /* Supprime les marges */
+  position: static; 
+  height: 500px;     
+  transform: none;  
+  object-fit: contain; 
+  margin: 0 0 0 20%;        
 }
 
 .info-container {
