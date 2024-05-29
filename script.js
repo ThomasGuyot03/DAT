@@ -76,7 +76,10 @@ var max = $('#c > li').length;
 				navLinks.forEach(link => {
 					link.classList.remove('active');
 				});
-				document.querySelector('header nav a[href="#' + id + '"]').classList.add('active');
+				let targetLink = document.querySelector('header nav a[href="#' + id + '"]');
+				if (targetLink) {
+					targetLink.classList.add('active');
+				}
 			}
 		});
 	});
