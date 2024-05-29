@@ -1146,7 +1146,7 @@ h1{
 
 .footer-content {
   position: relative; /* Ajouter position relative */
-  min-height: 100vh; /* Forcer le footer à occuper au moins toute la hauteur de la fenêtre */
+  min-height: 75vh; /* Forcer le footer à occuper au moins toute la hauteur de la fenêtre */
   padding: 40px 15px 60px;
   text-align: center;
   display: flex;
