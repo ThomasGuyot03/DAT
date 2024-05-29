@@ -997,11 +997,11 @@ h1{
 .home-content h1 {
     font-size: 3.6rem; /* Taille du texte */
     width: 90%;
-    margin: 5% 0 5% 0;
+    margin: 20% 0 5% 0;
 }
 
 .home-content p {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     width: 80%; /* Assurer que le paragraphe occupe toute la largeur */
     margin: 1rem 0 3rem;
 }
@@ -1026,13 +1026,13 @@ h1{
 }
 
 #filters {
-    margin-bottom: 30%;
+    margin-bottom: 40%;
 }
 
 .filter-button {
     flex: 1 1 calc(50% - 10px); /* Chaque bouton prend environ 50% de la largeur disponible sur mobile */
     max-width: calc(50% - -20px); /* Assure que chaque bouton ne dépasse pas 50% de la largeur */
-    margin: 0;
+    margin: 0 10px 10px 0 ;
     font-size: 14px;
 }
 
@@ -1119,38 +1119,81 @@ h1{
     width: 100%;
 }
 
+.equip-container{
+  background-color: var(--bg-color);
+}
+
+.equip-section{
+  background-color: var(--bg-color);
+}
+
 .equip-button {
     margin: 0 5%;
 }
 
+.titre-equip-section{
+  font-size: 22px;
+}
+
+
 .footer-wave-path {
-    color: var(--main-color);
+    color: var(--bg-color);
 }
 
-.footer h4 {
-    font-size: 20px;
+.footer-content-column{
+  width: 100%;
 }
 
-.footer-menu-list li {
-    font-size: 14px;
+.footer-content {
+  position: relative; /* Ajouter position relative */
+  min-height: 100vh; /* Forcer le footer à occuper au moins toute la hauteur de la fenêtre */
+  padding: 40px 15px 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.footer-call-to-action-button {
-    font-size: 10px;
-    padding: 8px 20px;
+/* Ajouter également des styles pour les éléments individuels du footer si nécessaire */
+.footer-menu-name,
+.footer-call-to-action-title {
+  font-size: 16px;
 }
 
-.footer-wave-svg {
-    display: none;  
+.footer-call-to-action-description {
+  margin-bottom: 10px;
 }
 
-.footer-copyright{
-    width: 100%;
-    padding: 0;
+.footer-social-links {
+  height: auto;
+  width: 100%;
+  position: static;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.footer-copyright-wrapper{
-    margin: 10% 0 0 0;
+.footer-social-link {
+  padding: 5px;
+}
+
+.footer-social-link.linkedin,
+.footer-social-link.twitter,
+.footer-social-link.youtube,
+.footer-social-link.github {
+  height: 24px;
+  width: 24px;
+}
+
+.footer-copyright {
+  bottom: 0; /* Placer le footer au bas de la page */
+  width: 100%; /* Occuper toute la largeur */
+  padding: 10px; /* Ajouter un espace au contenu du footer */
+  margin-top: 10%;
+}
+
+.footer-copyright-wrapper {
+  max-width: 100%;
 }
 
 }
