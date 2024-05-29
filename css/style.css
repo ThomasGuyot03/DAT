@@ -935,36 +935,6 @@ h1{
     text-decoration: none;
 }
 
-/* Media Query For different screens */
-@media (min-width:320px) and (max-width:479px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-  .footer-content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1230px;
-    padding: 40px 15px 1050px;
-    position: relative;
-  }
-}
-@media (min-width:480px) and (max-width:599px)  { /* smartphones, Android phones, landscape iPhone */
-  .footer-content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1230px;
-    padding: 40px 15px 1050px;
-    position: relative;
-  }
-}
-@media (min-width:600px) and (max-width: 800px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-  .footer-content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1230px;
-    padding: 40px 15px 1050px;
-    position: relative;
-  }
-}
-
-
   .footer-content {
     height: 270px;
       margin-left: auto;
@@ -1057,6 +1027,10 @@ h1{
     position: static; /* Position statique pour éviter les chevauchements */
     margin-top: 2rem; /* Ajouter un espace au-dessus des icônes sociales */
     margin-bottom: 3%;
+}
+
+.home-title h2 {
+  margin-top: 10%;
 }
 
 #filters {

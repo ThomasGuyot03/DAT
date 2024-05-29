@@ -40,15 +40,15 @@ body {
 
 .logo {
   margin-bottom: 10px;
-  font-size: 24px; /* Réduire la taille du logo pour un affichage mobile */
-  margin: 1% auto 0; /* Centrer horizontalement */
+  font-size: 24px; 
+  margin: 1% auto 0; 
   text-align: center;
 }
 
 .menu-dropdown {
-  position: absolute; /* Position absolue pour garantir l'alignement correct */
-  top: 10px; /* Réajuster la position verticale */
-  right: 10px; /* Réajuster la position horizontale */
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
 }
 
 .dropdown-content {
@@ -56,30 +56,29 @@ body {
   left: 0;
 }
 
-
 .container {
   flex-direction: column;
-  align-items: center; /* Centrer le contenu sur les écrans mobiles */
+  align-items: center; 
   width: 100%;
 }
 
 .photo-container {
   width: 100%;
-  height: auto; /* Ajuste la hauteur automatiquement pour les petits écrans */
+  height: auto; 
 }
 
 .photo-container img {
-  position: static; /* Réinitialise le positionnement pour les petits écrans */
-  width: 100%;      /* Adapter la largeur de l'image à la taille de son conteneur */
-  height: auto;     /* Maintient le ratio d'aspect de l'image */
-  transform: none;  /* Enlève la transformation pour les petits écrans */
-  object-fit: contain; /* Ajuste l'image pour qu'elle soit entièrement visible dans le conteneur */
-  margin: 0;        /* Supprime les marges */
+  position: static; 
+  width: 100%;      
+  height: auto;     
+  transform: none;  
+  object-fit: contain; 
+  margin: 0;      
 }
 
 .photo-container-concerto-touch {
   width: 100%;
-  height: auto; /* Ajuste la hauteur automatiquement pour les petits écrans */
+  height: auto; 
 }
 
 .photo-container-concerto-touch img {
@@ -91,39 +90,38 @@ body {
 }
 
 .info-container {
-  width: 100%; /* Réduire la largeur du conteneur d'informations */
+  width: 100%; 
   padding: 10px;
-  text-align: center; /* Centrer le texte */
+  text-align: center; 
 }
 
 .info-container h2 {
-  font-size: 20px; /* Réduire la taille du titre */
-  margin-top: 20px; /* Réajuster la marge supérieure */
-  margin-bottom: 20px; /* Réajuster la marge inférieure */
+  font-size: 20px; 
+  margin-top: 20px; 
+  margin-bottom: 20px; 
 }
 
 .info-container p {
-  font-size: 14px; /* Réduire la taille du texte */
+  font-size: 14px;
   margin: 0 10px;
   text-align: justify;
 }
 
 .machine-section hr {
-  width: 100%; /* Réduire la largeur de la ligne horizontale */
+  width: 100%; 
   margin: 20px auto;
 }
 
 .svg-wrapper {
-  width: 100%; /* Adapter la largeur du bouton SVG */
-  max-width: 319px; /* Limiter la largeur maximale du bouton */
-  margin: 40px auto; /* Ajouter une marge en haut et en bas pour descendre le bouton */
-  order: 2; /* Par défaut, le bouton est après le texte */
+  width: 100%; 
+  max-width: 319px; 
+  margin: 40px auto; 
+  order: 2; 
 }
 
 .photo-container-deux,
 .zone {
-  display: none; /* Masquer les éléments non nécessaires sur les écrans mobiles */
-}
+  display: none; 
 
 .zone-2 {
   display: flex;
@@ -138,31 +136,31 @@ body {
 .info-container-2,
 .info-container-3,
 .info-container-concerto {
-  text-align: left; /* Aligner le texte à gauche */
-  width: 100%; /* Utiliser toute la largeur disponible */
+  text-align: left; 
+  width: 100%; 
   height: 100%;
 }
 
 .info-container-concerto h2 {
-  font-size: 4vh; /* Taille de police relative à la hauteur de l'écran */
-  margin: 40px 0 10px 0; /* Ajuster les marges */
+  font-size: 4vh; 
+  margin: 40px 0 10px 0; 
   font-weight: 600;
   position: relative;
   left: 50%;
-  transform: translateX(-50%); /* Centrer le titre horizontalement */
-  white-space: nowrap; /* Empêche le titre de se diviser en plusieurs lignes */
+  transform: translateX(-50%); 
+  white-space: nowrap; 
 }
 
 
 .info-container-concerto hr {
-  margin-top: 0px; /* Réajuster la marge supérieure */
+  margin-top: 0px; 
   width: 80%;
 }
 
 .info-container-concerto p {
   text-align: justify;
   margin-left: 0;
-  font-size: 14px; /* Réduire la taille du texte */
+  font-size: 14px; 
   line-height: 20px;
   padding: 20px 30px 20px 30px ;
 }
@@ -182,7 +180,7 @@ body {
 }
 
 .footer-content {
-  padding: 40px 15px 80px; /* Réduire l'espacement du pied de page */
+  padding: 40px 15px 80px; 
   text-align: center;
 }
 
@@ -230,7 +228,7 @@ body {
 
 }
 
-/* Media query pour les écrans de largeur maximale de 1024px (tablettes) */
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .header {
     flex-direction: row;
@@ -240,7 +238,7 @@ body {
   }
 
   .logo {
-    font-size: 28px; /* Ajuster la taille du logo pour un affichage tablette */
+    font-size: 28px; 
     margin: 0;
     text-align: left;
   }
@@ -266,48 +264,48 @@ body {
 
   .photo-container {
     width: 100%;
-    height: 80vh; /* Ajustez la hauteur selon vos besoins */
+    height: 80vh; 
     display: flex;
-    justify-content: center; /* Centrer l'image horizontalement */
-    align-items: center; /* Centrer l'image verticalement */
-    overflow: hidden; /* Masquer toute partie de l'image qui déborde */
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden; 
   }
 
   .photo-container img {
-    width: auto; /* Laisser la largeur s'ajuster automatiquement */
-    height: 100%; /* Ajuster la hauteur de l'image à celle du conteneur */
-    max-height: 100%; /* Assurer que l'image ne dépasse pas la hauteur du conteneur */
-    margin: 0 auto; /* Centrer l'image horizontalement */
-    object-fit: cover; /* Couper l'image pour qu'elle remplisse le conteneur sans déformation */
+    width: auto; 
+    height: 100%; 
+    max-height: 100%; 
+    margin: 0 auto; 
+    object-fit: cover; 
   }
 
   .info-container {
-    width: 50%; /* Ajuster la largeur du conteneur d'informations */
+    width: 50%; 
     padding: 20px;
-    text-align: left; /* Aligner le texte à gauche */
+    text-align: left; 
   }
 
   .info-container h2 {
-    font-size: 24px; /* Ajuster la taille du titre */
-    margin-top: 10px; /* Réajuster la marge supérieure */
-    margin-bottom: 10px; /* Réajuster la marge inférieure */
+    font-size: 24px; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
   }
 
   .info-container p {
-    font-size: 16px; /* Ajuster la taille du texte */
+    font-size: 16px; 
     margin: 0 20px;
     text-align: justify;
   }
 
   .machine-section hr {
-    width: 100%; /* Ajuster la largeur de la ligne horizontale */
+    width: 100%; 
     margin: 20px auto;
   }
 
 .svg-wrapper {
-  width: 100%; /* Adapter la largeur du bouton SVG */
-  max-width: 280px; /* Limiter la largeur maximale du bouton */
-  margin: 40px auto 20px; /* Ajouter une marge en haut et en bas pour descendre le bouton */
+  width: 100%; 
+  max-width: 280px; 
+  margin: 40px auto 20px; 
 }
 
   .photo-container-deux,
@@ -328,8 +326,8 @@ body {
   .info-container-2,
   .info-container-3,
   .info-container-concerto {
-    text-align: left; /* Aligner le texte à gauche */
-    width: 100%; /* Utiliser toute la largeur disponible */
+    text-align: left; 
+    width: 100%; 
     height: 100%;
     padding: 0px;
   }
@@ -340,27 +338,27 @@ body {
 
 
   .info-container-concerto h2 {
-    font-size: 4vh; /* Taille de police relative à la hauteur de l'écran */
+    font-size: 4vh; 
     font-weight: 500;
     position: relative;
     top: 50%;
-    white-space: nowrap; /* Empêche le titre de se diviser en plusieurs lignes */
-    margin: 20px auto; /* Centrer l'élément horizontalement */
+    white-space: nowrap; 
+    margin: 20px auto; 
   }
 
   .info-container-concerto hr {
-    margin-top: 10px; /* Réajuster la marge supérieure */
+    margin-top: 10px; 
     width: 50%;
-    margin: 20px auto; /* Centrer l'élément horizontalement */
+    margin: 20px auto; 
 
   }
 
   .info-container-concerto p {
     text-align: justify;
-    font-size: 18px; /* Ajuster la taille du texte */
+    font-size: 18px; 
     line-height: 24px;
     padding: 20px;
-    margin: 20px auto; /* Centrer l'élément horizontalement */
+    margin: 20px auto; 
 
   }
 
@@ -370,11 +368,11 @@ body {
   }
 
   .machine-section {
-    text-align: center; /* Centrer le texte à l'intérieur du conteneur */
+    text-align: center; 
   }
   
   .machine-section h3 {
-    margin: 20px auto; /* Centrer l'élément horizontalement */
+    margin: 20px auto; 
     padding: 20px;
   }
 
@@ -383,7 +381,7 @@ body {
   }
 
   .footer-content {
-    padding: 40px 15px 60px; /* Réduire l'espacement du pied de page */
+    padding: 40px 15px 60px; 
     text-align: center;
   }
 
@@ -424,4 +422,5 @@ body {
   .footer-copyright-wrapper {
     max-width: 100%;
   }
+}
 }
