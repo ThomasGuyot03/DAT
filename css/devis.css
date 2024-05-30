@@ -155,4 +155,20 @@ button:hover {
   align-items: flex-start;
   width: 100%;
 }
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 3%;
+  height: 50px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 3%;
+  height: 50px;
+  text-align: center; 
+  font-size: 16px;
+}
 }
