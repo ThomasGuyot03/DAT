@@ -150,10 +150,7 @@ body {
 }
 
 .zone {
-  flex-grow: 1; /* Les zones prennent autant d'espace que possible */
-  width: 100%;
-  display: flex; /* Utiliser flex pour aligner le contenu */
-  justify-content: center; /* Aligner le contenu horizontalement au centre */
+display: none;
 }
 
 .info-container-2,
