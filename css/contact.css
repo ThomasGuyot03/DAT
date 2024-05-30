@@ -15,10 +15,10 @@ html, body {
 }
 
 :root {
-  --bg-color: #041C31;
-  --second-bg-color: #363636;
-  --text-color: #ededed;
-  --main-color: #008ADE;
+--bg-color: #041C31;
+--second-bg-color: #363636;
+--text-color: #ededed;
+--main-color: #008ADE;
 }
 
 /* Header et navigation */
@@ -164,154 +164,165 @@ html, body {
 
 /* Pour les appareils de largeur maximale de 1024px (tablettes et plus petits) */
 @media (max-width: 1024px) {
-  .menu-icon {
-    display: block;
-  }
+.menu-icon {
+  display: block;
+}
 
-  .header {
-    color: var(--bg-color);
-    background-color: var(--bg-color);
-    width: 100vw;
-  }
+.header {
+  color: var(--bg-color);
+  background-color: var(--bg-color);
+  width: 100vw;
+}
 
-  .navbar {
-    display: none;
-    flex-direction: column;
-    width: 100vw;
-    background-color: var(--bg-color);
-    position: absolute;
-    top: 60px; /* ajustez en fonction de la hauteur de votre header */
-    left: 0;
-    padding: 1rem;
-  }
+.navbar {
+  display: none;
+  flex-direction: column;
+  width: 100vw;
+  background-color: var(--bg-color);
+  position: absolute;
+  top: 60px; /* ajustez en fonction de la hauteur de votre header */
+  left: 0;
+  padding: 1rem;
+}
 
-  .navbar.active {
-    display: flex;
-  }
+.navbar.active {
+  display: flex;
+}
 
-  .navbar a {
-    margin: 1rem 0;
-    font-size: 1rem;
-    color: var(--main-color);
-  }
+.navbar a {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: var(--main-color);
+}
 
-  .contact-item {
-    margin: 1rem 3rem;
-  }
+.contact-item {
+  margin: 1rem 3rem;
+}
 
-  .blue-section {
-    height: 30vh;
-    font-size: 1.5rem;
-    width: 100vw;
-  }
+.blue-section {
+  height: 30vh;
+  font-size: 1.5rem;
+  width: 100vw;
+}
 
-  .form-group label {
-    font-size: 1rem;
-  }
+.form-group label {
+  font-size: 1rem;
+}
 
-  .form-group input,
-  .form-group textarea {
-    font-size: 0.9rem;
-  }
+.form-group input,
+.form-group textarea {
+  font-size: 0.9rem;
+}
 
-  .bouton {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-  }
+.bouton {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
 }
 
 /* Pour les appareils de largeur maximale de 768px (mobiles et plus petits) */
 @media (min-width: 320px) and (max-width: 768px) {
 
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem 5%;
-    width: 100vw;
-  }
+.header {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 5%;
+  width: 100vw;
+}
 
-  .menu-icon {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin: 1rem;
-    color: white;
-  }
+.menu-icon {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  color: white;
+}
 
-  .navbar {
-    display: none;
-    color: var(--bg-color);
-    width: 100vw;
-  }
+.navbar {
+  display: none;
+  color: var(--bg-color);
+  width: 100vw;
+}
 
-  .navbar a {
-    margin: 1rem 0;
-    font-size: 1rem;
-    color: var(--main-color);
-    text-align: center;
-    width: 100%;
-  }
+.navbar a {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: var(--main-color);
+  text-align: center;
+  width: 100%;
+}
 
-  .navbar.active {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100vw;
-  }
+.navbar.active {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100vw;
+}
 
-  .blue-section {
-    height: 35vh;
-    font-size: 1.2rem;
-    width: 100vw;
-    padding: 1rem;
-  }
+.blue-section {
+  height: 35vh;
+  font-size: 1.2rem;
+  width: 100vw;
+  padding: 1rem;
+}
 
-  .contact-item {
-    margin: 1rem 5%;
-    width: 100%;
-  }
+.contact-item {
+  margin: 1rem 5%;
+  width: 100%;
+}
 
-  .contact-info {
-    justify-content: center;
-    margin-top: 1rem;
-    flex-direction: column;
-  }
+.contact-item span {
+  text-decoration: none;
+  color: inherit; /* Garder la couleur actuelle du texte */
+  position: relative; /* Nécessaire pour positionner le lien absolu */
+}
 
-  .contact-form-section {
-    padding: 2rem 5%;
-    width: 100vw;
-  }
+.contact-info {
+  justify-content: center;
+  margin-top: 1rem;
+  flex-direction: column;
+}
 
-  .container {
-    padding: 0 1rem;
-    width: 100%;
-  }
+.contact-form-section {
+  padding: 2rem 5%;
+  width: 100vw;
+}
 
-  .form-group {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
+.container {
+  padding: 0 1rem;
+  width: 100%;
+}
 
-  .form-group label {
-    font-size: 0.9rem;
-  }
+.form-group {
+  width: 100%;
+  margin-bottom: 1rem;
+}
 
-  .form-group input,
-  .form-group textarea {
-    font-size: 0.8rem;
-    width: 100%;
-  }
+.form-group label {
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+  font-size: 0.8rem;
+  width: 100%;
+}
 
 
-  input,
+input,
 textarea,
 select {
-    font-size: 16px;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
 }
-  .bouton {
-    font-size: 0.8rem;
-    padding: 0.5rem 0.75rem;
-    color: black;
-  }
+
+.bouton {
+  font-size: 0.8rem;
+  padding: 0.5rem 0.75rem;
+  color: black;
+}
 }
