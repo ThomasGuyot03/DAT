@@ -7,25 +7,26 @@
     <link rel="stylesheet" href="../css/devis.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="icon" href="/Photo/Logo DAT.png" type="image/x-icon">
+    <meta name="description" content="Testez l'éligibilité de votre entreprise à l'installation d'une nouvelle machine et découvrez quel type de machine correspond le mieux à vos besoins. Remplissez notre formulaire de devis pour obtenir une évaluation personnalisée et des recommandations adaptées à votre activité.">
 
 </head>
 <body>
 
-<header class="header">        
-    <a href="../index.html" class="logo">DAT.</a>
-
-    <div class="bx bx-menu" id="menu-icon"></div>
-
-    <div class="menu-dropdown" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-        <div class="dropdown-content" id="dropdownContent">
-            <!-- Contenu du menu déroulant -->
-            <a href="#">Accueil</a>
-            <a href="#">Option 2</a>
-            <a href="#">Option 3</a>
+    <header class="header">        
+        <a href="../index.html" class="logo">D . A . T</a>    
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
         </div>
-    </div>
-</header>
+        
+        <nav class="navbar" id="navbar">
+            <a href="../index.html" class="active">Home</a>
+            <a href="../index.html#section-machine">Nos Machines</a>
+            <a href="../index.html#container-3">A Propos</a>
+            <a href="/">Nos Marques</a>
+            <a href="../html/contact.html">Contact</a>
+        </nav>
+    </header>
+
 <div class="container">
     <h1>Formulaire Devis</h1>
     <form id="devisForm">
@@ -51,6 +52,6 @@
 </div>
 
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script src="/devis.js"></script>
+<script src="../devis.js"></script>
 </body>
 </html>
