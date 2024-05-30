@@ -1,6 +1,3 @@
-.zone-1{
-  display: flex;
-}
 .photo-container-deux-maestro{
   text-align: center;
   margin-top: 7%;
@@ -112,13 +109,6 @@ body {
   margin: 20px auto; /* Réajuster les marges */
 }
 
-.info-container p {
-  font-size: 14px; /* Réduire la taille du texte */
-  margin: 0 auto 20px; /* Réajuster la marge inférieure */
-  max-width: 80%; /* Limiter la largeur du paragraphe pour éviter un texte trop large */
-  text-align: justify; /* Justifier le texte */
-}
-
 .machine-section hr {
   width: 80%; /* Réduire la largeur de la ligne horizontale */
   margin: 20px auto; /* Centrer horizontalement */
@@ -129,10 +119,6 @@ body {
   max-width: 262px; /* Limiter la largeur maximale du bouton */
   margin: 90px  25% 5% 10%; /* Ajouter une marge en haut et en bas pour descendre le bouton */
   text-align: center; /* Centrer horizontalement le contenu */
-}
-
-.zone-1{
-  display: none;
 }
 
 .zone {
@@ -339,11 +325,6 @@ text-align: left; /* Aligner le texte à gauche */
   margin-left: 0;
 }
 
-.info-container p {
-  font-size: 16px;
-  text-align: center; /* Centre les paragraphes horizontalement */
-}
-
 .machine-section hr {
   width: 60%;
   margin: 20px auto;
@@ -358,10 +339,6 @@ text-align: left; /* Aligner le texte à gauche */
 .second-section {
   display: flex;
   flex-direction: column;
-}
-
-.zone-1{
-  display: none;
 }
 
 .zone-2 {

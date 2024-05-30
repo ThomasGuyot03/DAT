@@ -1,6 +1,3 @@
-.zone-1{
-  display: flex;
-}
 .photo-container-deux-maestro{
   text-align: center;
   margin-top: 7%;
@@ -143,10 +140,6 @@ body {
   max-width: 262px; /* Limiter la largeur maximale du bouton */
   margin: 90px  25% 5% 10%; /* Ajouter une marge en haut et en bas pour descendre le bouton */
   text-align: center; /* Centrer horizontalement le contenu */
-}
-
-.zone-1{
-  display: none;
 }
 
 .zone {
@@ -369,10 +362,6 @@ text-align: left; /* Aligner le texte à gauche */
 .second-section {
   display: flex;
   flex-direction: column;
-}
-
-.zone-1{
-  display: none;
 }
 
 .zone-2 {

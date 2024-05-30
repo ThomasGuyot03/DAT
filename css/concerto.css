@@ -358,16 +358,8 @@ body{
   object-fit: cover;
 }
 
-.zone-1 {
-  width: 33%;
-}
-
 .info-container-2{
   color:var(--main-color);
-}
-
-.info-container h3 {
-  margin-bottom: 10px; 
 }
 
 .info-container p {

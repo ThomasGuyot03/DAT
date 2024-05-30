@@ -102,12 +102,6 @@ body {
   margin-bottom: 20px; 
 }
 
-.info-container p {
-  font-size: 14px;
-  margin: 0 10px;
-  text-align: justify;
-}
-
 .machine-section hr {
   width: 100%; 
   margin: 20px auto;
@@ -168,7 +162,7 @@ body {
 .info-container-concerto p {
   text-align: justify;
   margin-left: 0;
-  font-size: 14px; 
+  font-size: 16px; 
   line-height: 20px;
   padding: 20px 30px 20px 30px ;
 }
