@@ -322,12 +322,20 @@ span {
   border-radius: 8px; /* Bord arrondi selon vos préférences */
   overflow: hidden; /* Pour cacher le dépassement de l'image */
   border-radius: 5%;
+  display: none;
+}
+
+
+.image-container:first-child {
+  display: block;
 }
 
 /* CSS pour l'image à l'intérieur de la boîte */
 .image-container img {
   width: 100%; /* Assurez-vous que l'image occupe toute la largeur du conteneur */
-  backdrop-filter: blur;
+  height: 100%; /* Assurez-vous que l'image occupe toute la hauteur du conteneur */
+  object-fit: cover; /* L'image est redimensionnée pour remplir le conteneur tout en conservant ses proportions */
+  border-radius: 8px; /* Bord arrondi selon vos préférences */
 }
 
 /* Styles pour les boutons */
