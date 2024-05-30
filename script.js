@@ -11,10 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
     setInterval(showNextImage, 10000); // Change d'image toutes les 3 secondes (3000 ms)
 });
 
-
-
-
-
 	document.addEventListener("DOMContentLoaded", function() {
 		const filterButtons = document.querySelectorAll(".filter-button");
 		const items = document.querySelectorAll(".item");
