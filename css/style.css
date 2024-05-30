@@ -1027,6 +1027,10 @@ h1{
   margin-top: 10%;
 }
 
+.home-title p {
+  width: 95%;
+}
+
 #filters {
     margin-bottom: 40%;
 }
