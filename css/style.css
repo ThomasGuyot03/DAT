@@ -960,7 +960,6 @@ h1{
     top: 0;
     padding: 0 0%;
     background-color: rgb(70, 70, 70);
-    opacity: 40%;
 }
 
 .logo {
@@ -1025,7 +1024,7 @@ h1{
 }
 
 .home-title h2 {
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
 .home-title p {
