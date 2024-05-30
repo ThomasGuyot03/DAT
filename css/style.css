@@ -960,6 +960,7 @@ h1{
     top: 0;
     padding: 0 0%;
     background-color: rgb(70, 70, 70);
+    opacity: 40%;
 }
 
 .logo {
