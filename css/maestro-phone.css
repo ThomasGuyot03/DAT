@@ -54,10 +54,14 @@ body {
   text-align: center;
 }
 
-.menu-dropdown {
-  position: absolute; /* Position absolue pour garantir l'alignement correct */
-  top: 10px; /* Réajuster la position verticale */
-  right: 10px; /* Réajuster la position horizontale */
+/* .menu-dropdown {
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
+} */
+
+.menu-dropdown{
+  display: none;
 }
 
 .dropdown-content {

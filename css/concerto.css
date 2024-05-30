@@ -409,8 +409,12 @@ body{
   font-weight: 200;
 }
 
-.info-container-3{
+.info-container-3 {
   width: 30%;
+  height: 100%; /* Assurez-vous que le conteneur a une hauteur définie */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .info-container-3 .description-data p {
