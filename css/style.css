@@ -666,7 +666,7 @@ h1{
 .cercle p {
   color: white;
   text-align: left;
-  font-size: 1rem; /* Use relative units for font size */
+  font-size: 1 rem; /* Use relative units for font size */
   max-width: 100%; /* Ensure the text does not exceed the container's width */
   word-wrap: break-word; /* Break long words to fit within the container */
   overflow: hidden; /* Hide overflow content */
