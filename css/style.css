@@ -652,28 +652,31 @@ h1{
   align-items: center;
   justify-content: center;
   border: 2px solid var(--text-color);
-
+  border-radius: 20px; /* Adds rounded corners */
 }
 
 .c1 {
-  background: #0075a3;
-  border-radius: 31% 69% 70% 47% / 30% 32% 68% 70%;
+  background:var(--bg-color);
+  border-radius: 20px; /* Uniform rounded corners */
+  margin-bottom: 20px;
 }
 
 .c2 {
-  background: #0e3aff;
-  border-radius: 59% 25% 18% 52% / 41% 59% 41% 59%;
+  background: var(--bg-color);
+  border-radius: 20px; /* Uniform rounded corners */
+  margin-bottom: 20px;
 }
 
 .c3 {
-  background: #00025e;
-  border-radius: 24% 63% 16% 84% / 61% 59% 41% 39%;
+  background: var(--bg-color);
+  border-radius: 20px; /* Uniform rounded corners */
 }
+
 
 .cercle p {
   color: white;
   text-align: left;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .equip-section {
@@ -1162,7 +1165,7 @@ h1{
 }
 
 .cercle p {
-  font-size: 15px;
+  font-size: 17px;
   margin: 20px 0 10% 0;
 }
 
