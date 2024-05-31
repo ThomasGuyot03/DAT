@@ -657,19 +657,19 @@ h1{
 
 .c1 {
   background:var(--bg-color);
-  border-radius: 20px; /* Uniform rounded corners */
+  border-radius: 20%; /* Uniform rounded corners */
   margin-bottom: 20px;
 }
 
 .c2 {
   background: var(--bg-color);
-  border-radius: 20px; /* Uniform rounded corners */
+  border-radius: 20%; /* Uniform rounded corners */
   margin-bottom: 20px;
 }
 
 .c3 {
   background: var(--bg-color);
-  border-radius: 20px; /* Uniform rounded corners */
+  border-radius: 20%; /* Uniform rounded corners */
 }
 
 
