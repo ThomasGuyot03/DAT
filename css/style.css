@@ -994,11 +994,11 @@ h1{
 }
 
 .navbar {
-  display: none; /* Masque la barre de navigation par défaut */
+  display: none; 
   position: fixed;
   top: 0;
-  left: 0; /* Ajustement de la position à gauche */
-  width: 100%; /* Largeur de 100% */
+  left: 0; 
+  width: 100%; 
   background-color:var(--second-bg-color);
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -1008,10 +1008,11 @@ h1{
 
 .menu-toggle {
   display: block;
-  position: fixed; /* Position fixe pour ancrer l'élément */
-  top: 20px; /* Ajustement de la position à partir du haut */
-  right: 20px; /* Ajustement de la position à partir de la droite */
-  z-index: 1000; /* Assurez-vous que le menu toggle est au-dessus des autres éléments */}
+  position: fixed; 
+  top: 20px; 
+  right: 20px; 
+  z-index: 1000; 
+}
 
 .navbar.active {
   display: flex; /* Affiche la barre de navigation avec la classe active */
