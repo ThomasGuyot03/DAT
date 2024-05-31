@@ -49,10 +49,10 @@ body{
 }
 
 .logo {
-  font-size: 34px;
+  font-size: 40px;
   font-weight: bold;
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
   /* Ajoutez ces propriétés pour éviter que le texte du logo n'affecte la position de la navbar */
   display: inline-block;
   vertical-align: middle;
@@ -90,20 +90,28 @@ section{
   position: relative; /* Assure que les éléments à l'intérieur soient positionnés relativement */
 }
 
-.home{
+.home {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Alignement des éléments au début */
   padding: 0 9%;
 }
 
 .home-content {
-  max-width: 60rem;
+  max-width: 100%;
+  flex: 1;
+  margin-top: 10%;
+}
+
+.image-box {
+  flex: 1;
+  margin-left: 2rem; /* Espace entre le contenu et l'image */
 }
 
 .home-content h1 {
   font-size: 5.6rem;
   font-weight: 700;
   line-height: 1.3;
+  width: 30%;
 }
 
 .home-content h1::first-letter {
@@ -122,12 +130,12 @@ section{
 
 .home-content h1 span {
   color: var(--text-color);
-  width: 1500px;
 }
 
 .home-content p {
   font-size: 1.6rem;
   margin: 2rem 0 4rem;
+  width: 50%;
 }
 
 .btn-box {
@@ -322,7 +330,7 @@ span {
   border-radius: 8px; /* Bord arrondi selon vos préférences */
   overflow: hidden; /* Pour cacher le dépassement de l'image */
   border-radius: 5%;
-  display: none;
+  display: block;
 }
 
 
@@ -332,10 +340,10 @@ span {
 
 /* CSS pour l'image à l'intérieur de la boîte */
 .image-container img {
-  width: 100%; /* Assurez-vous que l'image occupe toute la largeur du conteneur */
-  height: 100%; /* Assurez-vous que l'image occupe toute la hauteur du conteneur */
-  object-fit: cover; /* L'image est redimensionnée pour remplir le conteneur tout en conservant ses proportions */
-  border-radius: 8px; /* Bord arrondi selon vos préférences */
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  border-radius: 8px; 
 }
 
 /* Styles pour les boutons */
@@ -991,8 +999,9 @@ h1{
 }
 
 .home {
-    flex-direction: column; /* Empiler les éléments verticalement */
-    padding: 0 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home-content {
@@ -1008,21 +1017,24 @@ h1{
     font-size: 3.6rem; /* Taille du texte */
     width: 90%;
     margin: 20% 0 5% 0;
+    order: 1;
 }
 
 .home-content p {
     font-size: 1.7rem;
     width: 80%; /* Assurer que le paragraphe occupe toute la largeur */
-    margin: 1rem 0 3rem;
+    margin: 5rem 0 3rem;
+    order: 3;
+}
+
+.image-box {
+  margin: 10% 0 0 0;
+  width: 100%;
+  order: 2;
 }
 
 .btn-box {
    display: none;
-}
-
-.image-box {
-    margin: 10% 0 0 0;
-    width: 80%;
 }
 
 .home-sci {
