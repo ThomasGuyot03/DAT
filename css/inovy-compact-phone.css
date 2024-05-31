@@ -1,0 +1,480 @@
+.photo-container-deux-maestro{
+  text-align: center;
+  margin-top: 7%;
+}
+.info-container-1{
+  display: none;
+}
+/* Media query pour les écrans de largeur maximale de 767px (téléphones) */
+@media only screen and (max-width: 767px) {
+html, body {
+  overflow-x: hidden; /* Empêche le défilement horizontal */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+}
+
+.logo {
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.logo {
+  margin-bottom: 10px;
+  font-size: 24px; /* Réduire la taille du logo pour un affichage mobile */
+  margin: 1% auto 0; /* Centrer horizontalement */
+  text-align: center;
+}
+
+.menu-dropdown{
+  display: none;
+}
+
+.dropdown-content {
+  top: 100%;
+  left: 0;
+}
+
+.photo-container-compact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.photo-container-compact img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-left: 0;
+}
+
+.container {
+  flex-direction: column;
+  align-items: center; /* Centrer le contenu sur les écrans mobiles */
+  width: 100%;
+}
+
+.photo-container {
+  width: 100%;
+  height: auto; /* Ajuste la hauteur automatiquement pour les petits écrans */
+}
+
+.photo-container-maestro {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.photo-container-maestro img {
+  max-width: 60%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.photo-container img {
+  position: static; /* Réinitialise le positionnement pour les petits écrans */
+  width: 100%;      /* Adapter la largeur de l'image à la taille de son conteneur */
+  height: auto;     /* Maintient le ratio d'aspect de l'image */
+  transform: none;  /* Enlève la transformation pour les petits écrans */
+  object-fit: contain; /* Ajuste l'image pour qu'elle soit entièrement visible dans le conteneur */
+  margin: 0;        /* Supprime les marges */
+}
+
+.info-container {
+  width: 100%; /* Réduire la largeur du conteneur d'informations */
+  padding: 10px;
+  text-align: center; /* Centrer le texte */
+}
+
+.info-container h2 {
+  font-size: 20px; /* Réduire la taille du titre */
+  margin: 20px auto; /* Réajuster les marges */
+}
+
+.info-container p {
+  font-size: 14px; /* Réduire la taille du texte */
+  margin: 0 auto 20px; /* Réajuster la marge inférieure */
+  max-width: 80%; /* Limiter la largeur du paragraphe pour éviter un texte trop large */
+  text-align: justify; /* Justifier le texte */
+}
+
+.machine-section hr {
+  width: 80%; /* Réduire la largeur de la ligne horizontale */
+  margin: 20px auto; /* Centrer horizontalement */
+}
+
+.svg-wrapper {
+  width: 100%; /* Adapter la largeur du bouton SVG */
+  max-width: 262px; /* Limiter la largeur maximale du bouton */
+  margin: 90px  25% 5% 10%; /* Ajouter une marge en haut et en bas pour descendre le bouton */
+  text-align: center; /* Centrer horizontalement le contenu */
+}
+
+.zone {
+display: none;
+}
+
+.info-container-2,
+.info-container-3,
+.info-container-concerto {
+  text-align: center; /* Aligner le texte au centre */
+  width: 90%; /* Utiliser 90% de la largeur disponible pour éviter le débordement */
+  margin-left: auto; /* Centrer les zones horizontalement */
+  margin-right: auto;
+}
+
+.zone-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.zone-2:not(:last-child) {
+  width: 100%;
+  padding: 0;
+}
+
+.info-container-2,
+.info-container-3,
+.info-container-concerto {
+text-align: left; /* Aligner le texte à gauche */
+  width: 100%; /* Utiliser toute la largeur disponible */
+  height: 100%;
+}
+
+.info-container-concerto h2 {
+  font-size: 4vh; /* Taille de police relative à la hauteur de l'écran */
+  margin: 40px 0 10px 0; /* Ajuster les marges */
+  font-weight: 600;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* Centrer le titre horizontalement */
+  white-space: nowrap; /* Empêche le titre de se diviser en plusieurs lignes */
+}
+
+
+.info-container-concerto hr {
+  margin-top: 0px; /* Réajuster la marge supérieure */
+  width: 80%;
+}
+
+.info-container-concerto p {
+  text-align: justify;
+  margin-left: 0;
+  font-size: 14px; /* Réduire la taille du texte */
+  line-height: 20px;
+  padding: 20px 30px 20px 30px ;
+}
+
+.description-data {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.machine-section h3 {
+  margin-left: 0%;
+  padding: 20px;
+}
+
+.container-deux {
+  width: 100%;
+}
+
+.footer-content {
+  padding: 40px 15px 80px; /* Réduire l'espacement du pied de page */
+  text-align: center;
+}
+
+.footer-menu-name,
+.footer-call-to-action-title {
+  font-size: 14px;
+}
+
+.footer-call-to-action-description {
+  margin-bottom: 10px;
+}
+
+.footer-social-links {
+  height: auto;
+  width: 100%;
+  position: static;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-social-link {
+  padding: 5px;
+}
+
+.footer-social-link.linkedin,
+.footer-social-link.twitter,
+.footer-social-link.youtube,
+.footer-social-link.github {
+  height: 20px;
+  width: 20px;
+}
+
+.footer-copyright {
+  padding: 0px;
+}
+
+.footer-copyright-wrapper{
+  max-width: 100%;
+}
+
+.footer-content-column {
+  width: 100%;
+}
+
+}
+
+/* Media query pour les écrans de largeur maximale de 1024px (tablettes) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 28px; /* Ajuster la taille du logo pour un affichage tablette */
+  margin: 0;
+  text-align: left;
+}
+
+.menu-dropdown {
+  position: relative;
+  top: 0;
+  right: 0;
+  margin-left: auto;
+}
+
+.dropdown-content {
+  top: 100%;
+  right: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.machine-section, .second-section {
+  flex-direction: column;
+  width: 100%;
+}
+
+.info-container {
+  width: 80%;
+}
+
+.photo-container {
+  width: 100%;
+  height: 80vh; /* Ajustez la hauteur selon vos besoins */
+  display: flex;
+  justify-content: center; /* Centrer l'image horizontalement */
+  align-items: center; /* Centrer l'image verticalement */
+  overflow: hidden; /* Masquer toute partie de l'image qui déborde */
+}
+
+.photo-container-maestro img {
+  max-width: 85%;
+  max-height: 75%;
+  object-fit: contain;
+  margin-top: 10%;
+}
+
+.photo-container-maestro {
+  flex: 1;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-container {
+  flex: 1;
+  width: 100%;
+  text-align: center; /* Centre le texte horizontalement */
+  padding: 20px;
+}
+
+.info-container h2 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center; /* Centre les titres horizontalement */
+  margin-left: 0;
+}
+
+.info-container p {
+  font-size: 16px;
+  text-align: center; /* Centre les paragraphes horizontalement */
+}
+
+.machine-section hr {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.svg-wrapper {
+  width: 100%;
+  max-width: 280px;
+  margin: 90px auto 20px;
+}
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.zone-2 {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.zone {
+  width: 50%;
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center;       
+  height: 100%;           
+}
+
+.zone-2:not(:last-child) {
+  width: 100%;
+  padding: 10px;
+}
+
+.info-container-2,
+.info-container-3,
+.info-container-concerto {
+  text-align: left; /* Aligner le texte à gauche */
+  width: 50%; /* Utiliser toute la largeur disponible */
+  height: 100%;
+  padding: 0px;
+}
+
+.info-container-concerto{
+  text-align: center;
+}
+
+.info-container-concerto h2 {
+  font-size: 4vh; /* Taille de police relative à la hauteur de l'écran */
+  font-weight: 500;
+  position: relative;
+  top: 50%;
+  white-space: nowrap; /* Empêche le titre de se diviser en plusieurs lignes */
+  margin: 20px auto; /* Centrer l'élément horizontalement */
+}
+
+.info-container-concerto hr {
+  margin-top: 10px; /* Réajuster la marge supérieure */
+  width: 50%;
+  margin: 20px auto; /* Centrer l'élément horizontalement */
+
+}
+
+.info-container-concerto p {
+  text-align: justify;
+  font-size: 18px; /* Ajuster la taille du texte */
+  line-height: 24px;
+  padding: 20px;
+  margin: 20px auto; /* Centrer l'élément horizontalement */
+}
+
+.description-data {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.machine-section {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+
+.machine-section h3 {
+  margin: 20px auto; /* Centrer l'élément horizontalement */
+  padding: 20px;
+}
+
+.container-deux {
+  width: 100%;
+}
+
+.footer-content {
+  padding: 40px 15px 60px; /* Réduire l'espacement du pied de page */
+  text-align: center;
+}
+
+.footer-menu-name,
+.footer-call-to-action-title {
+  font-size: 16px;
+}
+
+.footer-call-to-action-description {
+  margin-bottom: 10px;
+}
+
+.footer-social-links {
+  height: auto;
+  width: 100%;
+  position: static;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-social-link {
+  padding: 5px;
+}
+
+.footer-social-link.linkedin,
+.footer-social-link.twitter,
+.footer-social-link.youtube,
+.footer-social-link.github {
+  height: 24px;
+  width: 24px;
+}
+
+.footer-copyright {
+  padding: 0px;
+}
+
+.footer-copyright-wrapper {
+  max-width: 100%;
+}
+}
