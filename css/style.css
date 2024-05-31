@@ -77,6 +77,18 @@ body{
   color: var(--main-color);
 }
 
+.menu-toggle {
+  display: none; /* Masque le menu hamburger par défaut */
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 5px 0;
+}
+
 #menu-icon {
   font-size: 3.6rem;
   color: var(--text-color);
@@ -975,7 +987,6 @@ h1{
 .header {
     top: 0;
     padding: 0 0%;
-    background-color: rgb(70, 70, 70);
 }
 
 .logo {
@@ -983,15 +994,37 @@ h1{
 }
 
 .navbar {
-    display: flex;
-    flex-wrap: wrap; /* Permettre le passage à la ligne */
-    justify-content: center; /* Centrer horizontalement */
-    align-items: center; /* Centrer verticalement */
+  display: none; /* Masque la barre de navigation par défaut */
+  position: fixed;
+  top: 0;
+  left: 0; /* Ajustement de la position à gauche */
+  width: 100%; /* Largeur de 100% */
+  background-color:var(--second-bg-color);
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  text-align: center;
+}
+
+.menu-toggle {
+  display: block;
+  position: fixed; /* Position fixe pour ancrer l'élément */
+  top: 20px; /* Ajustement de la position à partir du haut */
+  right: 20px; /* Ajustement de la position à partir de la droite */
+  z-index: 1000; /* Assurez-vous que le menu toggle est au-dessus des autres éléments */}
+
+.navbar.active {
+  display: flex; /* Affiche la barre de navigation avec la classe active */
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 10%;
 }
 
 .navbar a {
-    font-size: 16px;
-    padding: 5px; /* Ajouter un peu de padding pour l'espace entre les éléments */
+  margin-bottom: 10px;
+  display: inline-block; /* Définit les liens comme des éléments en ligne avec une largeur de bloc */
+  width: 100%; /* Largeur de 100% */
+  text-align: center; /* Centre le texte */
 }
 
 #menu-icon {

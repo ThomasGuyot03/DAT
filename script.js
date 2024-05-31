@@ -1,4 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbar = document.querySelector('.navbar');
+
+    menuToggle.addEventListener('click', function () {
+        navbar.classList.toggle('active');
+    });
+
+    // Ajoutez un écouteur d'événements pour fermer le menu lorsqu'un lien est cliqué
+    navbar.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+            navbar.classList.remove('active');
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
     let currentImageIndex = 0;
     const images = document.querySelectorAll('.image-container');
 
