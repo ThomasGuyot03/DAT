@@ -1163,7 +1163,7 @@ h1{
 
 .cercle p {
   font-size: 15px;
-  margin: 0 0 10% 0;
+  margin: 20px 0 10% 0;
 }
 
 .container {
@@ -1185,11 +1185,11 @@ h1{
 }
 
 .equip-container{
-  background-color: var(--bg-color);
+  background-color: var(--second-bg-color);
 }
 
 .equip-section{
-  background-color: var(--bg-color);
+  background-color: var(--second-bg-color);
 }
 
 .equip-button {
