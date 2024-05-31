@@ -1152,18 +1152,20 @@ h1{
     margin: 2rem 0 3rem;
 }
 
-.cercle {
-    width: 100%;
+.cercles-container {
+  flex-direction: column;
+  align-items: center;
 }
 
-.cercles-container {
-    flex-direction: column;
-    width: 100%;
+.cercle {
+  width: 100%; /* Adjust the width to fit within the screen */
+  height: 100%; /* Allow the height to adjust automatically */
+  padding: 20px; /* Reduce padding for small screens */
 }
 
 .cercle p {
-  font-size: 17px;
-  margin: 20px 0 10% 0;
+  font-size: 1.875rem; /* Adjust font size for small screens */
+  padding: 0 5px; /* Adjust padding for small screens */
 }
 
 .container {
