@@ -406,6 +406,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 2%;
 }
 
 .info-container-3 .description-data p {
@@ -421,17 +422,17 @@ body{
 }
 
 .info-container-3 .description-data {
-  margin-bottom: 0px; 
+  margin-bottom: 30px; 
   text-align: center;
 }
 
 .info-container-3 .description-data .description {
-  font-weight: 200;
+  font-weight: 800;
   font-size: 14px;
 }
 
 .info-container-3 .description-data .description-info {
-  font-weight: 800;
+  font-weight: 200;
 }
 
 .pg-footer {

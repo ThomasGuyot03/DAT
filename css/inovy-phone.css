@@ -51,12 +51,6 @@ body {
   text-align: center;
 }
 
-/* .menu-dropdown {
-  position: absolute; 
-  top: 10px; 
-  right: 10px; 
-} */
-
 .menu-dropdown{
   display: none;
 }
@@ -109,6 +103,13 @@ body {
   margin: 20px auto; /* Réajuster les marges */
 }
 
+.info-container p {
+  font-size: 14px; /* Réduire la taille du texte */
+  margin: 0 auto 20px; /* Réajuster la marge inférieure */
+  max-width: 80%; /* Limiter la largeur du paragraphe pour éviter un texte trop large */
+  text-align: justify; /* Justifier le texte */
+}
+
 .machine-section hr {
   width: 80%; /* Réduire la largeur de la ligne horizontale */
   margin: 20px auto; /* Centrer horizontalement */
@@ -122,10 +123,7 @@ body {
 }
 
 .zone {
-  flex-grow: 1; /* Les zones prennent autant d'espace que possible */
-  width: 100%;
-  display: flex; /* Utiliser flex pour aligner le contenu */
-  justify-content: center; /* Aligner le contenu horizontalement au centre */
+display: none;
 }
 
 .info-container-2,
@@ -325,6 +323,11 @@ text-align: left; /* Aligner le texte à gauche */
   margin-left: 0;
 }
 
+.info-container p {
+  font-size: 16px;
+  text-align: center; /* Centre les paragraphes horizontalement */
+}
+
 .machine-section hr {
   width: 60%;
   margin: 20px auto;
@@ -339,10 +342,6 @@ text-align: left; /* Aligner le texte à gauche */
 .second-section {
   display: flex;
   flex-direction: column;
-}
-
-.zone-1{
-  display: none;
 }
 
 .zone-2 {
