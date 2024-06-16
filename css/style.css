@@ -331,6 +331,7 @@ span {
 .image-box {
   flex-shrink: 0; /* Pour éviter que cette section réduise la taille du contenu */
   margin-left: auto; /* Positionner à droite */
+  margin-top: -100px;
   width: 40%; /* Largeur de la section (ajustez selon vos besoins) */
   box-shadow: 0 0 20px rgba(0, 204, 255, 0.5); /* Ajout de l'ombre */
   border-radius: 5%;
