@@ -27,16 +27,15 @@ body{
 }
 
 .header {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background: transparent;
+  background: var(--text-color);
   display: flex;
   justify-content: space-between;
   align-items: center;  
-  z-index: 100;
+  z-index: 1000;
   transition: .3s;
 }
 
@@ -45,13 +44,27 @@ body{
   color: var(--second-bg-color);
   font-weight: 600;
 }
-    
+ 
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar a {
+  font-size: 2.2rem;
+  color: var(--second-bg-color);
+  font-weight: 500;
+  margin-left: 3.5rem;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
     
 .menu-dropdown {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  cursor: pointer;
+display: none;
 }
 
 .menu-dropdown i {
@@ -172,7 +185,7 @@ body{
   width: 500px;
   margin-left: -10px;
   margin-bottom: 30%;
-  margin-top: 60%;
+  margin-top: 20%;
   background-color: #f0f0f0;
 }
 .photo-container-inovy {
@@ -327,6 +340,14 @@ body{
   top: 50%;
   left: 50%;
   width: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.photo-container-deux-inovy img {
+  height: 500px; 
+  position: absolute;
+  top: 134%;
   transform: translate(-50%, -50%);
   object-fit: cover;
 }
@@ -722,64 +743,3 @@ body{
 .footer-content-column {
   width: 24.99%;
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

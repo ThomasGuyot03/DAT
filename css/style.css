@@ -146,7 +146,7 @@ section{
 
 .home-content p {
   font-size: 1.6rem;
-  margin: 2rem 0 4rem;
+  margin: 8rem 0 4rem;
   width: 50%;
 }
 
@@ -429,6 +429,12 @@ span {
 .item {
   width: calc(25% - 20px); /* Largeur de chaque carte, avec un espace de 20px entre elles */
   margin-bottom: -50px; /* Espacement entre les lignes de cartes */
+}
+
+.item:nth-last-child(2),
+.item:nth-last-child(1) {
+  width: calc(50% - 20px); /* Ajustez la largeur pour les deux dernières cartes */
+  margin-bottom: 20px; /* Assurez-vous que la marge du bas est la même pour toutes les cartes */
 }
 
 .nft{
