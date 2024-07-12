@@ -379,6 +379,12 @@ display: none;
   object-fit: cover;
 }
 
+.photo-container-deux-royalblack img {
+  height: 380px; 
+  object-fit: cover;
+  margin-top: 10%;
+}
+
 .info-container-2{
   color:var(--main-color);
 }
