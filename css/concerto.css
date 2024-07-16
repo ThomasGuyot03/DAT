@@ -353,7 +353,7 @@ display: none;
 }
 
 .photo-container-deux-maestro img {
-  width: 50%; 
+  width: 90%; 
   height: auto; 
   margin-left: -20%;
 }
@@ -385,6 +385,9 @@ display: none;
   margin-top: 10%;
 }
 
+.zone-1-maestrokeyboard{
+  width: 30%;
+}
 .info-container-2{
   color:var(--main-color);
 }
