@@ -619,67 +619,89 @@ h1{
   height: auto; /* Allow the height to adjust automatically */
 }
 
-.titre-apropos {
-  width: 100%;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 5%;
+
+
+.container_premier_partie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.titre-apropos h3 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: var(--main-color);
-  font-size: 45px;
+.images_premiere_partie {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-left: 10%;
+    margin-top: 10%;
 }
 
-.container-3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--second-bg-color);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  padding: 20px;
+.images_premiere_partie img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Augmenté pour des images plus grandes */
+    max-height: 300px; /* Augmenté pour des images plus grandes */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
 }
 
-.cercles-container {
-  display: flex;
-  justify-content: space-around; /* Distribute circles across the width of the container */
-  width: 100%; /* Ensure the container takes the full width of the page */
-  margin-top: 20px;
-  flex-wrap: wrap; /* Allow the circles to wrap on smaller screens */
+.text {
+    max-width: 500px;
+    margin-right: 10%;
 }
 
-.cercle {
-  background-color: var(--second-bg-color);
-  padding: 90px;
-  width: 480px;
-  height: 480px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--text-color);
-  border-radius: 20px; /* Adds rounded corners */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+.text h1 {
+    font-size: 3.5em;
+    margin: 0;
+    margin-top: 25%;
+    color: white;
 }
 
-.c1, .c2, .c3 {
-  background: var(--bg-color);
-  border-radius: 20%; /* Uniform rounded corners */
-  margin-bottom: 20px;
+.text p {
+    font-size: 1.5em;
+    line-height: 30px;
+    color: white;
 }
 
-.cercle p {
-  color: white;
-  text-align: left;
-  font-size: 1 rem; /* Use relative units for font size */
-  max-width: 100%; /* Ensure the text does not exceed the container's width */
-  word-wrap: break-word; /* Break long words to fit within the container */
-  overflow: hidden; /* Hide overflow content */
-  text-overflow: ellipsis; /* Add ellipsis for overflowing text */
-  margin: 0; /* Remove default margin */
-  padding: 0 10px; /* Add padding to avoid touching the borders */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+.container_reverse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+.container_reverse .images_deuxieme-partie {
+    margin-left: 0;
+    margin-right: 6%;
+    margin-top: 5%;
+}
+
+.container_reverse .images_deuxieme-partie img {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 600px; /* Augmenté pour une image plus grande */
+    max-height: 600px; /* Augmenté pour une image plus grande */
+    display: block;
+    margin-left: auto;
+    border-radius: 20px;
+}
+
+.text-deuxieme-partie {
+    font-size: 1.5em;
+    line-height: 30px;
+    color: white;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.container_reverse h1 {
+    margin-left: 30%;
+    max-width: 600px;
+}
+
+.container_reverse p {
+    margin-left: 30%;
+    line-height: 40px;
 }
 
 .equip-section {
@@ -738,7 +760,7 @@ h1{
   align-items: center;
   margin-bottom: 20px;
   margin-top: 5%;
-  margin-right: 5%;
+  box-sizing: none;
 }
 
 .text-content {
@@ -756,7 +778,6 @@ h1{
 /* Réduire la taille de la deuxième image */
 #photo-magic {
   width: 30%; /* Ajustez ce pourcentage en fonction de la taille désirée */
-  margin-right: 5%;
 }
 
 /* Effet néon autour des images */
