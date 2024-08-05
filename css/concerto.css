@@ -301,12 +301,12 @@ header {
 
 .section-cinq {
   padding: 40px 20px;
-  background-color:var(--bg-color); /* Couleur de fond pour la section */
+  background-color: var(--bg-color); /* Couleur de fond pour la section */
 }
 
 .section-cinq-content {
   text-align: center;
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -328,6 +328,7 @@ header {
   border-radius: 10px;
   padding: 20px;
   width: 30%;
+  height: auto; /* Hauteur automatique */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour le relief */
   text-align: center;
   text-decoration: none; /* Supprime la décoration du lien */
@@ -340,37 +341,29 @@ header {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Ombre plus prononcée au survol */
 }
 
-.machine-card-image {
+.image-container {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 300px; /* Hauteur fixe pour toutes les images */
+  overflow: hidden;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.machine-card-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px; /* Coins arrondis pour les images */
 }
 
 .machine-card-image-une {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.machine-card-une {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  width: 30%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour le relief */
-  text-align: center;
-  text-decoration: none; /* Supprime la décoration du lien */
-  color: inherit; /* Hérite la couleur du texte */
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.machine-card-une h3{
-  font-size: 2.1em;
-  margin: -80px 0 0 0 ;
-  color: #333;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px; /* Coins arrondis pour les images */
+  transform: scale(1.2); /* Agrandit l'image légèrement */
 }
 
 .machine-card h3 {
@@ -384,6 +377,7 @@ header {
   color: #666;
   line-height: 1.4;
 }
+
 
 /* Styles pour le footer */
 .footer {
