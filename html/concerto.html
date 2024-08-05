@@ -14,7 +14,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Distributeur Concerto -DAT-</title>
     <link rel="stylesheet" href="../css/concerto.css">
-    <link rel="stylesheet" href="../css/concertophone.css">
     <!-- <link rel="stylesheet" href="html/index.html"> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,225 +27,137 @@
 </head>
 <body>
     
-    <header class="header">        
-      <a href="../index.html" class="logo">DAT.</a>
-    
-        <div class="bx bx-menu" id="menu-icon"></div>
-    
-        <div class="menu-dropdown" onclick="toggleMenu()">
-          <i class="fas fa-bars"></i>
-          <div class="dropdown-content" id="dropdownContent">
-              <!-- Contenu du menu déroulant -->
-              <a href="#">Accueil</a>
-              <a href="#">Option 2</a>
-              <a href="#">Option 3</a>
-          </div>
-        </div>
-        <nav class="navbar" id="navbar">
-          <a href="../index.html" class="active">Home</a>
-          <a href="../index.html#section-machine">Nos Machines</a>
-          <a href="../index.html#container-3">A Propos</a>
-          <a href="../index.html">Nos Marques</a>
-          <a href="/html/contact.html">Contact</a>
-      </nav>
-    </header>
-    
-    
-<section class="machine-section">
-    <div class="container">
-        <div class="photo-container">
-            <img src="../Photo/concerto.webp" alt="Photo de distributeur de café 'concerto'"loading="lazy">
-        </div>
-        <div class="info-container-concerto">
-            <h2><strong>Concerto Lavazza </strong></h2>
-            <hr>
-            <p>
-                Concerto, le distributeur de boissons chaudes performant conçu par Necta,
-                offre un large éventail de choix et une qualité exceptionnelle de boissons.
-                Disponible dans deux versions - Espresso et Double Espresso -
-                la machine répond à une variété de préférences de café tout en garantissant une expérience de dégustation inégalée.
-            </p>
-            <hr>
-            <h3>A partir de 80 cafés par jours </h3>
-            <hr>
-            <p>Conçu pour répondre aux besoins des amateurs de café les plus exigeants, le distributeur de boissons chaudes Concerto Lavazza est l'option parfaite pour les environnements où la consommation de café est élevée. À partir d'une certaine consommation quotidienne, la performance et la polyvalence de la machine se révèlent être des atouts incontournables, garantissant une expérience café exceptionnelle jour après jour. Avec sa capacité à offrir un large éventail de boissons chaudes de qualité supérieure, le Concerto Lavazza est votre partenaire idéal pour satisfaire les amateurs de café les plus passionnés.</p>
-            <div class="svg-wrapper">
-                <a href="#second-section" class="button-link">
-                  <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-                    <rect class="shape" height="60" width="320" />
-                    <div class="text">DECOUVRIR</div>
-                  </svg>
-                </a>
-              </div>
-        </div>
-    </div>
-</section>
-    
-<section class="second-section" id="second-section">
-  <div class="container-deux">
-      <div class="zone">
-          <div class="photo-container-deux">
-              <img src="../Photo/concerto.webp" alt="Photo de Distributeur a café concerto">
-          </div>
-      </div>
-      <div class="zone-2">
-          <div class="info-container-2">
-              <div class="description-data">
-                  <p class="description">Interface utilisateur :</p>
-                  <p class="description-info">Écran tactile Full HD 13,3''
-                  </p>
-              </div>
-                <hr>
-              <div class="description-data">
-                  <p class="description">Capacité du réservoir d’eau :</p>
-                  <p class="description-info">20L</p>
-              </div>
-              <hr>
-              <div class="description-data">
-                <p class="description">Nombre de sélections :</p>
-                <p class="description-info">26</p>
-              </div>
-              <hr>
-              <div class="description-data">
-                <p class="description">Capacité - tasses :</p>
-                <p class="description-info">490</p>
-              </div>
-              <hr>
-              <div class="description-data">
-                <p class="description">Capacité - capsule :</p>
-                <p class="description-info">220</p>
-              </div>
-              <hr>
-              <div class="description-data">
-                <p class="description">Couleurs :</p>
-                <p class="description-info">	Noir, blue</p>
-              </div>
-        </div>
-      </div>
-     
-          
-          <div class="info-container-3">
-            <div class="description-data">
-                <p class="description">Largeur :</p>
-                <p class="description-info">600 mm
-                </p>
-            </div>
-            <hr>
-            <div class="description-data">
-                <p class="description">Profondeur :</p>
-                <p class="description-info">	740 mm</p>
-            </div>
-            <hr>
-            <div class="description-data">
-              <p class="description">Hauteur :</p>
-              <p class="description-info">	1700 mm</p>
-            </div>
-            <hr>
-            <div class="description-data">
-              <p class="description">Poids :</p>
-              <p class="description-info">	130 kg</p>
-            </div>
-            <hr>
-            <div class="description-data">
-              <p class="description">Consommation électrique :</p>
-              <p class="description-info">	2500 W</p>
-            </div>
-            <hr>
-            <div class="description-data">
-              <p class="description">Tension :</p>
-              <p class="description-info">	230-240 V</p>
-            </div>
-      </div>
-      
-  </div>
+  <header>
+    <nav class="navbar">
+        <div class="logo">D.A.T</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#features">Nos Machines</a></li>
+            <li><a href="#pricing">Prix</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="/Photo/concerto.webp" alt="Produit" class="hero-image">
 </section>
 
-<div class="pg-footer">
-  <footer class="footer" id="footer">
-    <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
-      <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
-    </svg>
-    <div class="footer-content">
-      <div class="footer-content-column">
-        <div class="footer-logo">
-          <a class="footer-logo-link" href="#">
-            <span class="hidden-link-text">LOGO</span>
-            <h4>DAT.</h4>
+<section class="text-section">
+    <div class="text-content">
+        <h2>Concerto Lavazza</h2>
+        <p>Un espresso sublime et un style impeccable dans une machine au design compact, parfaite pour une pause relaxante dans tout environnement de travail.</p>
+        <p>A partir de 80 cafés par jour </p>
+        <a href="/html/contact.html" class="cta-button">Contactez-nous</a> <!-- Bouton ajouté ici -->
+
+
+    </div>
+</section>
+
+<section class="section-deux">
+    <div class="section-text-content">
+        <img src="../Photo/concerto.webp" alt="Image Description" class="section-image">
+        <div class="text-container">
+            <h3>Notre Engagement</h3>
+            <p>Nous nous engageons à fournir les meilleurs distributeurs automatiques pour répondre à vos besoins. Notre équipe dévouée travaille sans relâche pour garantir la satisfaction de nos clients.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section-trois">
+    <div class="section-trois-text-content">
+        <img src="/Photo/logo-dat-sansfond.png" alt="Image Description" class="section-trois-image">
+        <div class="section-trois-text-container">
+            <strong><h3>Trouvez la machine idéale pour votre entreprise.</h3></strong>
+            <p>Découvrez vos besoin pour votre entreprise</p>
+        </div>
+    </div>
+    <div class="section-trois-button-container">
+        <a href="/html/devis.html" class="section-trois-cta-button">Découvrez Votre Machine</a>
+    </div>
+</section>
+
+<section class="section-quatre">
+    <div class="section-quatre-content">
+        <h2>Caractéristiques de la Machine</h2>
+        <p>Découvrez les fonctionnalités et les spécifications techniques de notre distributeur à café de pointe.</p>
+        <div class="features-container">
+            <div class="feature-box">
+                <h3>Caractéristiques</h3>
+                <ul>
+                    <li>Capacité du réservoir d’eau - 0.9 L</li>
+                    <li>Recettes -    Espresso, Café Long </li>
+                    <li>Couleurs - Noir </li>
+                </ul>
+            </div>
+            
+            <div class="feature-box">
+                <h3>Caractéristiques</h3>
+                <ul>
+                    <li>LxPxH - 165mm - 370mm - 295mm</li>
+                    <li>Poids - 4,4 kg </li>
+                    <li>Tension 220-240V</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-cinq">
+    <div class="section-cinq-content">
+        <h2>Nos Autres Machines</h2>
+        <div class="machine-cards-container">
+
+            <a href="page_machine_1.html" class="machine-card-une">
+                <img src="/Photo/concerto.webp" alt="Machine 1" class="machine-card-image-une">
+                <h3>Inovy Mini </h3>
+                <p>A partir de 5 cafés par jour.</p>
+            </a>
+
+            <a href="page_machine_2.html" class="machine-card">
+                <img src="/Photo/concerto-touch.webp" alt="Machine 2" class="machine-card-image">
+                <h3>Inovy Compact </h3>
+                <p>A partir de 10 cafés par jour.</p>
+            </a>
+
+            <a href="page_machine_1.html" class="machine-card">
+              <img src="/Photo/Maestro-Keyboard.webp" alt="Machine 1" class="machine-card-image">
+              <h3>Inovy Mini </h3>
+              <p>A partir de 5 cafés par jour.</p>
           </a>
+
         </div>
-        <div class="footer-menu"></div>
-      </div>
-      <div class="footer-content-column">
-        <div class="footer-menu">
-          <h2 class="footer-menu-name"> Entreprise</h2>
-          <ul id="menu-company" class="footer-menu-list">
-            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-              <a href="#container-3">A Propos</a>
-            </li>
-            <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
-              <a href="#">News</a>
-            </li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-              <a href="#">Careers</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-menu">
-          <h2 class="footer-menu-name"> Legal</h2>
-          <ul id="menu-legal" class="footer-menu-list">
-            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
-              <a href="#">Privacy Notice</a>
-            </li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-              <a href="#">Terms of Use</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-content-column">
-        <div class="footer-menu">
-          <h2 class="footer-menu-name"> Liens Rapides</h2>
-          <ul id="menu-quick-links" class="footer-menu-list">
-            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-              <a target="_blank" rel="noopener noreferrer" href="/html/index.html">Home</a>
-            </li>
-            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-              <a target="_blank" rel="noopener noreferrer" href="#">Nos Machines</a>
-            </li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-              <a href="#">A propos</a>
-            </li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-              <a href="#">Nos marques</a>
-            </li>
-            <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
-              <a href="#">Contact</a></li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-              <a href="#">Blog</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-content-column">
-        <div class="footer-call-to-action">
-          <a class="footer-call-to-action-button button" href="#" target="_self"> Revenir en haut </a>
-        </div>
-        <div class="footer-call-to-action">
-          <h2 class="footer-call-to-action-title"> Nous appeller</h2>
-          <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" href="tel:0124-64XXXX" target="_self"> 05.34.48.00.59 </a></p>
-        </div>
-      </div>
-      
     </div>
-    <div class="footer-copyright">
-      <div class="footer-copyright-wrapper">
-        <p class="footer-copyright-text">
-          <a class="footer-copyright-link" href="#" target="_self"> ©2024. | Tout droits reservés. </a>
-        </p>
-      </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>À propos</h3>
+            <p>Nous proposons des distributeurs automatiques et des machines à café de haute qualité, offrant une expérience utilisateur exceptionnelle.</p>
+        </div>
+        <div class="footer-section links">
+            <h3>Liens utiles</h3>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Produits</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h3>Contact</h3>
+            <p>Email: dat.cafe@orange.fr</p>
+            <p>Téléphone: 05.34.48.00.59</p>
+            <p>Adresse: 2Av Marcel Langer, 31600 Seysses, France</p>
+        </div>
+        
     </div>
-  </footer>
-      </div>
+    <div class="footer-bottom">
+        &copy; 2024 datcafé.fr | Tous droits réservés
+    </div>
+</footer>
 
 </body>
 </html>

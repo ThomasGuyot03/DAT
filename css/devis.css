@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,60 +8,61 @@
   font-family: 'Poppins', sans-serif;
 }
 
-:root{
+:root {
   --bg-color: #041C31;
-  --second-bg-color:#363636;
+  --second-bg-color: #363636;
   --text-color: #ededed;
   --main-color: #008ADE;
-  }
-  .logo {
-    font-size: 30px;
-    font-weight: bold;
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
-  .logo:hover {
-    color: #000;
-  }
-  
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw; /* Assurez-vous que l'élément couvre toute la largeur de la fenêtre */
-    padding: 1rem 9%;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
-    z-index: 100;
-    transition: .3s;
-  }
-  
-  .menu-icon {
-    display: none;
-    font-size: 1.5rem;
-    color: var(--second-bg-color);
-    cursor: pointer;
-  }
-  
-  .navbar {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar a {
-    font-size: 1.2rem;
-    color: var(--second-bg-color);
-    font-weight: 500;
-    margin-left: 3.5rem;
-  }
-  
-  .navbar a:hover,
-  .navbar a.active {
-    color: var(--main-color);
-  }
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #000;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: .3s;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--second-bg-color);
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  font-size: 1.2rem;
+  color: var(--second-bg-color);
+  font-weight: 500;
+  margin-left: 3.5rem;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
@@ -71,16 +72,20 @@
   display: block;
 }
 
-/* Body*/ 
+/* Body */
 .container {
   max-width: 600px;
-  margin: 10% auto;
+  margin: 15% auto 0;
   padding: 20px;
   text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 h1 {
-  color: #333;
+  color: var(--bg-color);
+  margin-bottom: 20px;
 }
 
 form {
@@ -90,8 +95,10 @@ form {
 input, select {
   width: 100%;
   padding: 10px;
-  margin-top: 3%;
+  margin: 10px 0;
   height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 button {
@@ -100,75 +107,60 @@ button {
   color: #ffffff;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color:var(--main-color);
+  background-color: var(--main-color);
 }
 
 #resultat {
   font-weight: bold;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 10px;
+  }
 
-@media (min-width: 320px) and (max-width: 768px) {
+  .menu-icon {
+      display: block;
+  }
 
-.header {
-  flex-direction: column;
-  align-items: flex-start;
-  padding:0;
-  width: 100%;
-}
+  .navbar {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: var(--bg-color);
+  }
 
-.menu-icon {
-  display: block;
-  position: fixed;
-  top: 0;
-  right: 0;
-  margin: 1rem;
-  color: rgb(0, 0, 0);
-}
+  .navbar a {
+      margin: 1rem 0;
+      font-size: 1rem;
+      color: var(--main-color);
+      text-align: center;
+      width: 100%;
+  }
 
-.navbar {
-  display: none;
-  color: var(--bg-color);
-  width: 100vw;
-  background-color: var(--bg-color);
-}
+  .navbar a:hover,
+  .navbar a.active {
+      color: var(--main-color);
+  }
 
-.navbar a {
-  margin: 1rem 0;
-  font-size: 1rem;
-  color: var(--main-color);
-  text-align: center;
-  width: 100%;
-}
+  .navbar.active {
+      display: flex;
+  }
 
-.navbar a:hover,
-.navbar a.active {
-  color: var(--main-color);
-}
+  .container {
+      margin: 20% 10px 0;
+      padding: 20px;
+  }
 
-.navbar.active {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-}
-
-input, select {
-  width: 100%;
-  padding: 10px;
-  margin-top: 3%;
-  height: 50px;
-}
-
-select {
-  width: 100%;
-  padding: 10px;
-  margin-top: 3%;
-  height: 50px;
-  text-align: center; 
-  font-size: 16px;
-}
+  input, select {
+      margin-top: 10px;
+  }
 }
