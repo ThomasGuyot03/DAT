@@ -332,7 +332,7 @@ span {
   flex-shrink: 0; /* Pour éviter que cette section réduise la taille du contenu */
   margin-left: auto; /* Positionner à droite */
   margin-top: -250px;
-  width: 40%; /* Largeur de la section (ajustez selon vos besoins) */
+  width: 45%; /* Largeur de la section (ajustez selon vos besoins) */
   box-shadow: 0 0 20px rgba(0, 204, 255, 0.5); /* Ajout de l'ombre */
   border-radius: 5%;
 }
@@ -1286,6 +1286,65 @@ h1{
   font-size: 22px;
 }
 
+.container_premier_partie, .container_reverse {
+  flex-direction: column;
+  text-align: center;
+}
+
+.text, .text-deuxieme-partie {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.text h1, .container_reverse h1 {
+  font-size: 2.5em;
+  margin-top: 20px;
+  text-align: center; /* Centre le texte horizontalement */
+  margin: 10% 0 10% 0 ;
+}
+
+.text p, .container_reverse p {
+  font-size: 1.2em;
+  margin: 0;
+}
+.images_premiere_partie, .container_reverse .images_deuxieme-partie {
+  margin: 20px auto;
+}
+.images_premiere_partie {
+  grid-template-columns: 1fr;
+}
+.images_premiere_partie img, .container_reverse .images_deuxieme-partie img {
+display: none;
+}
+
+.content-container {
+  flex-direction: column;
+  text-align: center;
+}
+
+.content-container img {
+  width: 80%;
+  margin: 0 auto 20px auto;
+}
+
+.text-content {
+  padding: 0 20px;
+  max-width: 100%;
+}
+
+.text-content h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#photo-magic {
+  width: 80%;
+}
 
 .footer-wave-path {
     color: var(--bg-color);

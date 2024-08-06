@@ -165,6 +165,7 @@ header {
   object-fit: cover;
   border-radius: 10px; /* Ajoute des coins arrondis à l'image */
   margin-right: 20px; /* Espace entre l'image et le texte */
+  transform: scale(1.5); /* Effet de survol */
 }
 
 .text-container {
