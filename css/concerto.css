@@ -93,7 +93,7 @@ header {
   text-align: center;
 }
 
-.text-content h2 {
+.text-content h1{
   font-size: 4em;
   margin-bottom: 40px;
   color: var(--text-color);
