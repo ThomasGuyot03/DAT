@@ -93,14 +93,14 @@ header {
     text-align: center;
 }
 
-.text-content h2 {
-    font-size: 4em;
+.text-content h1 {
+    font-size: 3em;
     margin-bottom: 40px;
     color: var(--text-color);
 }
 
 .text-content p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: var(--text-color);
     line-height: 2.5rem;
     text-align: center;
@@ -171,7 +171,7 @@ header {
     width: 50%;
 }
 
-.text-container h3 {
+.text-container h2 {
     font-size: 1.8em;
     margin-bottom: 15px;
     color: #333;
@@ -250,7 +250,7 @@ header {
     margin: 0 auto;
 }
 
-.section-quatre-content h2 {
+.section-quatre-content h3 {
     font-size: 2em;
     margin-bottom: 20px;
     color: #333;
@@ -310,7 +310,7 @@ header {
     margin: 0 auto;
   }
   
-  .section-cinq-content h2 {
+  .section-cinq-content h4 {
     font-size: 2em;
     margin-bottom: 40px;
     color: var(--text-color);
