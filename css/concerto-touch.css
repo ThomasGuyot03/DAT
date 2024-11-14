@@ -92,14 +92,14 @@ body {
     text-align: center;
   }
   
-  .text-content h2 {
-    font-size: 4em;
+  .text-content h1 {
+    font-size: 3rem;
     margin-bottom: 40px;
     color: var(--text-color);
   }
   
   .text-content p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: var(--text-color);
     line-height: 2.5rem;
     text-align: center;
