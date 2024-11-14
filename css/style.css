@@ -708,8 +708,12 @@ h1{
     font-size: 1.4em;
 }
 
+.highlight-text {
+  color:var(--main-color);
+}
+
 .equip-section {
-  background-color: var(--second-bg-color);
+  background-color: var(--text-color);
   padding: 10px 0;
   text-align: center;
   min-height: 80px; /* ou une autre valeur appropriée */
@@ -718,10 +722,10 @@ h1{
 
 .equip-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 20px; /* Définit un espace de 20px entre les éléments */
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0 0 0 10%;
   padding: 0 20px;
   min-height: 80%;
 }
@@ -729,14 +733,11 @@ h1{
 .titre-equip-section {
   font-size: 35px;
   margin: 1% 0 0 20%;
-}
-
-.highlight-text {
-  color:var(--main-color);
+  color:var(--bg-color);
 }
 
 .equip-button {
-  background-color:var(--main-color);
+  background-color:var(--bg-color);
   color: white;
   height: 50px;
   width: 150px;
@@ -747,10 +748,6 @@ h1{
   justify-content: center;
   align-items: center;
   margin: 0% 20% 0 0;
-}
-
-.equip-button:hover {
-  background-color: var(--bg-color);
 }
 
 .additional-content {
@@ -1276,10 +1273,6 @@ h1{
 
 .equip-section{
   background-color: var(--second-bg-color);
-}
-
-.equip-button {
-    margin: 0 5%;
 }
 
 .titre-equip-section{
