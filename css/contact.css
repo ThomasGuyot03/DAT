@@ -73,14 +73,14 @@ html, body {
 
 /* Section contact */
 .blue-section {
-  height: 25vh; 
+  height: 15vh; 
   background-color: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--text-color);
-  font-size: 2rem;
-  margin-top: 5%;
+  font-size: 1.5rem;
+  margin-top: 3%;
   width: 100vw;
 }
 
@@ -91,7 +91,6 @@ html, body {
 .contact-info {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
 }
 
 .contact-item {
@@ -101,6 +100,40 @@ html, body {
 }
 
 .contact-item i {
+  margin-right: 0.5rem;
+}
+.contact-description {
+  padding: 2rem 9%;
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.contact-description h2, 
+.contact-description h3 {
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.contact-description p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-description ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-description ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.contact-description ul li::before {
+  content: "✔";
+  color: var(--main-color);
   margin-right: 0.5rem;
 }
 
