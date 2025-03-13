@@ -21,16 +21,36 @@
       
 <body>
     
+  <!-- Header -->
   <header>
     <nav class="navbar">
-        <div class="logo">D.A.T</div>
+        <div class="logo">
+            <a href="../index.html">D.A.T</a>
+        </div>
         <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#features">Nos Machines</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../index.html#section-machine">Nos Machines</a></li>
+            <li><a href="/html/contact.html">Contact</a></li>
         </ul>
+        <!-- Menu hamburger -->
+        <div class="menu-toggle" id="menuToggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </nav>
 </header>
+
+<!-- Script pour le menu hamburger -->
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    });
+</script>
 
 <section class="hero">
     <img src="/Photo/concerto.webp" alt="Distributeur automatique Concerto Necta, machine à café professionnelle offrant une large gamme de boissons chaudes et froides" class="hero-image">
@@ -140,23 +160,22 @@
         <div class="footer-section links">
             <h3>Liens utiles</h3>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Produits</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#section-machine">Nos machines</a></li>
+                <li><a href="../index.html#section-premiere-partie">À propos</a></li>
+                <li><a href="/html/contact.html">Contact</a></li>
             </ul>
         </div>
         <div class="footer-section contact">
             <h3>Contact</h3>
-            <p>Email: dat.cafe@orange.fr</p>
-            <p>Téléphone: 05.34.48.00.59</p>
+            <p>Email : <a href="mailto:dat.cafe@orange.fr">dat.cafe@orange.fr</a></p>
+            <p>Téléphone : <a href="tel:+33534480059">05.34.48.00.59</a></p>
             <p>Adresse: 2Av Marcel Langer, 31600 Seysses, France</p>
         </div>
         
     </div>
     <div class="footer-bottom">
-        &copy; 2024 datcafé.fr | Tous droits réservés
+        &copy; 2024 - 2025 datcafé.fr | Tous droits réservés
     </div>
 </footer>
 

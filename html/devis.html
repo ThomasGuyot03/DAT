@@ -21,20 +21,24 @@
 </head>
 <body>
 
-    <header class="header">        
-        <a href="../index.html" class="logo">D . A . T</a>    
-        <div class="menu-icon" id="menu-icon">
-            <i class="fas fa-bars"></i>
-        </div>
-        
-        <nav class="navbar" id="navbar">
-            <a href="../index.html" class="active">Home</a>
-            <a href="../index.html#section-machine">Nos Machines</a>
-            <a href="../index.html#container-3">A Propos</a>
-            <a href="/">Nos Marques</a>
-            <a href="../html/contact.html">Contact</a>
-        </nav>
-    </header>
+  <!-- Header -->
+  <nav class="navbar">
+    <div class="logo">
+        <a href="../index.html">D.A.T</a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../index.html#section-machine">Nos Machines</a></li>
+        <li><a href="/html/contact.html">Contact</a></li>
+    </ul>
+    <!-- Menu hamburger -->
+    <div class="menu-toggle" id="menuToggle">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+
 
 <div class="container">
     <h1>Demandez votre machine</h1>
@@ -59,6 +63,33 @@
 
     <div id="resultat"></div>
 </div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>À propos</h3>
+            <p>Nous proposons des distributeurs automatiques et des machines à café de haute qualité pour entreprises et particuliers à Toulouse et dans les environs.</p>
+        </div>
+        <div class="footer-section links">
+            <h3>Liens utiles</h3>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#section-machine">Nos machines</a></li>
+                <li><a href="../index.html#section-premiere-partie">À propos</a></li>
+                <li><a href="/html/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h3>Contact</h3>
+            <p>Email : <a href="mailto:dat.cafe@orange.fr">dat.cafe@orange.fr</a></p>
+            <p>Téléphone : <a href="tel:+33534480059">05.34.48.00.59</a></p>
+            <p>Adresse : 2 Av Marcel Langer, 31600 Seysses, France</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 - 2025 datcafé.fr | Tous droits réservés
+    </div>
+</footer>
 
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script src="../devis.js"></script>

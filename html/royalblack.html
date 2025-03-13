@@ -22,27 +22,41 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="icon" href="/Photo/Logo DAT.png" type="image/x-icon">
     <meta name="description" content="Découvrez la machine à café Saeco Royal Black avec une interface tactile intuitive et des options variées de café. Idéale pour une consommation quotidienne de 30 cafés.">
-  
-    
-
 </head>
 <body>
-    
-
-  <header>
-    <nav class="navbar">
-        <div class="logo">D.A.T</div>
-        <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#features">Nos Machines</a></li>
-            <li><a href="#pricing">Prix</a></li>
-            <li><a href="/html/contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<!-- Header -->
+<header>
+<nav class="navbar">
+    <div class="logo">
+        <a href="../index.html">D.A.T</a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../index.html#section-machine">Nos Machines</a></li>
+        <li><a href="/html/contact.html">Contact</a></li>
+    </ul>
+    <!-- Menu hamburger -->
+    <div class="menu-toggle" id="menuToggle">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
 </header>
 
+<!-- Script pour le menu hamburger -->
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    });
+</script>
+
 <section class="hero">
-    <img src="/Photo/royal-black.webp" alt="Produit" class="hero-image">
+    <img src="/Photo/royal-black.webp" alt="Photo d'une machine à café broyeur Royal Black " class="hero-image">
 </section>
 
 <section class="text-section">
@@ -61,7 +75,8 @@
         <img src="/Photo/royal-black.webp" alt="Image Description" class="section-image">
         <div class="text-container">
             <h3>Notre Engagement</h3>
-            <p>Nous nous engageons à fournir les meilleurs distributeurs automatiques pour répondre à vos besoins. Notre équipe dévouée travaille sans relâche pour garantir la satisfaction de nos clients.</p>
+            <p>Nous nous engageons à vous fournir les meilleures machines à café à grain, alliant qualité, performance et simplicité d'utilisation. Grâce à notre expertise,
+                 nous vous garantissons un café fraîchement moulu,riche en arômes, pour une expérience authentique à chaque tasse.</p>
         </div>
     </div>
 </section>
@@ -127,23 +142,22 @@
         <div class="footer-section links">
             <h3>Liens utiles</h3>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Produits</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#section-machine">Nos machines</a></li>
+                <li><a href="../index.html#section-premiere-partie">À propos</a></li>
+                <li><a href="/html/contact.html">Contact</a></li>
             </ul>
         </div>
         <div class="footer-section contact">
             <h3>Contact</h3>
-            <p>Email: dat.cafe@orange.fr</p>
-            <p>Téléphone: 05.34.48.00.59</p>
+            <p>Email : <a href="mailto:dat.cafe@orange.fr">dat.cafe@orange.fr</a></p>
+            <p>Téléphone : <a href="tel:+33534480059">05.34.48.00.59</a></p>
             <p>Adresse: 2Av Marcel Langer, 31600 Seysses, France</p>
         </div>
         
     </div>
     <div class="footer-bottom">
-        &copy; 2024 datcafé.fr | Tous droits réservés
+        &copy; 2024 - 2025 datcafé.fr | Tous droits réservés
     </div>
 </footer>
 

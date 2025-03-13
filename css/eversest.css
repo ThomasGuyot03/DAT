@@ -64,18 +64,21 @@ header {
 .hero {
     position: relative;
     width: 100%;
-    height: 700px; /* Hauteur ajustée */
+    height:800px; /* Ajustez la hauteur selon vos besoins */
     overflow: hidden;
     background-color: #f3f3f3; /* Couleur de fond pour éviter des espaces vides */
+    display: flex; /* Utilise Flexbox pour centrer */
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
 }
 
 .hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Ajusté pour contenir l'image */
-    transform: scale(1.3) translateY(-15%); /* Agrandit l'image et la fait remonter */
+    width: 100%; /* Réduit la taille de l'image initialement */
+    height: 60%;
+    object-fit: contain; /* Ajuste l'image pour qu'elle soit entièrement visible */
+    transform: scale(1.5); /* Double la taille de l'image */
+    margin-bottom: 8%;
 }
-
 
 .hero::after {
     content: "";
@@ -103,14 +106,14 @@ header {
     text-align: center;
 }
 
-.text-content h2 {
-    font-size: 4em;
+.text-content h1 {
+    font-size: 2.5em;
     margin-bottom: 40px;
     color: var(--text-color);
 }
 
 .text-content p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: var(--text-color);
     line-height: 1.4rem;
     text-align: center;
@@ -134,64 +137,44 @@ header {
 }
 
 .section-deux {
-    padding: 1px 0px;
-    background-color: var(--text-color); /* Couleur de fond pour la section de texte */
-}
-
-.section-text-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.section-text-content h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: var(--second-bg-color);
-}
-
-.section-text-content p {
-    font-size: 1.2em;
-    color: var(--se);
-    line-height: 1.6;
-}
-
-.section-deux {
-    padding: 40px 20px;
+    padding: 20px 0; /* Réduit la hauteur de padding */
     background-color: #f9f9f9; /* Couleur de fond pour la section */
 }
 
 .section-text-content {
     display: flex;
     align-items: center;
-    max-width: 1200px;
+    max-width: 800px; /* Réduit la largeur maximale */
     margin: 0 auto;
+    text-align: left; /* Alignement du texte à gauche pour plus de lisibilité */
+    flex-wrap: wrap; /* Permet au contenu de se replier en petits écrans */
 }
 
 .section-image {
-    width: 40%;
+    width: 55%; /* Augmente la largeur de l'image */
     height: auto;
     object-fit: cover;
     border-radius: 10px; /* Ajoute des coins arrondis à l'image */
     margin-right: 20px; /* Espace entre l'image et le texte */
-    transform: scale(1.3); /* Agrandit l'image et la fait remonter */
-
+    margin-bottom: 20px; /* Ajoute un espace en bas pour les petits écrans */
 }
 
 .text-container {
-    width: 50%;
+    width: 40%; /* Réduit la largeur du conteneur de texte */
 }
 
-.text-container h3 {
+.text-container h2 {
     font-size: 1.8em;
     margin-bottom: 15px;
     color: #333;
+    margin-left: 10%;
 }
 
 .text-container p {
     font-size: 1.2em;
     color: #0b0707;
     line-height: 1.6;
+    margin: 5% 10% 0 10%;
 }
 
 .section-trois {
@@ -442,43 +425,43 @@ header {
 }
 
 @media (max-width: 768px) and (min-width: 350px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background: #2c3e50;
-        padding: 15px 0;
-        z-index: 999; /* S'assure que le menu passe au-dessus du contenu */
-    }
-    
-    .nav-links.active {
-        display: flex;
-    }
-    
-    .nav-links li {
-        text-align: center;
-        padding: 12px 0;
-    }
-    
-    .menu-toggle {
-        display: flex;
-    }
-    
-    /* Animation du menu burger */
-    .menu-toggle.active div:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 6px);
-    }
-    
-    .menu-toggle.active div:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .menu-toggle.active div:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
-    }
+.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #2c3e50;
+    padding: 15px 0;
+    z-index: 999; /* S'assure que le menu passe au-dessus du contenu */
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.nav-links li {
+    text-align: center;
+    padding: 12px 0;
+}
+
+.menu-toggle {
+    display: flex;
+}
+
+/* Animation du menu burger */
+.menu-toggle.active div:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-toggle.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
 
   .hero {
     height: 400px; 
@@ -489,13 +472,13 @@ header {
   }
 
   .text-content h2 {
-    font-size: 2.5em; 
+    font-size: 2em; 
   }
 
   .text-content p {
     font-size: 1.2rem; 
     line-height: 1.2rem;
-    margin: 5% 5% 0 5%;
+    margin: 5% 10% 0 10%;
   }
 
   .section-text-content {
@@ -503,7 +486,7 @@ header {
   }
 
   .section-image {
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px; 
   }
 
@@ -555,7 +538,7 @@ header {
     margin-bottom: 20px; /* Ajouter un espace entre les cartes */
   }
 
-  .footer {
+.footer {
     background-color: #333;
     color: white;
     padding: 40px 20px;
@@ -586,6 +569,7 @@ header {
 .footer-section ul {
     font-size: 1em;
     line-height: 1.6;
+    text-decoration: none;
 }
 
 .footer-section ul {

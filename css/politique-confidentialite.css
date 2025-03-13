@@ -1,0 +1,373 @@
+/* mentions-legales.css */
+
+/* Styles généraux */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* navbar.css */
+
+/* Styles généraux */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50;
+    padding: 20px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.navbar .logo a {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff ;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6em;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #f1c40f;
+}
+
+/* Menu burger pour mobile */
+.menu-toggle {
+    display: none; /* Masqué par défaut */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle div {
+    width: 30px;  /* Réduit la largeur */
+    height: 2px;  /* Réduit la hauteur */
+    background: #041C31; /* Couleur rouge pour les lignes */
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    margin: -2px 0;  /* Réduit l'écart entre les lignes (au lieu de 6px, passe à 4px) */
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres */
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 5%;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #34495e;
+    border-bottom: 3px solid #008ADE;
+    padding-bottom: 8px;
+    margin-top: 40px;
+}
+
+/* Paragraphes */
+p {
+    font-size: 1.6em;
+    line-height: 1.8;
+    margin: 12px 0;
+}
+
+/* Liens */
+a {
+    color: #fff; /* Noir au lieu du bleu */
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background: #2c3e50;
+    color: white;
+    text-align: left;
+    padding: 30px 20px;  /* Réduit le padding */
+    margin-top: 60px;
+}
+
+/* Conteneur des sections du footer */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permet aux éléments de se réorganiser en fonction de l'espace */
+}
+
+.footer-content h3 {
+   font-size: 2.5em
+}
+
+/* Section à propos */
+.footer .about {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px; /* Réduit la marge */
+}
+
+.footer .about h3 {
+    font-size: 2.4em;  /* Taille réduite */
+    margin-bottom: 15px;
+}
+
+.footer .about p {
+    font-size: 1.6em;  /* Taille du texte ajustée */
+    line-height: 1.5;
+}
+
+/* Section liens */
+.footer .links {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer .links a {
+    color: white; /* Changer la couleur des liens en blanc */
+    text-decoration: none;
+    font-size: 1.6em; /* Augmenter la taille du texte */
+}
+
+.footer .links a:hover {
+    text-decoration: underline;
+}
+
+.footer .links h3 {
+    font-size: 2.4em;  /* Taille réduite */
+    margin-bottom: 15px;
+}
+
+.footer .links ul {
+    list-style: none;
+    padding: 0;
+    font-size: 2.4em;
+}
+
+.footer .links ul li {
+    margin-bottom: 8px; /* Réduit l'espacement entre les liens */
+}
+
+.footer .links a {
+    color: #008ADE;
+    text-decoration: none;
+    font-size: 1.8em;  /* Taille du texte ajustée */
+}
+
+.footer .links a:hover {
+    text-decoration: underline;
+}
+
+/* Section contact */
+.footer .contact {
+    flex: 1;
+    min-width: 250px;
+    margin-left: 20px; /* Réduit la marge */
+}
+
+.footer .contact h3 {
+    font-size: 2.4em;  /* Taille réduite */
+    margin-bottom: 15px;
+}
+
+.footer .contact p {
+    font-size: 1.4em;  /* Taille du texte ajustée */
+    line-height: 1.5;
+}
+
+.footer .contact a {
+    color: #008ADE;
+    font-weight: 700;
+}
+
+/* Bas de page */
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px; /* Réduit le padding */
+    font-size: 1.1em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        background: #2c3e50;
+        padding: 15px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    /* Affichage du menu burger sur mobile */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Animation du menu burger */
+    .menu-toggle.active div:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .menu-toggle.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active div:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    /* Changer la couleur du fond du menu */
+    .nav-links.active {
+        z-index: 1000; /* Pour éviter que le menu soit masqué */
+    }
+
+    .container {
+        margin: 30px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.6em;
+    }
+
+    .footer {
+        padding: 15px; /* Réduit le padding pour compacter le footer */
+        margin-top: 60px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column; /* Affichage en colonne */
+        align-items: center; /* Centre les sections */
+        width: 100%;
+        gap: 10px; /* Ajoute un petit espace entre les sections du footer */
+    }
+
+    /* Section à propos */
+    .footer .about,
+    .footer .links,
+    .footer .contact {
+        width: 100%;  /* Prend toute la largeur */
+        margin-bottom: 10px; /* Réduit l'espacement entre les sections */
+        display: flex;
+        flex-direction: column; /* Force l'affichage en colonne */
+        align-items: center; /* Centre le contenu à l'intérieur */
+        text-align: center; /* Centre le texte */
+    }
+
+    /* Section à propos */
+    .footer .about h3 {
+        font-size: 3em;  /* Taille des titres */
+        margin-bottom: 8px; /* Réduit la marge sous les titres */
+    }
+
+    .footer .about p {
+        font-size: 1.8em;  /* Augmente la taille du texte */
+        margin-bottom: 6px; /* Réduit l'espacement entre le texte */
+    }
+
+    /* Section liens */
+    .footer .links h3 {
+        font-size: 3em;  /* Taille des titres */
+        margin-bottom: 8px; /* Réduit la marge sous les titres */
+    }
+
+    .footer .links ul {
+        padding: 0;
+        list-style: none;
+        font-size: 1.8em;  /* Augmente la taille de la liste */
+        margin-bottom: 5px; /* Réduit l'espacement entre la liste et le bas */
+    }
+
+    .footer .links ul li {
+        margin-bottom: 5px; /* Réduit l'espacement entre les éléments de la liste */
+    }
+
+    /* Section contact */
+    .footer .contact h3 {
+        font-size: 3em;  /* Taille des titres */
+        margin-bottom: 8px; /* Réduit la marge sous les titres */
+    }
+
+    .footer .contact p {
+        font-size: 1.8em;  /* Augmente la taille du texte */
+        margin-bottom: 6px; /* Réduit l'espacement entre le texte */
+    }
+
+    .footer .contact a {
+        font-weight: 700;
+        font-size: 1.8em;
+        margin-bottom: 6px; /* Réduit l'espacement entre le lien et le texte */
+    }
+
+    .footer-bottom {
+        text-align: center;
+        font-size: 1.4em;  /* Augmente la taille du bas de page */
+        padding-top: 10px; /* Réduit l'espace au-dessus */
+        width: 100%;
+        margin-top: 10px; /* Ajoute un petit espace au-dessus du bas de page */
+    }
+}

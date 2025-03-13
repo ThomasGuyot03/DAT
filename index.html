@@ -53,15 +53,7 @@
     "telephone": "05.34.48.00.59",
     "openingHours": [
       "Mo-Fr 08:00-18:00"
-    ]
-    "priceRange": "$$",
-    "servesCuisine": "Café, Restaurant",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.5",
-      "reviewCount": "24"
-    }
-  }
+    ],    
   </script>
 </head>
 
@@ -71,47 +63,53 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-<header class="header">        
+  <header class="header">        
     <a href="#" class="logo">D.A.T</a>
 
+    <!-- Menu hamburger (visible sur mobile) -->
     <div class="menu-toggle" id="menu-toggle">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
     </div>
 
+    <!-- Navigation principale -->
     <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#section-machine" class="active">Nos Machines</a>
-        <a href="#section-premiere-partie">A Propos</a>
-        <a href="loader.html">Nos Marques</a>
-        <a href="html/contact.html">Contact</a>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#section-machine" class="nav-link">Nos Machines</a>
+        <a href="#section-premiere-partie" class="nav-link">A Propos</a>
+        <a href="#home" class="nav-link">Nos Marques</a>
+        <a href="html/contact.html" class="nav-link">Contact</a>
     </nav>
 </header>
 
-    <!-- home section  --> 
-<section class="home" id="home">
-        <div class="home-content">
-            <h1>Distribution Automatique <span>Toulousaine</span> </h1>                
-            <p> Découvrez l'art de la dégustation avec DAT Café.
-                Nous sommes fiers de vous offrir une expérience exceptionnelle en mettant à votre disposition des machines à café de pointe et des équipements de snack innovants,
-                que vous soyez un particulier ou un professioSnnel cherchant à transformer votre entreprise désirant offrir une pause gourmande à ses collaborateurs.
-            </p>
-            <div class="btn-box">
-                <a href="#section-premiere-partie" class="btn">A propos </a>
-                <a href="html/devis.html" class="btn">Nos services</a>
-            </div>
-        
 
-        <div class="image-box">
-          <div class="image-container">
-              <img src="Photo/LavazzaFirma_MacchineCapsule-2-980x539.webp" alt="Machine à café Lavazza Firma en situation "loading="lazy">  
+<!-- Section d'accueil améliorée -->
+<section class="home" id="home">
+  <div class="home-container">
+      <div class="home-text">
+          <h1>Distribution Automatique <span>Toulousaine</span></h1>                
+          <p>
+              Découvrez l'art de la dégustation avec <strong>DAT Café</strong>. 
+              Profitez d'une expérience haut de gamme avec nos <span class="highlight">machines à café de pointe</span> et distributeurs automatiques de snacks, que vous soyez un particulier ou une entreprise souhaitant offrir une pause gourmande à ses collaborateurs.
+          </p>
+          
+          <div class="depot-gratuit">
+              <p><i class="fas fa-gift"></i> <strong>Nos machines sont installées gratuitement</strong>, sans frais d’installation ni d’entretien.</p>
+          </div>  
+
+          <div class="btn-container">
+              <a href="#section-premiere-partie" class="btn">À Propos</a>
+              <a href="html/devis.html" class="btn btn-outline">Nos Services</a>
           </div>
-          <!-- Ajoutez d'autres images ici si nécessaire -->
       </div>
-    </div>        
- 
-    </section>
+
+      <div class="home-image">
+          <img src="Photo/LavazzaFirma_MacchineCapsule-2-980x539.webp" alt="Machine à café Lavazza Firma" loading="lazy">
+      </div>
+  </div>        
+</section>
+
 
     <div class="container" >
       <section class="section" id="section-machine">
@@ -131,115 +129,128 @@
               </div>
           </div>
         <div class="items">
+                <div class="item filter1">
+                  <div class="bg"></div>
+                  <div class="nft">
+                      <a href="html/concerto.html" class="carte-lien"> <!-- Ajoutez l'URL souhaitée ici -->
+                          <div class="main">
+                              <img class="tokenImage-concerto" src="Photo/concerto.webp" alt="Photo de distributeur Automatique Concerto" loading="lazy"> 
+                              <h3 class="titre-cartes">Concerto</h3>
+                              <p class="description">A partir de 80 cafés.</p>
+                              <hr>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+
               <div class="item filter1">
                 <div class="bg"></div>
                 <div class="nft">
-                    <a href="html/concerto.html" class="carte-lien"> <!-- Ajoutez l'URL souhaitée ici -->
+                    <a href="html/concerto-touch.html" class="carte-lien"> <!-- Ajoutez l'URL souhaitée ici -->
                         <div class="main">
-                            <img class="tokenImage-concerto" src="Photo/concerto.webp" alt="Photo de distributeur Automatique Concerto" loading="lazy"> 
-                            <h3 class="titre-cartes">Concerto</h3>
+                            <img class="tokenImage-concerto-touch" src="Photo/concerto-touch.webp" alt="Photo de distributeur Automatique Concerto"loading="lazy">
+                            <h3 class="titre-cartes">Concerto Touch</h3>
                             <p class="description">A partir de 80 cafés.</p>
                             <hr>
                         </div>
                     </a>
                 </div>
             </div>
+            
+                <div class="item filter1">
+                    <div class="bg"></div>
+                    <div class="nft">
+                      <a href="html/maestro.html" class="carte-lien"> <!-- Ajoutez l'URL souhaitée ici -->
+                          <div class="main">
+                              <img class="tokenImage-maestro" src="Photo/maestro-webp.webp" alt="Photo de distributeur Automatique Concerto"loading="lazy">
+                              <h3 class="titre-cartes">Maestro</h3>
+                              <p class="description">A partir de 150 cafés.</p>
+                              <hr>
+                          </div>
+                      </a>
+                  </div>
+                </div>
 
-            <div class="item filter1">
-              <div class="bg"></div>
-              <div class="nft">
-                  <a href="html/concerto-touch.html" class="carte-lien"> <!-- Ajoutez l'URL souhaitée ici -->
-                      <div class="main">
-                          <img class="tokenImage-concerto-touch" src="Photo/concerto-touch.webp" alt="Photo de distributeur Automatique Concerto"loading="lazy">
-                          <h3 class="titre-cartes">Concerto Touch</h3>
-                          <p class="description">A partir de 80 cafés.</p>
-                          <hr>
-                      </div>
-                  </a>
-              </div>
-          </div>
-          
-              <div class="item filter1">
+                <div class="item filter1">
+                    <div class="bg"></div>
+                    <div class="nft">
+                      <a href="html/maestrokeyboard.html" class="carte-lien"> 
+                          <div class="main">
+                              <img class="tokenImage-maestro-key" src="Photo/Maestro-Keyboard.webp" alt="Photo de distributeur Automatique Maestro keyboard"loading="lazy">
+                              <h3 class="titre-cartes">Maestro Keyboard</h3>
+                              <p class="description">A partir de 150 cafés.</p>
+                              <hr>
+                          </div>
+                      </a>
+                  </div>
+                </div>
+
+                <div class="item filter2">
+                    <div class="bg"></div>
+                    <div class="nft">
+                      <a href="html/inovymini.html" class="carte-lien"> <!-- Ajoutez l'URL souhaitée ici -->
+                          <div class="main">
+                              <img class="tokenImage-inovymini" src="Photo/inovy_mini.webp" alt="Photo de machine de bureau Inovy Mini Lavazza"loading="lazy">
+                              <h3 class="titre-cartes">Inovy Mini</h3>
+                              <p class="description">A partir de 5 cafés.</p>
+                              <hr>
+                          </div>
+                      </a>
+                  </div>
+                </div>
+
+                <div class="item filter2">
+                    <div class="bg"></div>
+                    <div class="nft">
+                      <a href="html/inovycompact.html" class="carte-lien"> <!-- Ajoutez l'URL souhaitée ici -->
+                          <div class="main">
+                              <img class="tokenImage-inovycompact" src="Photo/inovy_compact_1.webp" alt="Photo de machine de bureau Inovy Compact Lavazza"loading="lazy">
+                              <h3 class="titre-cartes">Inovy Compact</h3>
+                              <p class="description">A partir de 10 cafés.</p>
+                              <hr>
+                          </div>
+                      </a>
+                  </div>
+                </div>
+
+                <div class="item filter2">
+                    <div class="bg"></div>
+                    <div class="nft">
+                      <a href="html/inovy.html" class="carte-lien"> 
+                          <div class="main">
+                              <img class="tokenImage-inovy" src="Photo/inovygrande.webp" alt="Photo de machine à capsule inovy"loading="lazy">
+                              <h3 class="titre-cartes">Inovy</h3>
+                              <p class="description">A partir de 15 cafés.</p>
+                              <hr>
+                          </div>
+                      </a>
+                  </div>
+                </div>
+                <div class="item filter3">
                   <div class="bg"></div>
                   <div class="nft">
-                    <a href="html/maestro.html" class="carte-lien"> <!-- Ajoutez l'URL souhaitée ici -->
+                    <a href="html/everest.html" class="carte-lien"> 
                         <div class="main">
-                            <img class="tokenImage-maestro" src="Photo/maestro-webp.webp" alt="Photo de distributeur Automatique Concerto"loading="lazy">
-                            <h3 class="titre-cartes">Maestro</h3>
-                            <p class="description">A partir de 150 cafés.</p>
+                            <img class="tokenImage-everest" src="Photo/fontaine-everest.png" alt="Photo de fontaine à eau "loading="lazy">
+                            <h3 class="titre-cartes-everest">Fontaine Everest</h3>
+                            <p class="description">Eau Froide ou Chaude</p>
                             <hr>
                         </div>
                     </a>
                 </div>
               </div>
-
-              <div class="item filter1">
+                <div class="item filter4">
                   <div class="bg"></div>
                   <div class="nft">
-                    <a href="html/maestrokeyboard.html" class="carte-lien"> 
+                    <a href="html/royalblack.html" class="carte-lien"> 
                         <div class="main">
-                            <img class="tokenImage-maestro-key" src="Photo/Maestro-Keyboard.webp" alt="Photo de distributeur Automatique Maestro keyboard"loading="lazy">
-                            <h3 class="titre-cartes">Maestro Keyboard</h3>
-                            <p class="description">A partir de 150 cafés.</p>
-                            <hr>
-                        </div>
-                    </a>
-                </div>
-              </div>
-
-              <div class="item filter2">
-                  <div class="bg"></div>
-                  <div class="nft">
-                    <a href="html/inovymini.html" class="carte-lien"> <!-- Ajoutez l'URL souhaitée ici -->
-                        <div class="main">
-                            <img class="tokenImage-inovymini" src="Photo/inovy_mini.webp" alt="Photo de machine de bureau Inovy Mini Lavazza"loading="lazy">
-                            <h3 class="titre-cartes">Inovy Mini</h3>
-                            <p class="description">A partir de 5 cafés.</p>
-                            <hr>
-                        </div>
-                    </a>
-                </div>
-              </div>
-
-              <div class="item filter2">
-                  <div class="bg"></div>
-                  <div class="nft">
-                    <a href="html/inovycompact.html" class="carte-lien"> <!-- Ajoutez l'URL souhaitée ici -->
-                        <div class="main">
-                            <img class="tokenImage-inovycompact" src="Photo/inovy_compact_1.webp" alt="Photo de machine de bureau Inovy Compact Lavazza"loading="lazy">
-                            <h3 class="titre-cartes">Inovy Compact</h3>
-                            <p class="description">A partir de 10 cafés.</p>
-                            <hr>
-                        </div>
-                    </a>
-                </div>
-              </div>
-
-              <div class="item filter2">
-                  <div class="bg"></div>
-                  <div class="nft">
-                    <a href="html/inovy.html" class="carte-lien"> 
-                        <div class="main">
-                            <img class="tokenImage-inovy" src="Photo/inovygrande.webp" alt="Photo de machine à capsule inovy"loading="lazy">
-                            <h3 class="titre-cartes">Inovy</h3>
+                            <img class="tokenImage" src="Photo/royal-black.webp" alt="Photo de machine à café broyeur royal Black "loading="lazy">
+                            <h3 class="titre-cartes">Royal Black </h3>
                             <p class="description">A partir de 15 cafés.</p>
                             <hr>
                         </div>
                     </a>
                 </div>
-              </div>
-              <div class="item filter4">
-                <div class="bg"></div>
-                <div class="nft">
-                  <a href="html/royalblack.html" class="carte-lien"> 
-                      <div class="main">
-                          <img class="tokenImage" src="Photo/royal-black.webp" alt="Photo de machine à café broyeur royal Black "loading="lazy">
-                          <h3 class="titre-cartes">Royal Black </h3>
-                          <p class="description">A partir de 15 cafés.</p>
-                          <hr>
-                      </div>
-                  </a>
-              </div>
             </div>
             <div class="item filter4">
               <div class="bg"></div>
@@ -261,10 +272,10 @@
   <section class="section-premiere-partie" id="section-premiere-partie">
     <div class="container_premier_partie">
         <div class="images_premiere_partie">
-            <img src="/Photo/tasseetgrain.jpg" alt="Image 1">
-            <img src="/Photo/tasseetgrain.jpg" alt="Image 2">
-            <img src="/Photo/tassehaut.jpg" alt="Image 3">
-            <img src="/Photo/tassehaut.jpg" alt="Image 4">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Image 1">
+            <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Image 2">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Image 3">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Image 4">
         </div>
         <div class="text">
             <h1>A propos de l'entreprise DAT</h1>
@@ -286,13 +297,15 @@
     </div>
 </section>
   
-  <section class="equip-section">
-    <div class="equip-container">
-        <h2 class="titre-equip-section">Equipez votre <span class="highlight-text">Entreprise</span></h2>
-        <a href="html/devis.html" class="equip-button">Découvrir</a>
-    </div>
-  </section>
-  
+<section class="equip-section">
+  <div class="equip-container">
+      <h2 class="titre-equip-section">Équipez votre <span class="highlight-text">Entreprise</span></h2>
+      <!-- Message ajoutant l'info du dépôt gratuit -->
+      <p class="free-depot-info">Machines en dépôt gratuit, sans frais supplémentaires !</p>
+      <a href="html/devis.html" class="equip-button">Découvrir</a>
+  </div>
+</section>
+
   <section class="additional-content">
     <!-- Première section avec image à gauche -->
     <div class="content-container">
@@ -349,17 +362,21 @@
       </div>
       <div class="footer-content-column">
         <div class="footer-menu">
-          <h2 class="footer-menu-name"> Legal</h2>
-          <ul id="menu-legal" class="footer-menu-list">
-            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
-              <a href="#">Privacy Notice</a>
-            </li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-              <a href="#">Terms of Use</a>
-            </li>
-          </ul>
+            <h2 class="footer-menu-name">Legal</h2>
+            <ul id="menu-legal" class="footer-menu-list">
+                <li class="menu-item">
+                    <a href="/html/mentions-legales.html">Mentions légales</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/html/politique-confidentialite.html">Politique de confidentialité</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/html/conditions-generales.html">Conditions générales</a>
+                </li>
+            </ul>
         </div>
-      </div>
+    </div>
+    
       <div class="footer-content-column">
         <div class="footer-menu">
           <h2 class="footer-menu-name"> Liens Rapides</h2>
@@ -368,16 +385,16 @@
               <a target="_blank" rel="noopener noreferrer" href="#">Home</a>
             </li>
             <li class="menu-item menu-item-type-custom menu-item-object-custom">
-              <a target="_blank" rel="noopener noreferrer" href="#">Nos Machines</a>
+              <a href="#section-machine">Nos Machines</a> <!-- Ancre vers la section Nos Machines -->
             </li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page">
-              <a href="#">A propos</a>
+              <a href="#section-premiere-partie">A propos</a>
             </li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page">
               <a href="#">Nos marques</a>
             </li>
             <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
-              <a href="#">Contact</a></li>
+              <a href="html/contact.html">Contact</a></li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page">
               <a href="#">Blog</a>
             </li>
@@ -398,7 +415,7 @@
     <div class="footer-copyright">
       <div class="footer-copyright-wrapper">
         <p class="footer-copyright-text">
-          <a class="footer-copyright-link" href="#" target="_self"> ©2024. | Tout droits reservés. </a>
+          <a class="footer-copyright-link" href="#" target="_self"> ©2024 - 2025 | Tout droits reservés. </a>
         </p>
       </div>
     </div>

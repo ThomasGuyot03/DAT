@@ -25,16 +25,36 @@
 
 <body>
 
-<header>
-  <nav class="navbar">
-    <div class="logo">D.A.T</div>
-    <ul class="nav-links">
-      <li><a href="../index.html">Accueil</a></li>
-      <li><a href="#features">Nos Machines</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">D.A.T</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../index.html#section-machine">Nos Machines</a></li>
+            <li><a href="/html/contact.html">Contact</a></li>
+        </ul>
+        <!-- Menu hamburger -->
+        <div class="menu-toggle" id="menuToggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
 </header>
+
+<!-- Script pour le menu hamburger -->
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    });
+</script>
 
 <section class="hero">
   <img src="/Photo/Maestro-Keyboard.webp" alt="Distributeur Automatique Lavazza Maestro Keyboard pour cafés et boissons chaudes" class="hero-image">
@@ -137,12 +157,11 @@
     <div class="footer-section links">
       <h3>Liens utiles</h3>
       <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Produits</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../index.html#section-machine">Nos machines</a></li>
+        <li><a href="../index.html#section-premiere-partie">À propos</a></li>
+        <li><a href="/html/contact.html">Contact</a></li>
+    </ul>
     </div>
     <div class="footer-section contact">
       <h3>Contactez-nous</h3>
@@ -152,7 +171,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    &copy; 2024 datcafé.fr | Tous droits réservés
+    &copy; 2024 - 2025 datcafé.fr | Tous droits réservés
   </div>
 </footer>
 

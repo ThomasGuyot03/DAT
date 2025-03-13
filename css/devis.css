@@ -15,17 +15,6 @@
   --main-color: #008ADE;
 }
 
-.logo {
-  font-size: 30px;
-  font-weight: bold;
-  color: #000000;
-  text-decoration: none;
-}
-
-.logo:hover {
-  color: #000;
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -40,28 +29,55 @@
   transition: .3s;
 }
 
+.logo a {
+  width: auto;
+  color: white;
+  font-size: 2.5em;
+  cursor: pointer;
+  text-decoration: none; /* Supprime le soulignement */
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #2c3e50;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Menu burger - caché par défaut */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle div {
+  width: 30px;
+  height: 3px;
+  background: white;
+  margin: 5px;
+  transition: 0.3s;
+}
+
 .menu-icon {
   display: none;
   font-size: 1.5rem;
   color: var(--second-bg-color);
   cursor: pointer;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-}
-
-.navbar a {
-  font-size: 1.2rem;
-  color: var(--second-bg-color);
-  font-weight: 500;
-  margin-left: 3.5rem;
-}
-
-.navbar a:hover,
-.navbar a.active {
-  color: var(--main-color);
 }
 
 .dropdown-content a:hover {
@@ -75,7 +91,7 @@
 /* Body */
 .container {
   max-width: 600px;
-  margin: 15% auto 0;
+  margin: 5% auto 0;
   padding: 20px;
   text-align: center;
   background-color: #f9f9f9;
@@ -119,48 +135,194 @@ button:hover {
   font-weight: bold;
 }
 
+/* Styles pour le footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 0 20px;
+  text-align: left;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-right: 60px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #3498db;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  font-size: 0.9em;
+  color: #999;
+}
+
+.footer-section.contact a {
+  color: white;  /* Texte blanc */
+  text-decoration: none; /* Supprime le soulignement */
+}
+
+.footer-section.contact a:hover {
+  color: white; /* Reste blanc même au survol */
+}
+
 /* Responsive */
 @media (max-width: 768px) {
-  .header {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 0 10px;
-  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #2c3e50;
+    padding: 15px 0;
+    z-index: 999; /* S'assure que le menu passe au-dessus du contenu */
+}
 
-  .menu-icon {
-      display: block;
-  }
+.nav-links.active {
+    display: flex;
+}
 
-  .navbar {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      background-color: var(--bg-color);
-  }
+.nav-links li {
+    text-align: center;
+    padding: 12px 0;
+}
 
-  .navbar a {
-      margin: 1rem 0;
-      font-size: 1rem;
-      color: var(--main-color);
-      text-align: center;
-      width: 100%;
-  }
+.menu-toggle {
+    display: flex;
+}
 
-  .navbar a:hover,
-  .navbar a.active {
-      color: var(--main-color);
-  }
+/* Animation du menu burger */
+.menu-toggle.active div:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
 
-  .navbar.active {
-      display: flex;
-  }
+.menu-toggle.active div:nth-child(2) {
+    opacity: 0;
+}
 
-  .container {
-      margin: 20% 10px 0;
-      padding: 20px;
-  }
+.menu-toggle.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.container {
+    margin: 20% 10px 0;
+    padding: 20px;
+}
 
   input, select {
       margin-top: 10px;
   }
+
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin-bottom: 20px;
+    min-width: 200px; /* Assure que chaque section a une largeur minimale */
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 1em;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #3498db;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 0.9em;
+    color: #999;
+}
+
+.footer-section.contact a {
+    color: white;  /* Texte blanc */
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+.footer-section.contact a:hover {
+    color: white; /* Reste blanc même au survol */
+}
+
 }
