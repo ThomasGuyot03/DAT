@@ -38,6 +38,7 @@ header {
     list-style: none;
     display: flex;
     gap: 15px;
+    margin-right: 50px; /* Ajuste cette valeur selon ton besoin */
 }
 
 .nav-links li a {
