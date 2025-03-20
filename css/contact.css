@@ -26,7 +26,7 @@ html, body {
 .logo {
   font-size: 30px;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--second-bg-color);
   text-decoration: none;
 }
 
@@ -300,6 +300,10 @@ html, body {
   font-size: 1.2rem;
   width: 100vw;
   padding: 1rem;
+}
+
+.contact-description {
+  margin-top: 8%;
 }
 
 .contact-item {
