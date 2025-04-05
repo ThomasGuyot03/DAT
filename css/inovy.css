@@ -429,6 +429,17 @@ header {
     color: #999;
 }
 
+.footer-bottom a {
+    color: #999; /* Couleur du texte identique au reste du footer */
+    text-decoration: none; /* Supprime le soulignement du lien */
+    margin-left: 5px; /* Espacement entre le texte et le lien */
+}
+
+.footer-bottom a:hover {
+    color: #fff; /* Change la couleur au survol */
+    text-decoration: underline; /* Ajoute un soulignement au survol */
+}
+
 .footer-section.contact a {
     color: white;  /* Texte blanc */
     text-decoration: none; /* Supprime le soulignement */

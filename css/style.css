@@ -412,6 +412,14 @@ ins{
     margin-bottom: 25%;
     margin-left: 18%;
   }
+  .tokenImage-royalblack {
+    border-radius: .5rem;
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-left: 10%;
+    margin-top: 25px;
+  }
   .tokenImage-everest {
     border-radius: .5rem;
     max-width: 50%;
@@ -421,13 +429,27 @@ ins{
     margin-right: auto; /* Cela va pousser l'image vers la gauche */
     display: block;     /* S'assurer que l'image est un élément bloc pour centrer correctement */
   }
-  
+  .tokenImage-magic {
+    border-radius: .5rem;
+    max-width: 100%;
+    height: 450px;
+    object-fit: cover;
+    margin-left: 10%;
+  }
   .titre-cartes-everest {
     font-size: 1.5rem;
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
     margin-top: -50px;
+  }
+
+.titre-cartes-royalblack {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: -15px;
   }
   
   .description{
@@ -1136,56 +1158,6 @@ h1{
     padding-top: 6rem; /* Ajout d'un padding en haut pour espacer la section */
 }
 
-.about-content {
-    text-align: center;
-    max-width: 80%; /* Ajustez cette valeur selon vos besoins */
-}
-
-.about-img {
-    position: relative;
-    width: 25rem;
-    height: 25rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem; /* Ajout d'un margin-bottom pour espacer l'image du texte */
-}
-
-.about-img img {
-    width: 90%;
-    border-radius: 50%;
-    border: .4rem solid var(--main-color);
-}
-
-.about-img .circle-spin {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border-top: .2rem solid var(--second-bg-color);
-    border-bottom: .2rem solid var(--second-bg-color);
-    border-left: .2rem solid var(--main-color);
-    border-right: .2rem solid var(--main-color);
-}
-
-.about-content h3 {
-    font-size: 2.6rem;
-}
-
-.about-content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
-}
-
-.cercles-container {
-  flex-direction: column;
-  align-items: center;
-}
-
 .container {
     height: auto; /* Hauteur automatique pour s'adapter au contenu */
 }
@@ -1233,12 +1205,15 @@ h1{
   font-size: 1.6em;
   margin: 0;
 }
+
 .images_premiere_partie, .container_reverse .images_deuxieme-partie {
   margin: 20px auto;
 }
+
 .images_premiere_partie {
   grid-template-columns: 1fr;
 }
+
 .images_premiere_partie img, .container_reverse .images_deuxieme-partie img {
 display: none;
 }
