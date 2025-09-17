@@ -2,113 +2,964 @@
 <html lang="fr">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VGS04MDMHT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGS04MDMHT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VGS04MDMHT');
+    </script>
 
-  gtag('config', 'G-VGS04MDMHT');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact D.A.T</title>
-    <link rel="stylesheet" href="../css/contact.css">
     <link rel="icon" href="../Photo/Logo DAT.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/d72f655667.js" crossorigin="anonymous"></script>
     <meta name="description" content="Contactez D.A.T pour toute information sur nos machines à café et services. Remplissez notre formulaire de contact ou contactez-nous par email ou téléphone.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <style>
+      :root {
+        --primary: #1a1a1a;
+        --secondary: #6b7280;
+        --accent: #3b82f6;
+        --accent-hover: #2563eb;
+        --surface: #ffffff;
+        --surface-secondary: #f8fafc;
+        --border: #e2e8f0;
+        --text-primary: #0f172a;
+        --text-secondary: #64748b;
+        --text-muted: #94a3b8;
+        --success: #10b981;
+        --error: #ef4444;
+        --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+        --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        line-height: 1.6;
+        color: var(--text-primary);
+        background: var(--surface);
+        overflow-x: hidden;
+      }
+
+      /* Navigation moderne */
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem 2rem;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        transition: all 0.3s ease;
+      }
+
+      .logo {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: var(--primary);
+        text-decoration: none;
+        letter-spacing: -0.025em;
+      }
+
+      .logo:hover {
+        color: var(--accent);
+      }
+
+      .menu-icon {
+        display: none;
+        font-size: 1.5rem;
+        color: var(--primary);
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+
+      .menu-icon:hover {
+        background: var(--surface-secondary);
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .navbar a {
+        font-size: 0.95rem;
+        color: var(--text-secondary);
+        font-weight: 500;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .navbar a:hover,
+      .navbar a.active {
+        color: var(--accent);
+        background: rgba(59, 130, 246, 0.1);
+      }
+
+      /* Hero Section */
+      .hero {
+        padding: 8rem 2rem 4rem;
+        text-align: center;
+        background: var(--gradient);
+        color: white;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: url('https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop') center/cover;
+        opacity: 0.1;
+      }
+
+      .hero-content {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        z-index: 2;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.5rem, 5vw, 3.5rem);
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        margin-bottom: 2rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-badge {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        backdrop-filter: blur(10px);
+      }
+
+      /* Contact Info Cards */
+      .contact-info-section {
+        padding: 4rem 2rem;
+        background: var(--surface-secondary);
+      }
+
+      .contact-info-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .contact-card {
+        background: var(--surface);
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+        text-align: center;
+        transition: all 0.3s ease;
+        border: 1px solid var(--border);
+      }
+
+      .contact-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .contact-card-icon {
+        width: 60px;
+        height: 60px;
+        background: var(--accent);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+        color: white;
+        font-size: 1.5rem;
+      }
+
+      .contact-card h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: var(--text-primary);
+      }
+
+      .contact-card p {
+        color: var(--text-secondary);
+        margin-bottom: 1rem;
+      }
+
+      .contact-card a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .contact-card a:hover {
+        text-decoration: underline;
+      }
+
+      /* Services Section */
+      .services-section {
+        padding: 4rem 2rem;
+        background: var(--surface);
+      }
+
+      .services-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .services-container h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: var(--text-primary);
+      }
+
+      .services-container > p {
+        font-size: 1.1rem;
+        color: var(--text-secondary);
+        margin-bottom: 3rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+      }
+
+      .service-item {
+        background: var(--surface-secondary);
+        padding: 2rem;
+        border-radius: 12px;
+        text-align: left;
+      }
+
+      .service-item h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--accent);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .service-item h3::before {
+        content: "✓";
+        background: var(--accent);
+        color: white;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+
+      .service-item p {
+        color: var(--text-secondary);
+        line-height: 1.6;
+      }
+
+      /* Form Section */
+      .contact-form-section {
+        padding: 4rem 2rem;
+        background: var(--surface-secondary);
+      }
+
+      .form-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .form-header {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .form-header h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: var(--text-primary);
+      }
+
+      .form-header p {
+        font-size: 1.1rem;
+        color: var(--text-secondary);
+      }
+
+      .contact-form {
+        background: var(--surface);
+        padding: 3rem;
+        border-radius: 16px;
+        box-shadow: var(--shadow-lg);
+        border: 1px solid var(--border);
+      }
+
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .form-group.full-width {
+        grid-column: 1 / -1;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: var(--text-primary);
+        font-size: 0.95rem;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 0.875rem 1rem;
+        font-size: 1rem;
+        border: 2px solid var(--border);
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        font-family: inherit;
+        background: var(--surface);
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+
+      .bouton {
+        background: var(--accent);
+        color: white;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 100%;
+        font-family: inherit;
+      }
+
+      .bouton:hover {
+        background: var(--accent-hover);
+        transform: translateY(-1px);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .bouton:active {
+        transform: translateY(0);
+      }
+
+      #resultat {
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: 500;
+        display: none;
+      }
+
+      #resultat.success {
+        background: rgba(16, 185, 129, 0.1);
+        color: var(--success);
+        border: 1px solid rgba(16, 185, 129, 0.2);
+        display: block;
+      }
+
+      #resultat.error {
+        background: rgba(239, 68, 68, 0.1);
+        color: var(--error);
+        border: 1px solid rgba(239, 68, 68, 0.2);
+        display: block;
+      }
+
+      /* Footer moderne */
+      .pg-footer {
+        margin-top: 4rem;
+      }
+
+      .footer {
+        background: var(--primary);
+        color: white;
+        position: relative;
+      }
+
+      .footer-wave-svg {
+        background-color: transparent;
+        display: block;
+        height: 60px;
+        position: relative;
+        top: -1px;
+        width: 100%;
+      }
+
+      .footer-wave-path {
+        fill: var(--primary);
+      }
+
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .footer-content-column h4 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .footer-menu-name {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: white;
+      }
+
+      .footer-menu-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer-menu-list li {
+        margin-bottom: 0.5rem;
+      }
+
+      .footer-menu-list a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .footer-menu-list a:hover {
+        color: white;
+      }
+
+      .footer-call-to-action-button {
+        background: var(--accent);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+        display: inline-block;
+        transition: all 0.3s ease;
+        margin-bottom: 1rem;
+      }
+
+      .footer-call-to-action-button:hover {
+        background: var(--accent-hover);
+        transform: translateY(-1px);
+      }
+
+      .footer-call-to-action-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .footer-call-to-action-link-wrapper a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .footer-copyright {
+        background: rgba(0, 0, 0, 0.2);
+        padding: 1.5rem 2rem;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .footer-copyright-text {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.9rem;
+      }
+
+      .footer-copyright-link {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+      }
+
+      /* Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease;
+      }
+
+      .animate-on-scroll.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .navbar {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background: rgba(255, 255, 255, 0.95);
+          backdrop-filter: blur(20px);
+          flex-direction: column;
+          padding: 1rem;
+          border-top: 1px solid var(--border);
+          box-shadow: var(--shadow-lg);
+        }
+
+        .navbar.active {
+          display: flex;
+        }
+
+        .navbar a {
+          width: 100%;
+          text-align: center;
+          padding: 1rem;
+          margin: 0;
+        }
+
+        .menu-icon {
+          display: block;
+        }
+
+        .form-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero {
+          padding: 6rem 1rem 3rem;
+        }
+
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .hero p {
+          font-size: 1rem;
+        }
+
+        .contact-info-section,
+        .services-section,
+        .contact-form-section {
+          padding: 3rem 1rem;
+        }
+
+        .contact-form {
+          padding: 2rem 1.5rem;
+        }
+
+        .services-container h2,
+        .form-header h2 {
+          font-size: 2rem;
+        }
+
+        .footer-content {
+          padding: 2rem 1rem;
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .header {
+          padding: 1rem;
+        }
+
+        .logo {
+          font-size: 1.5rem;
+        }
+
+        .hero {
+          padding: 5rem 1rem 2rem;
+        }
+
+        .contact-form {
+          padding: 1.5rem 1rem;
+        }
+
+        .contact-info-grid,
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Scrollbar personnalisée */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: var(--surface-secondary);
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: var(--border);
+        border-radius: 3px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--text-muted);
+      }
+    </style>
 </head>
 <body>
 
-<header class="header">        
-    <a href="../index.html" class="logo">D . A . T</a>    
-    <div class="menu-icon" id="menu-icon">
-        <i class="fas fa-bars"></i>
+    <header class="header">        
+        <a href="../index.html" class="logo">D . A . T</a>    
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <nav class="navbar" id="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#section-machine">Nos Machines</a>
+            <a href="../index.html#container-3">À Propos</a>
+            <a href="./nosmarques.html">Blog</a>
+            <a href="/html/contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+    
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-badge">Contact Professionnel</div>
+        <h1>Contactez-nous</h1>
+        <p>Découvrez nos solutions de machines à café et distributeurs automatiques en dépôt gratuit pour votre entreprise.</p>
     </div>
-    
-    <nav class="navbar" id="navbar">
-        <a href="../index.html" class="active">Home</a>
-        <a href="../index.html#section-machine">Nos Machines</a>
-        <a href="../index.html#container-3">A Propos</a>
-        <a href="../index.html">Nos Marques</a>
-        <a href="/html/contact.html">Contact</a>
-    </nav>
-</header>
-    
-<section class="contact-description">
-    <div class="container">
+</section>
+
+<!-- Contact Info Cards -->
+<section class="contact-info-section">
+    <div class="contact-info-grid">
+        <div class="contact-card animate-on-scroll">
+            <div class="contact-card-icon">
+                <i class="fas fa-phone"></i>
+            </div>
+            <h3>Téléphone</h3>
+            <p>Appelez-nous directement</p>
+            <a href="tel:0534480059">05.34.48.00.59</a>
+        </div>
+        
+        <div class="contact-card animate-on-scroll">
+            <div class="contact-card-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p>Envoyez-nous un message</p>
+            <a href="mailto:contact@dat-cafe.fr">contact@dat-cafe.fr</a>
+        </div>
+        
+        <div class="contact-card animate-on-scroll">
+            <div class="contact-card-icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Localisation</h3>
+            <p>Notre zone d'intervention</p>
+            <span>Toulouse et région</span>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services-section">
+    <div class="services-container animate-on-scroll">
         <h2>Pourquoi nous contacter ?</h2>
         <p>
-            <strong>D.A.T</strong> met à disposition des professionnels des <strong>machines à café</strong> ainsi que des  
-            <strong>distributeurs automatiques de boissons et snacks</strong> en <strong>dépôt gratuit</strong>.  
-            Que vous soyez une entreprise, un commerce ou un établissement recevant du public, nous vous offrons une solution clé en main,  
-            sans investissement de votre part.
+            <strong>D.A.T</strong> met à disposition des professionnels des solutions complètes 
+            de machines à café et distributeurs automatiques en <strong>dépôt gratuit</strong>.
         </p>
-        <p>
-            Nous nous chargeons de la <strong>livraison, de l’installation et de la maintenance</strong> de vos équipements,  
-            ainsi que de l’<strong>approvisionnement en café, boissons et snacks</strong>.  
-            Vous profitez d’un service complet et réactif, garantissant une pause gourmande de qualité à vos collaborateurs et clients.
-        </p>
-        <h3>Nos services :</h3>
-        <ul>
-            <li><strong>Machines à café</strong> en dépôt gratuit pour entreprises et commerces</li>
-            <li><strong>Distributeurs automatiques</strong> de boissons chaudes, froides et snacks</li>
-            <li>Installation, entretien et maintenance inclus</li>
-            <li>Approvisionnement régulier en café, boissons et encas</li>
-            <li>Intervention rapide en cas de besoin</li>
-        </ul>
-        <p>
-            Faites confiance à <strong>D.A.T</strong> pour un service personnalisé et une gestion simplifiée de vos pauses café et collations !  
-            Contactez-nous dès maintenant pour en savoir plus.
-        </p>
-    </div>
-</section>
-
-
-<section class="contact-form-section">
-    <div class="container">
-        <h2>Contactez-nous</h2>
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="name">Nom</label>
-                <input type="text" id="name" name="name" required>
+        
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>Machines à café premium</h3>
+                <p>Machines à café professionnelles en dépôt gratuit pour entreprises et commerces, avec installation et maintenance incluses.</p>
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+            
+            <div class="service-item">
+                <h3>Distributeurs automatiques</h3>
+                <p>Distributeurs de boissons chaudes, froides et snacks adaptés à vos besoins et à votre fréquentation.</p>
             </div>
-            <div class="form-group">
-                <label for="phone">Téléphone</label>
-                <input type="tel" id="phone" name="phone">
+            
+            <div class="service-item">
+                <h3>Service complet</h3>
+                <p>Installation, entretien, maintenance et approvisionnement régulier inclus dans notre offre.</p>
             </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button class="bouton" type="button" onclick="envoyerEmail()">Envoyer par e-mail</button>
-        </form>
-        <div id="resultat"></div> <!-- Message de réponse -->
-    </div>
-</section>
-
-<section class="blue-section">
-    <div class="titre-contact">
-        <h1>Contact</h1>
-        <div class="contact-info">
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>dat.cafe@orange.fr</span>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>05.34.48.00.59</span>
+            
+            <div class="service-item">
+                <h3>Intervention rapide</h3>
+                <p>Service réactif et personnalisé pour garantir une pause gourmande de qualité à vos équipes.</p>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Contact Form -->
+<section class="contact-form-section">
+    <div class="form-container">
+        <div class="form-header animate-on-scroll">
+            <h2>Demandez votre devis</h2>
+            <p>Remplissez le formulaire ci-dessous et nous vous recontacterons rapidement pour étudier vos besoins.</p>
+        </div>
+        
+        <form class="contact-form animate-on-scroll" id="contactForm">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">Nom *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Décrivez-nous vos besoins : nombre d'employés, type d'établissement, préférences..."></textarea>
+            </div>
+            
+            <button class="bouton" type="button" onclick="envoyerEmail()">
+                <i class="fas fa-paper-plane" style="margin-right: 0.5rem;"></i>
+                Envoyer la demande
+            </button>
+            
+            <div id="resultat"></div>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<div class="pg-footer">
+    <footer class="footer" id="footer">
+      <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+        <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+      </svg>
+      <div class="footer-content">
+        <div class="footer-content-column">
+          <div class="footer-logo">
+            <a class="footer-logo-link" href="#">
+              <h4>DAT.</h4>
+            </a>
+          </div> 
+        </div>
+        <div class="footer-content-column">
+          <div class="footer-menu">
+              <h2 class="footer-menu-name">Legal</h2>
+              <ul class="footer-menu-list">
+                  <li><a href="./mentions-legales.html">Mentions légales</a></li>
+                  <li><a href="./politique-confidentialite.html">Politique de confidentialité</a></li>
+              </ul>
+          </div>
+        </div>
+        
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name">Liens Rapides</h2>
+            <ul class="footer-menu-list">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../index.html#section-machine">Nos Machines</a></li>
+              <li><a href="../index.html#section-premiere-partie">À propos</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-content-column">
+          <div class="footer-call-to-action">
+            <a class="footer-call-to-action-button" href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Revenir en haut</a>
+          </div>
+          <div class="footer-call-to-action">
+            <h2 class="footer-call-to-action-title">Nous appeler</h2>
+            <p class="footer-call-to-action-link-wrapper">
+              <a class="footer-call-to-action-link" href="tel:0534480059">05.34.48.00.59</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-copyright">
+        <div class="footer-copyright-wrapper">
+          <p class="footer-copyright-text">
+            <a class="footer-copyright-link" href="#">©2024 - 2025 | Tous droits réservés.</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+</div>
+
+<!-- Scripts -->
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script src="../contact.js" defer></script>
+<script>
+  function envoyerEmail() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const message = document.getElementById('message').value;
+      const resultat = document.getElementById('resultat');
+
+      if (!name || !email || !message) {
+          resultat.className = 'error';
+          resultat.textContent = "Veuillez remplir tous les champs obligatoires.";
+          return;
+      }
+
+      // Désactiver le bouton pendant l'envoi
+      const button = document.querySelector('.bouton');
+      const originalText = button.innerHTML;
+      button.innerHTML = '<i class="fas fa-spinner fa-spin" style="margin-right: 0.5rem;"></i>Envoi en cours...';
+      button.disabled = true;
+
+      emailjs.init('JOTvNGFjrUQfQG57r');
+      emailjs.send("Test0307", "template_jln1elq", {
+          name: name,
+          email: email,
+          phone: phone,
+          message: message
+      })
+      .then(function(response) {
+          resultat.className = 'success';
+          resultat.textContent = "Votre message a été envoyé avec succès ! Nous vous recontacterons rapidement.";
+          document.getElementById('contactForm').reset();
+      }, function(error) {
+          console.error('Erreur lors de l\'envoi de l\'e-mail :', error);
+          resultat.className = 'error';
+          resultat.textContent = "Une erreur s'est produite lors de l'envoi. Veuillez réessayer.";
+      })
+      .finally(function() {
+          // Réactiver le bouton
+          button.innerHTML = originalText;
+          button.disabled = false;
+      });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+      const menuIcon = document.getElementById('menu-icon');
+      const navbar = document.getElementById('navbar');
+
+      if (menuIcon && navbar) {
+          menuIcon.addEventListener('click', function () {
+              navbar.classList.toggle('active');
+          });
+      }
+
+      // Animation au scroll
+      const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('visible');
+              }
+          });
+      }, observerOptions);
+
+      document.querySelectorAll('.animate-on-scroll').forEach(el => {
+          observer.observe(el);
+      });
+
+      // Effet navbar au scroll
+      window.addEventListener('scroll', () => {
+          const header = document.querySelector('.header');
+          if (window.scrollY > 100) {
+              header.style.background = 'rgba(255, 255, 255, 0.95)';
+              header.style.backdropFilter = 'blur(20px)';
+          } else {
+              header.style.background = 'rgba(255, 255, 255, 0.9)';
+              header.style.backdropFilter = 'blur(20px)';
+          }
+      });
+  });
+</script>
 </body>
 </html>

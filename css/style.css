@@ -435,6 +435,7 @@ ins{
     height: 450px;
     object-fit: cover;
     margin-left: 10%;
+    margin-top: -5%;
   }
   .titre-cartes-everest {
     font-size: 1.5rem;
@@ -445,6 +446,14 @@ ins{
   }
 
 .titre-cartes-royalblack {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: -15px;
+  }
+
+  .titre-cartes-magic {
     font-size: 1.5rem;
     color: #ffffff;
     font-weight: bold;

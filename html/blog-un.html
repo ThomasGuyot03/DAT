@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bien choisir sa machine à capsules | DAT Café</title>
+  <link rel="icon" href="/Photo/Logo DAT.png" type="image/x-icon">
+  <style>
+    :root {
+      --main-color: #008ADE;
+      --bg-color: #f5f5f5;
+      --text-color: #333;
+      --accent-color: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    /* Navigation */
+    nav {
+      background-color: var(--accent-color);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      position: relative;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: var(--main-color);
+    }
+
+    .coffee-icon {
+      width: 28px;
+      height: 28px;
+      stroke: var(--main-color);
+    }
+
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: var(--main-color);
+    }
+
+    /* hamburger (hidden desktop) */
+    .menu-toggle {
+      display: none;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      padding: 0;
+      align-items: center;
+    }
+    .menu-toggle .bar {
+      display: block;
+      width: 28px;
+      height: 3px;
+      margin: 5px 0;
+      background: var(--text-color);
+      border-radius: 2px;
+    }
+
+    /* Header */
+    header.hero-section {
+      text-align: center;
+      padding: 3rem 2rem 1rem;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-description {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #555;
+    }
+
+    /* Machines Grid */
+    .machines-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .machine-card {
+      background-color: var(--accent-color);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 360px;
+      cursor: pointer;
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      height: 360px; /* Hauteur fixe pour toutes les cartes */
+    }
+
+    .machine-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .machine-image {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background: #fff;
+      flex-shrink: 0;
+    }
+
+    /* Réduit uniquement la 3ème image */
+    .machine-card:nth-child(3) .machine-image {
+      height: 140px;
+      object-fit: contain;
+      background: #fff;
+      margin-top: 50px;
+    }
+
+    .machine-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .machine-name {
+      font-size: 1.2rem;
+      color: var(--main-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .learn-more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.3rem;
+      color: var(--text-color);
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .learn-more svg { width: 14px; height: 14px; flex-shrink: 0; }
+    .learn-more:hover { color: var(--main-color); }
+
+    /* Machine Details */
+    .machine-detail {
+      display: none;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: var(--accent-color);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .machine-detail.active { display: block; }
+
+    .detail-title { color: var(--main-color); display:flex; align-items:center; gap:0.5rem; }
+    .detail-description { margin: 1rem 0; line-height: 1.6; }
+
+    .features-list { display: grid; gap: 0.5rem; margin-top: 1rem; }
+    .feature-item { display: flex; align-items: center; gap: 0.5rem; }
+    .feature-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--main-color); }
+
+    .detail-image {
+      margin-top: 1rem;
+      width: auto;
+      max-width: 300px;
+      max-height: 200px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+
+    /* Footer */
+    .footer { background: var(--accent-color); padding: 2rem; text-align: center; border-top: 1px solid #ddd; }
+    .footer-brand { display:flex; align-items:center; justify-content:center; gap:0.5rem; font-weight:bold; color:var(--main-color); font-size:1.2rem; margin-bottom:1rem; }
+    .footer-links { margin-top:1rem; display:flex; justify-content:center; gap:1.5rem; }
+    .footer-link { text-decoration:none; color:var(--text-color); font-size:0.9rem; }
+    .footer-link:hover { color:var(--main-color); }
+
+    /* mobile responsive: menu hamburger + centré */
+    @media (max-width: 768px) {
+      /* show hamburger, hide horizontal menu */
+      .menu-toggle { display: flex; }
+      .nav-menu { display: none; } /* hidden by default on mobile */
+
+      /* mobile menu styling when active (JS will toggle .active) */
+      .nav-menu.active {
+        display: flex;
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        width: 100%;
+        background-color: var(--accent-color);
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 0;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        box-sizing: border-box;
+        z-index: 1100;
+      }
+
+      .nav-link {
+        display: block;
+        width: calc(100% - 2rem);
+        max-width: 420px;
+        margin: 0.25rem auto;
+        padding: 0.6rem 1rem;
+        text-align: center;
+      }
+
+      /* tighten header for mobile */
+      nav { padding: 0.6rem 1rem; }
+      .nav-brand { font-size: 1.15rem; }
+      .hero-title { font-size: 1.9rem; padding-top: 0.6rem; }
+
+      /* machines stack on mobile */
+      .machines-grid { flex-direction: column; align-items: center; padding: 1rem; }
+      .machine-card { width: calc(100% - 2rem); max-width: 420px; height: 360px; }
+      .machine-image { height: 180px; }
+
+      /* adjust details and footer */
+      .detail-image { max-width: 260px; max-height: 180px; }
+      .footer-links { flex-direction: column; gap: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-brand">
+        <svg class="coffee-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+          <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+          <line x1="6" y1="1" x2="6" y2="4"/>
+          <line x1="10" y1="1" x2="10" y2="4"/>
+          <line x1="14" y1="1" x2="14" y2="4"/>
+        </svg>
+        DAT Café
+      </div>
+
+      <!-- hamburger button -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- navigation (desktop horizontal / mobile toggled) -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="../index.html" class="nav-link">Accueil</a></li>
+        <li><a href="../index.html#section-machine" class="nav-link">Nos Machines</a></li>
+        <li><a href="../index.html#section-premiere-partie" class="nav-link">À propos</a></li>
+        <li><a href="./nosmarques.html" class="nav-link">Blog</a></li>
+        <li><a href="./contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="hero-section">
+    <h1 class="hero-title">Bien choisir sa machine à capsules</h1>
+    <p class="hero-description">
+      Découvrez nos conseils pour sélectionner la machine à café à capsules qui correspond parfaitement à vos besoins et à votre style de vie.
+    </p>
+  </header>
+
+  <!-- Machines Grid -->
+  <section class="machines-section">
+    <div class="machines-grid">
+      <div class="machine-card" data-target="detail-lor">
+        <img src="/Photo/inovy_mini.webp" alt="Firma Mini Lavazza" class="machine-image">
+        <div class="machine-info">
+          <h3 class="machine-name">Firma Mini Lavazza</h3>
+          <div class="learn-more">
+            <span>En savoir plus</span>
+            <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9,18 15,12 9,6"></polyline></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="machine-card" data-target="detail-nespresso">
+        <img src="/Photo/inovy_compact_1.webp" alt="Firma Inovy Compact Lavazza" class="machine-image">
+        <div class="machine-info">
+          <h3 class="machine-name">Firma Inovy Compact Lavazza</h3>
+          <div class="learn-more">
+            <span>En savoir plus</span>
+            <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9,18 15,12 9,6"></polyline></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="machine-card" data-target="detail-lavazza">
+        <img src="/Photo/inovygrande.webp" alt="Firma Inovy Lavazza" class="machine-image">
+        <div class="machine-info">
+          <h3 class="machine-name">Firma Inovy Lavazza</h3>
+          <div class="learn-more">
+            <span>En savoir plus</span>
+            <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9,18 15,12 9,6"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Machine Details -->
+  <section class="details-section" id="detailsSection">
+    <div class="machine-detail" id="detail-lor">
+      <h2 class="detail-title">Firma Mini Lavazza</h2>
+      <p class="detail-description">
+        La machine Firma Mini de Lavazza est compacte et élégante, idéale pour les petits espaces. Elle utilise les capsules Lavazza Firma, offrant un espresso italien authentique à chaque tasse.
+      </p>
+      <div class="features-list">
+        <div class="feature-item"><div class="feature-dot"></div><span>Compacte</span></div>
+        <div class="feature-item"><div class="feature-dot"></div><span>Design élégant</span></div>
+        <div class="feature-item"><div class="feature-dot"></div><span>Espresso authentique</span></div>
+        <div class="feature-item"><div class="feature-dot"></div><span>Facile d'utilisation</span></div>
+      </div>
+      <img src="" class="detail-image" alt="">
+    </div>
+
+    <div class="machine-detail" id="detail-nespresso">
+      <h2 class="detail-title">Firma Inovy Compact Lavazza</h2>
+      <p class="detail-description">
+        La Firma Inovy Compact de Lavazza offre une performance professionnelle dans un format réduit. Elle est parfaite pour les bureaux ou les petits espaces.
+      </p>
+      <div class="features-list">
+        <div class="feature-item"><div class="feature-dot"></div><span>Performance pro</span></div>
+        <div class="feature-item"><div class="feature-dot"></div><span>Format compact</span></div>
+        <div class="feature-item"><div class="feature-dot"></div><span>Qualité premium</span></div>
+        <div class="feature-item"><div class="feature-dot"></div><span>Technologie avancée</span></div>
+      </div>
+      <img src="" class="detail-image" alt="">
+    </div>
+
+    <div class="machine-detail" id="detail-lavazza">
+      <h2 class="detail-title">Firma Inovy Lavazza</h2>
+      <p class="detail-description">
+        La Firma Inovy de Lavazza est conçue pour les environnements professionnels exigeants. Elle combine une grande capacité avec une technologie avancée pour offrir une expérience café optimale.
+      </p>
+      <div class="features-list">
+        <div class="feature-item"><div class="feature-dot"></div><span>Grande capacité</span></div>
+        <div class="feature-item"><div class="feature-dot"></div><span>Usage professionnel</span></div>
+        <div class="feature-item"><div class="feature-dot"></div><span>Technologie de pointe</span></div>
+        <div class="feature-item"><div class="feature-dot"></div><span>Durabilité</span></div>
+      </div>
+      <img src="" class="detail-image" alt="">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand"><span class="footer-brand-text">DAT Café</span></div>
+      <p class="footer-description">Votre partenaire pour une expérience café exceptionnelle</p>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Mentions légales</a>
+        <a href="#" class="footer-link">Politique de confidentialité</a>
+        <a href="#" class="footer-link">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Toggle menu hamburger (accessible)
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    toggleBtn.addEventListener('click', () => {
+      const expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+      toggleBtn.setAttribute('aria-expanded', String(!expanded));
+      navMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // showDetails keeps existing behaviour (toggle active class)
+    function showDetails(id) {
+      const detailsSections = document.querySelectorAll('.machine-detail');
+      detailsSections.forEach(section => {
+        if (section.id === id) section.classList.add('active');
+        else section.classList.remove('active');
+      });
+    }
+
+    // Make card clickable: copy image to details, open detail, scroll, close menu if open
+    document.querySelectorAll('.machine-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        // avoid firing when clicking a link inside nav (not relevant here) but keep safe
+        const targetId = card.dataset.target;
+        if (!targetId) return;
+
+        // copy image src/alt into related detail-image
+        const cardImg = card.querySelector('.machine-image');
+        const detailSection = document.getElementById(targetId);
+        if (detailSection) {
+          const detailImg = detailSection.querySelector('.detail-image');
+          if (detailImg && cardImg) {
+            detailImg.src = cardImg.src;
+            detailImg.alt = cardImg.alt || '';
+          }
+
+          // open detail & scroll to it
+          showDetails(targetId);
+          detailSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // if mobile menu open, close it
+        if (navMenu.classList.contains('active')) {
+          navMenu.classList.remove('active');
+          toggleBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

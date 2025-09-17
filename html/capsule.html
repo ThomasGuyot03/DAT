@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGS04MDMHT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VGS04MDMHT');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capsules de Café | DAT Café</title>
+    <link rel="icon" href="/Photo/Logo DAT.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Découvrez la gamme complète de capsules de café Lavazza chez DAT Café : espresso, lungo, décaféiné. Arômes riches, intensité variée, origine sélectionnée.">
+    <meta name="keywords" content="capsules café, café Lavazza, espresso, lungo, décaféiné, DAT Café">
+    <meta name="author" content="DAT Café">
+    
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --secondary: #6b7280;
+            --accent: #008ADE;
+            --accent-hover: #0066b3;
+            --surface: #ffffff;
+            --surface-secondary: #f8fafc;
+            --border: #e2e8f0;
+            --text-primary: #0f172a;
+            --text-secondary: #64748b;
+            --text-muted: #94a3b8;
+            --success: #10b981;
+            --error: #ef4444;
+            --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --gradient: linear-gradient(135deg, #008ADE 0%, #0066b3 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--surface);
+            overflow-x: hidden;
+        }
+
+        /* Navigation moderne */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: -0.025em;
+        }
+
+        .logo:hover {
+            color: var(--accent);
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .menu-icon:hover {
+            background: var(--surface-secondary);
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .navbar a {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: var(--accent);
+            background: rgba(0, 138, 222, 0.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+            background: var(--gradient);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop') center/cover;
+            opacity: 0.1;
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Capsules Container */
+        .capsules-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            position: relative;
+        }
+
+        .capsules-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .capsules-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .capsules-header p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Navigation des capsules */
+        .capsule-nav {
+            position: fixed;
+            left: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            padding: 1rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+        }
+
+        .capsule-nav-item {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+        }
+
+        .capsule-nav-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .capsule-nav-item.active {
+            border-color: var(--accent);
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 138, 222, 0.3);
+        }
+
+        .capsule-nav-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contenu principal */
+        .capsule-display {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            min-height: 600px;
+            transition: all 0.6s ease;
+        }
+
+        .capsule-visual {
+            text-align: center;
+            position: relative;
+        }
+
+        .capsule-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: var(--shadow-xl);
+            margin-bottom: 2rem;
+            transition: all 0.5s ease;
+        }
+
+        .capsule-box {
+            max-width: 400px;
+            margin: 0 auto;
+            transition: all 0.5s ease;
+        }
+
+        .capsule-box img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .capsule-info {
+            padding: 2rem;
+        }
+
+        .capsule-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .capsule-description {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .capsule-details {
+            background: var(--surface-secondary);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+        }
+
+        .capsule-details h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .detail-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 1rem;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .capsule-quantity {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--accent);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            width: fit-content;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Navigation controls */
+        .nav-controls {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            gap: 1rem;
+            z-index: 100;
+        }
+
+        .nav-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .nav-btn:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        /* Footer moderne */
+        .pg-footer {
+            margin-top: 4rem;
+        }
+
+        .footer {
+            background: var(--primary);
+            color: white;
+            position: relative;
+        }
+
+        .footer-wave-svg {
+            background-color: transparent;
+            display: block;
+            height: 60px;
+            position: relative;
+            top: -1px;
+            width: 100%;
+        }
+
+        .footer-wave-path {
+            fill: var(--primary);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-content-column h4 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .footer-menu-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .footer-menu-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-menu-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-menu-list a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-menu-list a:hover {
+            color: white;
+        }
+
+        .footer-call-to-action-button {
+            background: var(--accent);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+        }
+
+        .footer-call-to-action-button:hover {
+            background: var(--accent-hover);
+            transform: translateY(-1px);
+        }
+
+        .footer-call-to-action-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-call-to-action-link-wrapper a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer-copyright {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 1.5rem 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-copyright-text {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+
+        .footer-copyright-link {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .navbar {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: 1rem;
+                border-top: 1px solid var(--border);
+                box-shadow: var(--shadow-lg);
+            }
+
+            .navbar.active {
+                display: flex;
+            }
+
+            .navbar a {
+                width: 100%;
+                text-align: center;
+                padding: 1rem;
+                margin: 0;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .capsule-nav {
+                position: static;
+                transform: none;
+                flex-direction: row;
+                justify-content: center;
+                margin-bottom: 2rem;
+                left: auto;
+                top: auto;
+                overflow-x: auto;
+                padding: 1rem 2rem;
+            }
+
+            .capsule-display {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .nav-controls {
+                bottom: 1rem;
+                right: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 6rem 1rem 3rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .capsules-container {
+                padding: 3rem 1rem;
+            }
+
+            .capsules-header h2 {
+                font-size: 2rem;
+            }
+
+            .capsule-image {
+                width: 250px;
+                height: 250px;
+            }
+
+            .capsule-title {
+                font-size: 2rem;
+            }
+
+            .capsule-info {
+                padding: 1rem;
+            }
+
+            .capsule-details {
+                padding: 1.5rem;
+            }
+
+            .footer-content {
+                padding: 2rem 1rem;
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 1rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .hero {
+                padding: 5rem 1rem 2rem;
+            }
+
+            .capsule-nav {
+                padding: 0.5rem 1rem;
+                gap: 0.5rem;
+            }
+
+            .capsule-nav-item {
+                width: 50px;
+                height: 50px;
+            }
+
+            .capsule-image {
+                width: 200px;
+                height: 200px;
+            }
+
+            .nav-controls {
+                bottom: 0.5rem;
+                right: 0.5rem;
+            }
+
+            .nav-btn {
+                width: 45px;
+                height: 45px;
+                font-size: 1rem;
+            }
+        }
+
+        /* Scrollbar personnalisée */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--surface-secondary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">        
+        <a href="../index.html" class="logo">D . A . T</a>    
+        <div class="menu-icon" id="menu-icon">
+            ☰
+        </div>
+        
+        <nav class="navbar" id="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#section-machine">Nos Machines</a>
+            <a href="../index.html#section-premiere-partie">À Propos</a>
+            <a href="./nosmarques.html">Blog</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">☕ Gamme Premium</div>
+            <h1>Capsules de Café Lavazza</h1>
+            <p>Découvrez notre sélection de capsules de café Lavazza, des arômes authentiques pour une expérience café d'exception.</p>
+        </div>
+    </section>
+
+    <!-- Capsules Container -->
+    <div class="capsules-container">
+        <div class="capsules-header fade-in">
+            <h2>Notre Gamme de Capsules</h2>
+            <p>Explorez nos différentes variétés de capsules, chacune avec ses propres caractéristiques et saveurs uniques.</p>
+        </div>
+
+        <!-- Navigation des capsules -->
+        <div class="capsule-nav" id="capsule-nav"></div>
+
+        <!-- Affichage principal -->
+        <div class="capsule-display" id="capsule-display">
+            <div class="capsule-visual">
+                <img class="capsule-image fade-in" id="capsule-img" src="" alt="Capsule café">
+                <div class="capsule-box fade-in" id="capsule-box">
+                    <img src="" alt="Boîte de café Lavazza" id="box-img">
+                </div>
+            </div>
+
+            <div class="capsule-info">
+                <h2 class="capsule-title fade-in" id="capsule-title"></h2>
+                <p class="capsule-description fade-in" id="capsule-desc"></p>
+                
+                <div class="capsule-details fade-in" id="capsule-details">
+                    <h3>Caractéristiques</h3>
+                    <div class="detail-item">
+                        <svg class="detail-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <span id="capsule-intensity"></span>
+                    </div>
+                    <div class="detail-item">
+                        <svg class="detail-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span id="capsule-origin"></span>
+                    </div>
+                    <div class="detail-item">
+                        <svg class="detail-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span id="capsule-advice"></span>
+                    </div>
+                    
+                    <div class="capsule-quantity" id="capsule-quantity">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        <span id="capsule-qty-text"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contrôles de navigation -->
+        <div class="nav-controls">
+            <button class="nav-btn" id="prev-btn">‹</button>
+            <button class="nav-btn" id="next-btn">›</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="pg-footer">
+        <footer class="footer" id="footer">
+          <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+            <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+          </svg>
+          <div class="footer-content">
+            <div class="footer-content-column">
+              <div class="footer-logo">
+                <a class="footer-logo-link" href="#">
+                  <h4>DAT.</h4>
+                </a>
+              </div> 
+            </div>
+            <div class="footer-content-column">
+              <div class="footer-menu">
+                  <h2 class="footer-menu-name">Legal</h2>
+                  <ul class="footer-menu-list">
+                      <li><a href="mentions-legales.html">Mentions légales</a></li>
+                      <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+                  </ul>
+              </div>
+            </div>
+            
+            <div class="footer-content-column">
+              <div class="footer-menu">
+                <h2 class="footer-menu-name">Liens Rapides</h2>
+                <ul class="footer-menu-list">
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../index.html#section-machine">Nos Machines</a></li>
+                  <li><a href="../index.html#section-premiere-partie">À propos</a></li>
+                  <li><a href="./nosmarques.html">Blog</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="footer-content-column">
+              <div class="footer-call-to-action">
+                <a class="footer-call-to-action-button" href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Revenir en haut</a>
+              </div>
+              <div class="footer-call-to-action">
+                <h2 class="footer-call-to-action-title">Nous appeler</h2>
+                <p class="footer-call-to-action-link-wrapper">
+                  <a class="footer-call-to-action-link" href="tel:0534480059">05.34.48.00.59</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="footer-copyright">
+            <div class="footer-copyright-wrapper">
+              <p class="footer-copyright-text">
+                <a class="footer-copyright-link" href="#">©2024 - 2025 | Tous droits réservés.</a>
+              </p>
+            </div>
+          </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Menu mobile
+            const menuIcon = document.getElementById('menu-icon');
+            const navbar = document.getElementById('navbar');
+
+            if (menuIcon && navbar) {
+                menuIcon.addEventListener('click', function () {
+                    navbar.classList.toggle('active');
+                });
+            }
+
+            // Données des capsules
+            const capsules = [
+                {
+                    title: "Espresso Vivace",
+                    desc: "Un assemblage corsé où l'excellence rencontre la durabilité. La saveur intense des origines brésiliennes avec les parfums et l'arôme de l'Amérique du Sud.",
+                    img: "/Photo/48-capsules-espresso-vivace (1).jpg",
+                    boxImg: "/Photo/boite-espresso-vivace.png",
+                    quantity: "48 capsules",
+                    intensity: "Intensité : 7/13",
+                    origin: "Origine : Brésil et Amérique du Sud",
+                    advice: "Notes aromatiques: Fleurs, fruits secs"
+                },
+                {
+                    title: "Lungo Vivace",
+                    desc: "La saveur intense des origines brésiliennes avec les parfums et l'arôme de l'Amérique du Sud. Un café long aux notes florales délicates.",
+                    img: "/Photo/48-capsules-espresso-vivace (2).jpg",
+                    boxImg: "/Photo/boite-espresso-vivace.png",
+                    quantity: "48 capsules",
+                    intensity: "Intensité : 7/13",
+                    origin: "Origine : Amérique du Sud",
+                    advice: "Notes aromatiques: Fleurs, fruits"
+                },
+                {
+                    title: "Lungo Aromatico",
+                    desc: "Un goût persistant et parfumé, avec des notes de fruits secs et un arrière-goût sucré. Parfait pour les amateurs de café long.",
+                    img: "/Photo/48-capsules-lungo-aromatico.jpg",
+                    boxImg: "/Photo/boite-lungo-aromatico.png",
+                    quantity: "48 capsules",
+                    intensity: "Intensité : 7/13",
+                    origin: "Origine : Amérique du Sud et Asie",
+                    advice: "Notes aromatiques: Figues, caramel"
+                },
+                {
+                    title: "Espresso Aromatico",
+                    desc: "Un assemblage aromatique extrêmement complet avec des notes de fruits secs et de caramel. L'équilibre parfait entre force et douceur.",
+                    img: "/Photo/48-capsules-espresso-aromatico.jpg",
+                    boxImg: "/Photo/boite-espresso-aromatico.png",
+                    quantity: "48 capsules",
+                    intensity: "Intensité : 9/13",
+                    origin: "Origine : Brésil, Inde",
+                    advice: "Notes aromatiques: Fruits secs, Caramel"
+                },
+                {
+                    title: "Lungo Corposo",
+                    desc: "Dense, intense et rond, une torréfaction moyenne qui révèle des arômes de noisettes et de miel. Un lungo riche en caractère.",
+                    img: "/Photo/48-capsules-lungo-corposo.jpg",
+                    boxImg: "/Photo/boite-lungo-corposo.png",
+                    quantity: "48 capsules",
+                    intensity: "Intensité : 8/13",
+                    origin: "Origine : Brésil, Inde",
+                    advice: "Notes aromatiques: Noisettes, Miel"
+                },
+                {
+                    title: "Espresso Corposo",
+                    desc: "Un assemblage riche et corsé aux notes de noisettes et de miel. La puissance et l'élégance réunies dans une seule capsule.",
+                    img: "/Photo/48-capsules-espresso-corposo.jpg",
+                    boxImg: "/Photo/boite-espresso-corposo.png",
+                    quantity: "48 capsules",
+                    intensity: "Intensité : 8/13",
+                    origin: "Origine : Amérique du Sud, Inde et Asie du Sud-Est",
+                    advice: "Notes aromatiques: Noisettes, Miel"
+                },
+                {
+                    title: "Espresso Gustoso",
+                    desc: "Une sélection rigoureuse de cafés raffinés aux notes de fruits secs et de chocolat au lait. L'expression du savoir-faire italien.",
+                    img: "/Photo/48-capsules-espresso-gustoso.jpg",
+                    boxImg: "/Photo/boite-espresso-gustoso.png",
+                    quantity: "48 capsules",
+                    intensity: "Intensité : 9/13",
+                    origin: "Origine : Amérique du Sud, Inde et Asie du Sud-Est",
+                    advice: "Notes aromatiques: Fruits secs, Chocolat au lait"
+                },
+                {
+                    title: "Espresso Decaffeinato",
+                    desc: "Décaféiné 100% Arabica avec un arôme plein et doux. Toute la saveur du café sans la caféine, parfait à tout moment de la journée.",
+                    img: "/Photo/24-capsules-espresso-decafeine.jpg",
+                    boxImg: "/Photo/boite-espresso-deca.png",
+                    quantity: "24 capsules",
+                    intensity: "Intensité : 6/13",
+                    origin: "Origine : Brésil",
+                    advice: "Notes aromatiques : Chocolat au lait, Vanille"
+                }
+            ];
+
+            let currentIndex = 0;
+            let isTransitioning = false;
+
+            // Éléments DOM
+            const capsuleImg = document.getElementById('capsule-img');
+            const capsuleTitle = document.getElementById('capsule-title');
+            const capsuleDesc = document.getElementById('capsule-desc');
+            const boxImg = document.getElementById('box-img');
+            const capsuleIntensity = document.getElementById('capsule-intensity');
+            const capsuleOrigin = document.getElementById('capsule-origin');
+            const capsuleAdvice = document.getElementById('capsule-advice');
+            const capsuleQtyText = document.getElementById('capsule-qty-text');
+            const navContainer = document.getElementById('capsule-nav');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+
+            // Créer la navigation des miniatures
+            function createNavigation() {
+                capsules.forEach((capsule, index) => {
+                    const navItem = document.createElement('div');
+                    navItem.classList.add('capsule-nav-item');
+                    if (index === 0) navItem.classList.add('active');
+
+                    const img = document.createElement('img');
+                    img.src = capsule.img;
+                    img.alt = `Miniature ${capsule.title}`;
+                    navItem.appendChild(img);
+
+                    navItem.addEventListener('click', () => {
+                        if (!isTransitioning && index !== currentIndex) {
+                            showCapsule(index);
+                        }
+                    });
+
+                    navContainer.appendChild(navItem);
+                });
+            }
+
+            // Afficher une capsule
+            function showCapsule(index) {
+                if (isTransitioning) return;
+                
+                isTransitioning = true;
+                currentIndex = index;
+                const capsule = capsules[index];
+
+                // Animation de sortie
+                const elements = document.querySelectorAll('.fade-in');
+                elements.forEach(el => {
+                    el.style.opacity = '0';
+                    el.style.transform = 'translateY(30px)';
+                });
+
+                setTimeout(() => {
+                    // Mise à jour du contenu
+                    capsuleImg.src = capsule.img;
+                    capsuleImg.alt = capsule.title;
+                    capsuleTitle.textContent = capsule.title;
+                    capsuleDesc.textContent = capsule.desc;
+                    boxImg.src = capsule.boxImg;
+                    boxImg.alt = `Boîte ${capsule.title}`;
+                    capsuleIntensity.textContent = capsule.intensity;
+                    capsuleOrigin.textContent = capsule.origin;
+                    capsuleAdvice.textContent = capsule.advice;
+                    capsuleQtyText.textContent = capsule.quantity;
+
+                    // Animation d'entrée
+                    setTimeout(() => {
+                        elements.forEach((el, i) => {
+                            setTimeout(() => {
+                                el.style.opacity = '1';
+                                el.style.transform = 'translateY(0)';
+                            }, i * 100);
+                        });
+                        
+                        setTimeout(() => {
+                            isTransitioning = false;
+                        }, 600);
+                    }, 100);
+
+                    // Mise à jour de la navigation
+                    updateNavigation();
+                }, 300);
+            }
+
+            // Mettre à jour la navigation active
+            function updateNavigation() {
+                const navItems = document.querySelectorAll('.capsule-nav-item');
+                navItems.forEach((item, index) => {
+                    item.classList.toggle('active', index === currentIndex);
+                });
+            }
+
+            // Navigation avec les boutons
+            prevBtn.addEventListener('click', () => {
+                if (!isTransitioning) {
+                    const newIndex = currentIndex === 0 ? capsules.length - 1 : currentIndex - 1;
+                    showCapsule(newIndex);
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (!isTransitioning) {
+                    const newIndex = currentIndex === capsules.length - 1 ? 0 : currentIndex + 1;
+                    showCapsule(newIndex);
+                }
+            });
+
+            // Navigation avec les touches du clavier
+            document.addEventListener('keydown', (e) => {
+                if (isTransitioning) return;
+                
+                if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                    const newIndex = currentIndex === 0 ? capsules.length - 1 : currentIndex - 1;
+                    showCapsule(newIndex);
+                } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                    const newIndex = currentIndex === capsules.length - 1 ? 0 : currentIndex + 1;
+                    showCapsule(newIndex);
+                }
+            });
+
+            // Animation au scroll pour les autres éléments
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.capsules-header .fade-in').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Effet navbar au scroll
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('.header');
+                if (window.scrollY > 100) {
+                    header.style.background = 'rgba(255, 255, 255, 0.95)';
+                    header.style.backdropFilter = 'blur(20px)';
+                } else {
+                    header.style.background = 'rgba(255, 255, 255, 0.9)';
+                    header.style.backdropFilter = 'blur(20px)';
+                }
+            });
+
+            // Initialisation
+            createNavigation();
+            showCapsule(0);
+        });
+    </script>
+</body>
+</html>
