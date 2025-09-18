@@ -1,145 +1,798 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGS04MDMHT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VGS04MDMHT');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Consultez les mentions légales de DAT Café, distributeur automatique à Toulouse. Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation du site.">
-    <meta name="keywords" content="mentions légales, distributeur automatique, Toulouse, DAT Café, informations légales">
+    <title>Politique de Confidentialité | DAT Café</title>
+    <link rel="icon" href="/Photo/Logo DAT.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Consultez la politique de confidentialité de DAT Café. Découvrez comment nous collectons, utilisons et protégeons vos données personnelles conformément au RGPD.">
+    <meta name="keywords" content="politique confidentialité, RGPD, données personnelles, DAT Café, protection données">
     <meta name="author" content="DAT Café">
     <meta name="robots" content="index, follow">
 
-    <title>Politique de Confidentialité | DAT Café</title>
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --secondary: #6b7280;
+            --accent: #008ADE;
+            --accent-hover: #0066b3;
+            --surface: #ffffff;
+            --surface-secondary: #f8fafc;
+            --border: #e2e8f0;
+            --text-primary: #0f172a;
+            --text-secondary: #64748b;
+            --text-muted: #94a3b8;
+            --success: #10b981;
+            --error: #ef4444;
+            --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --gradient: linear-gradient(135deg, #008ADE 0%, #0066b3 100%);
+        }
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/politique-confidentialite.css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <link rel="icon" href="/Photo/Logo DAT.png" type="image/x-icon">
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--surface);
+            overflow-x: hidden;
+        }
+
+        /* Navigation moderne */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: -0.025em;
+        }
+
+        .logo:hover {
+            color: var(--accent);
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .menu-icon:hover {
+            background: var(--surface-secondary);
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .navbar a {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: var(--accent);
+            background: rgba(0, 138, 222, 0.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+            background: var(--gradient);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop') center/cover;
+            opacity: 0.1;
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 900px;
+            margin: -3rem auto 4rem;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .content-card {
+            background: var(--surface);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--border);
+        }
+
+        .intro {
+            background: var(--surface-secondary);
+            padding: 2rem;
+            border-radius: 16px;
+            border-left: 4px solid var(--accent);
+            margin-bottom: 2rem;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .content-card h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .content-card h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .content-card h2::before {
+            content: "🔒";
+            font-size: 1.2rem;
+        }
+
+        .content-card h2:nth-of-type(2)::before { content: "📊"; }
+        .content-card h2:nth-of-type(3)::before { content: "🔄"; }
+        .content-card h2:nth-of-type(4)::before { content: "🤝"; }
+        .content-card h2:nth-of-type(5)::before { content: "🛡️"; }
+        .content-card h2:nth-of-type(6)::before { content: "🍪"; }
+        .content-card h2:nth-of-type(7)::before { content: "📝"; }
+        .content-card h2:nth-of-type(8)::before { content: "📞"; }
+
+        .content-card p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .content-card p strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .content-card a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .content-card a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        .content-card ul {
+            margin: 1rem 0 1.5rem 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .content-card li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        .content-card li::marker {
+            color: var(--accent);
+        }
+
+        /* Info Cards */
+        .info-section {
+            padding: 4rem 2rem;
+            background: var(--surface-secondary);
+        }
+
+        .info-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .info-card {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .info-card-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .info-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .info-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Footer moderne */
+        .pg-footer {
+            margin-top: 4rem;
+        }
+
+        .footer {
+            background: var(--primary);
+            color: white;
+            position: relative;
+        }
+
+        .footer-wave-svg {
+            background-color: transparent;
+            display: block;
+            height: 60px;
+            position: relative;
+            top: -1px;
+            width: 100%;
+        }
+
+        .footer-wave-path {
+            fill: var(--primary);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-content-column h4 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .footer-menu-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .footer-menu-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-menu-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-menu-list a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-menu-list a:hover {
+            color: white;
+        }
+
+        .footer-call-to-action-button {
+            background: var(--accent);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+        }
+
+        .footer-call-to-action-button:hover {
+            background: var(--accent-hover);
+            transform: translateY(-1px);
+        }
+
+        .footer-call-to-action-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-call-to-action-link-wrapper a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer-copyright {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 1.5rem 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-copyright-text {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+
+        .footer-copyright-link {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+
+        /* Animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .navbar {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: 1rem;
+                border-top: 1px solid var(--border);
+                box-shadow: var(--shadow-lg);
+            }
+
+            .navbar.active {
+                display: flex;
+            }
+
+            .navbar a {
+                width: 100%;
+                text-align: center;
+                padding: 1rem;
+                margin: 0;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 6rem 1rem 3rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .main-content {
+                margin: -2rem 1rem 3rem;
+            }
+
+            .content-card {
+                padding: 2rem;
+            }
+
+            .info-section {
+                padding: 3rem 1rem;
+            }
+
+            .footer-content {
+                padding: 2rem 1rem;
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 1rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .hero {
+                padding: 5rem 1rem 2rem;
+            }
+
+            .content-card {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Scrollbar personnalisée */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--surface-secondary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+    </style>
 </head>
 
 <body>
-
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="../index.html">D.A.T</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="../index.html#section-machine">Nos Machines</a></li>
-                <li><a href="../html/contact.html">Contact</a></li>
-            </ul>
-            <!-- Menu hamburger -->
-            <div class="menu-toggle" id="menuToggle">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+    <header class="header">        
+        <a href="index.html" class="logo">D . A . T</a>    
+        <div class="menu-icon" id="menu-icon">
+            ☰
+        </div>
+        
+        <nav class="navbar" id="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#section-machine">Nos Machines</a>
+            <a href="../index.html#section-premiere-partie">À Propos</a>
+            <a href="./nosmarques.html">Blog</a>
+            <a href="./contact.html">Contact</a>
         </nav>
     </header>
 
-    <!-- Script pour le menu hamburger -->
-    <script>
-        const menuToggle = document.getElementById('menuToggle');
-        const navLinks = document.querySelector('.nav-links');
-
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-        });
-    </script>
-
-<main class="politique-confidentialite">
-    <section class="container">
-        <h1>Politique de Confidentialité</h1>
-
-        <section class="intro">
-            <p>Votre vie privée est importante pour nous. Cette politique de confidentialité explique quelles informations nous collectons, comment nous les utilisons et les protections que nous mettons en place pour garantir la sécurité de vos données personnelles.</p>
-        </section>
-
-        <section class="collecte-infos">
-            <h2>1. Collecte des informations</h2>
-            <p>Nous collectons différentes informations lorsque vous utilisez notre site, y compris vos informations personnelles lorsque vous vous inscrivez, vous connectez ou effectuez un achat.</p>
-            <ul>
-                <li>Nom et prénom</li>
-                <li>Adresse e-mail</li>
-                <li>Informations de paiement</li>
-                <li>Adresse IP</li>
-            </ul>
-        </section>
-
-        <section class="utilisation-infos">
-            <h2>2. Utilisation des informations</h2>
-            <p>Les informations que nous collectons sont utilisées pour :</p>
-            <ul>
-                <li>Traiter les commandes et fournir les services demandés.</li>
-                <li>Améliorer l’expérience utilisateur sur notre site.</li>
-                <li>Envoyer des newsletters ou des mises à jour si vous vous êtes inscrit à notre liste de diffusion.</li>
-            </ul>
-        </section>
-
-        <section class="partage-infos">
-            <h2>3. Partage des informations</h2>
-            <p>Nous ne vendons, échangeons ou louons pas vos informations personnelles à des tiers. Nous pouvons toutefois partager vos données avec :</p>
-            <ul>
-                <li>Des prestataires de services tiers pour faciliter notre service.</li>
-                <li>Des autorités légales en cas de demande judiciaire ou d'enquête.</li>
-            </ul>
-        </section>
-
-        <section class="protection-infos">
-            <h2>4. Protection des informations</h2>
-            <p>Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos informations personnelles contre toute perte, vol ou utilisation non autorisée. Cela inclut l’utilisation de technologies de cryptage pour protéger les données sensibles pendant leur transmission.</p>
-        </section>
-
-        <section class="cookies">
-            <h2>5. Utilisation des cookies</h2>
-            <p>Notre site utilise des cookies pour améliorer votre expérience utilisateur. Les cookies nous permettent de personnaliser votre visite et de mieux comprendre vos préférences.</p>
-        </section>
-
-        <section class="modifications">
-            <h2>6. Modifications de cette politique</h2>
-            <p>Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Toute modification sera publiée sur cette page avec la date de la dernière mise à jour.</p>
-        </section>
-
-        <section class="contact">
-            <h2>7. Nous contacter</h2>
-            <p>Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité, n’hésitez pas à nous contacter à l’adresse suivante :</p>
-            <p>Email : <a href="mailto:dat.cafe@orange.fr">dat.cafe@orange.fr</a></p>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🔒 Protection des Données</div>
+            <h1>Politique de Confidentialité</h1>
+            <p>Votre vie privée est importante pour nous. Découvrez comment nous collectons, utilisons et protégeons vos données personnelles.</p>
+        </div>
     </section>
-</main>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="content-card animate-on-scroll">
+            <div class="intro">
+                <p>Votre vie privée est importante pour nous. Cette politique de confidentialité explique quelles informations nous collectons, comment nous les utilisons et les protections que nous mettons en place pour garantir la sécurité de vos données personnelles conformément au Règlement Général sur la Protection des Données (RGPD).</p>
+            </div>
+
+            <h2>Collecte des informations</h2>
+            <p>Nous collectons différentes informations lorsque vous utilisez notre site, y compris vos informations personnelles lorsque vous vous inscrivez, vous connectez ou effectuez une demande de devis.</p>
+            <ul>
+                <li><strong>Nom et prénom</strong> - Pour personnaliser nos services</li>
+                <li><strong>Adresse e-mail</strong> - Pour vous contacter et envoyer des informations</li>
+                <li><strong>Informations d'entreprise</strong> - Pour adapter nos recommandations</li>
+                <li><strong>Adresse IP</strong> - Pour des raisons de sécurité et d'analyse</li>
+                <li><strong>Données de navigation</strong> - Pour améliorer l'expérience utilisateur</li>
+            </ul>
+
+            <h2>Utilisation des informations</h2>
+            <p>Les informations que nous collectons sont utilisées exclusivement pour :</p>
+            <ul>
+                <li><strong>Traiter vos demandes</strong> et fournir les services demandés</li>
+                <li><strong>Améliorer l'expérience utilisateur</strong> sur notre site web</li>
+                <li><strong>Vous contacter</strong> concernant nos services et vos demandes</li>
+                <li><strong>Analyser l'utilisation</strong> de notre site pour l'optimiser</li>
+                <li><strong>Respecter nos obligations légales</strong> et réglementaires</li>
+            </ul>
+
+            <h2>Partage des informations</h2>
+            <p>Nous ne vendons, échangeons ou louons <strong>jamais</strong> vos informations personnelles à des tiers. Nous pouvons toutefois partager vos données avec :</p>
+            <ul>
+                <li><strong>Prestataires de services</strong> - Uniquement pour faciliter notre service (hébergement, email)</li>
+                <li><strong>Autorités légales</strong> - En cas de demande judiciaire ou d'enquête officielle</li>
+                <li><strong>Partenaires techniques</strong> - Pour la maintenance et la sécurité du site</li>
+            </ul>
+            <p>Tous nos partenaires sont tenus par des accords de confidentialité stricts.</p>
+
+            <h2>Protection des informations</h2>
+            <p>Nous mettons en œuvre des mesures de sécurité robustes pour protéger vos informations personnelles :</p>
+            <ul>
+                <li><strong>Chiffrement SSL/TLS</strong> - Pour sécuriser la transmission des données</li>
+                <li><strong>Accès restreint</strong> - Seul le personnel autorisé peut accéder aux données</li>
+                <li><strong>Sauvegardes sécurisées</strong> - Stockage redondant et chiffré</li>
+                <li><strong>Surveillance continue</strong> - Monitoring 24/7 contre les intrusions</li>
+                <li><strong>Mises à jour régulières</strong> - Systèmes toujours à jour</li>
+            </ul>
+
+            <h2>Utilisation des cookies</h2>
+            <p>Notre site utilise des cookies pour améliorer votre expérience utilisateur :</p>
+            <ul>
+                <li><strong>Cookies essentiels</strong> - Nécessaires au fonctionnement du site</li>
+                <li><strong>Cookies d'analyse</strong> - Pour comprendre l'utilisation du site (Google Analytics)</li>
+                <li><strong>Cookies de préférences</strong> - Pour mémoriser vos choix</li>
+            </ul>
+            <p>Vous pouvez gérer vos préférences de cookies dans les paramètres de votre navigateur.</p>
+
+            <h2>Vos droits RGPD</h2>
+            <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+            <ul>
+                <li><strong>Droit d'accès</strong> - Connaître les données que nous détenons sur vous</li>
+                <li><strong>Droit de rectification</strong> - Corriger des données inexactes</li>
+                <li><strong>Droit à l'effacement</strong> - Demander la suppression de vos données</li>
+                <li><strong>Droit à la portabilité</strong> - Récupérer vos données dans un format lisible</li>
+                <li><strong>Droit d'opposition</strong> - Vous opposer au traitement de vos données</li>
+                <li><strong>Droit de limitation</strong> - Limiter l'utilisation de vos données</li>
+            </ul>
+
+            <h2>Modifications de cette politique</h2>
+            <p>Nous pouvons mettre à jour cette politique de confidentialité de temps à autre pour refléter les changements dans nos pratiques ou pour des raisons légales. Toute modification sera publiée sur cette page avec la date de la dernière mise à jour. Nous vous encourageons à consulter régulièrement cette page.</p>
+            <p><strong>Dernière mise à jour :</strong> Janvier 2025</p>
+
+            <h2>Nous contacter</h2>
+            <p>Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité, ou si vous souhaitez exercer vos droits, n'hésitez pas à nous contacter :</p>
+            <p><strong>Email :</strong> <a href="mailto:dat.cafe@orange.fr">dat.cafe@orange.fr</a></p>
+            <p><strong>Téléphone :</strong> <a href="tel:+33534480059">05.34.48.00.59</a></p>
+            <p><strong>Adresse :</strong> 2 Av Marcel Langer, 31600 Seysses, France</p>
+            <p>Nous nous engageons à répondre à toute demande dans un délai maximum de 30 jours.</p>
+        </div>
+    </div>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="info-container">
+            <div class="info-card animate-on-scroll">
+                <div class="info-card-icon">🔐</div>
+                <h3>Sécurité Maximale</h3>
+                <p>Vos données sont protégées par des technologies de chiffrement avancées</p>
+            </div>
+            <div class="info-card animate-on-scroll">
+                <div class="info-card-icon">⚖️</div>
+                <h3>Conformité RGPD</h3>
+                <p>Nous respectons scrupuleusement le règlement européen sur la protection des données</p>
+            </div>
+            <div class="info-card animate-on-scroll">
+                <div class="info-card-icon">🤝</div>
+                <h3>Transparence Totale</h3>
+                <p>Vous avez un contrôle complet sur vos données personnelles</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section-about">
-                <h3>À propos</h3>
-                <p>Nous proposons des distributeurs automatiques et des fontaines à eau de haute qualité à Toulouse et ses environs.</p>
+    <div class="pg-footer">
+        <footer class="footer" id="footer">
+          <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+            <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+          </svg>
+          <div class="footer-content">
+            <div class="footer-content-column">
+              <div class="footer-logo">
+                <a class="footer-logo-link" href="#">
+                  <h4>DAT.</h4>
+                </a>
+              </div> 
             </div>
-            <div class="footer-section-links">
-                <h3>Liens utiles</h3>
-                <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="../index.html#section-machine">Nos Produits</a></li>
-                    <li><a href="../html/contact.html">Contact</a></li>
-                    <li><a href="../html/mentions-legales.html">Mentions Légales</a></li>
+            <div class="footer-content-column">
+              <div class="footer-menu">
+                  <h2 class="footer-menu-name">Legal</h2>
+                  <ul class="footer-menu-list">
+                      <li><a href="mentions-legales.html">Mentions légales</a></li>
+                      <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+                  </ul>
+              </div>
+            </div>
+            
+            <div class="footer-content-column">
+              <div class="footer-menu">
+                <h2 class="footer-menu-name">Liens Rapides</h2>
+                <ul class="footer-menu-list">
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../index.html#section-machine">Nos Machines</a></li>
+                  <li><a href="../index.html#section-premiere-partie">À propos</a></li>
+                  <li><a href="./nosmarques.html">Blog</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
                 </ul>
+              </div>
             </div>
-            <div class="footer-section-contact">
-                <h3>Contact</h3>
-                <p>Email : <a href="mailto:dat.cafe@orange.fr">dat.cafe@orange.fr</a></p>
-                <p>Téléphone : <a href="tel:+33534480059">05.34.48.00.59</a></p>
-                <p>Adresse : 2 Av Marcel Langer, 31600 Seysses, France</p>
+            
+            <div class="footer-content-column">
+              <div class="footer-call-to-action">
+                <a class="footer-call-to-action-button" href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Revenir en haut</a>
+              </div>
+              <div class="footer-call-to-action">
+                <h2 class="footer-call-to-action-title">Nous appeler</h2>
+                <p class="footer-call-to-action-link-wrapper">
+                  <a class="footer-call-to-action-link" href="tel:0534480059">05.34.48.00.59</a>
+                </p>
+              </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2024 - 2025 datcafé.fr | Tous droits réservés |
-            <a href="https://www.webdevtoulouse.com/" target="_blank" rel="noopener noreferrer">Site réalisé par WebDevToulouse</a>
-        </div>
-    </footer>
+          </div>
+          
+          <div class="footer-copyright">
+            <div class="footer-copyright-wrapper">
+              <p class="footer-copyright-text">
+                <a class="footer-copyright-link" href="#">©2024 - 2025 | Tous droits réservés.</a>
+              </p>
+            </div>
+          </div>
+        </footer>
+    </div>
 
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Menu mobile
+            const menuIcon = document.getElementById('menu-icon');
+            const navbar = document.getElementById('navbar');
+
+            if (menuIcon && navbar) {
+                menuIcon.addEventListener('click', function () {
+                    navbar.classList.toggle('active');
+                });
+            }
+
+            // Animation au scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Effet navbar au scroll
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('.header');
+                if (window.scrollY > 100) {
+                    header.style.background = 'rgba(255, 255, 255, 0.95)';
+                    header.style.backdropFilter = 'blur(20px)';
+                } else {
+                    header.style.background = 'rgba(255, 255, 255, 0.9)';
+                    header.style.backdropFilter = 'blur(20px)';
+                }
+            });
+
+            // Navigation fluide
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
-
 </html>

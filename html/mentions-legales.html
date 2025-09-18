@@ -1,61 +1,548 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGS04MDMHT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VGS04MDMHT');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales | DAT Café</title>
+    <link rel="icon" href="/Photo/Logo DAT.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="description" content="Consultez les mentions légales de DAT Café, distributeur automatique à Toulouse. Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation du site.">
     <meta name="keywords" content="mentions légales, distributeur automatique, Toulouse, DAT Café, informations légales">
     <meta name="author" content="DAT Café">
     <meta name="robots" content="index, follow">
 
-    <title>Mentions Légales | DAT Café</title>
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --secondary: #6b7280;
+            --accent: #008ADE;
+            --accent-hover: #0066b3;
+            --surface: #ffffff;
+            --surface-secondary: #f8fafc;
+            --border: #e2e8f0;
+            --text-primary: #0f172a;
+            --text-secondary: #64748b;
+            --text-muted: #94a3b8;
+            --success: #10b981;
+            --error: #ef4444;
+            --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --gradient: linear-gradient(135deg, #008ADE 0%, #0066b3 100%);
+        }
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/mentions-legales.css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <link rel="icon" href="/Photo/Logo DAT.png" type="image/x-icon">
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--surface);
+            overflow-x: hidden;
+        }
+
+        /* Navigation moderne */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: -0.025em;
+        }
+
+        .logo:hover {
+            color: var(--accent);
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .menu-icon:hover {
+            background: var(--surface-secondary);
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .navbar a {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: var(--accent);
+            background: rgba(0, 138, 222, 0.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+            background: var(--gradient);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop') center/cover;
+            opacity: 0.1;
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 900px;
+            margin: -3rem auto 4rem;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .content-card {
+            background: var(--surface);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--border);
+        }
+
+        .content-card h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .content-card h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .content-card h2::before {
+            content: "📋";
+            font-size: 1.2rem;
+        }
+
+        .content-card p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .content-card p strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .content-card a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .content-card a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        /* Info Cards */
+        .info-section {
+            padding: 4rem 2rem;
+            background: var(--surface-secondary);
+        }
+
+        .info-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .info-card {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .info-card-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .info-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .info-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Footer moderne */
+        .pg-footer {
+            margin-top: 4rem;
+        }
+
+        .footer {
+            background: var(--primary);
+            color: white;
+            position: relative;
+        }
+
+        .footer-wave-svg {
+            background-color: transparent;
+            display: block;
+            height: 60px;
+            position: relative;
+            top: -1px;
+            width: 100%;
+        }
+
+        .footer-wave-path {
+            fill: var(--primary);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-content-column h4 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .footer-menu-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .footer-menu-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-menu-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-menu-list a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-menu-list a:hover {
+            color: white;
+        }
+
+        .footer-call-to-action-button {
+            background: var(--accent);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+        }
+
+        .footer-call-to-action-button:hover {
+            background: var(--accent-hover);
+            transform: translateY(-1px);
+        }
+
+        .footer-call-to-action-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-call-to-action-link-wrapper a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer-copyright {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 1.5rem 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-copyright-text {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+
+        .footer-copyright-link {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+
+        /* Animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .navbar {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: 1rem;
+                border-top: 1px solid var(--border);
+                box-shadow: var(--shadow-lg);
+            }
+
+            .navbar.active {
+                display: flex;
+            }
+
+            .navbar a {
+                width: 100%;
+                text-align: center;
+                padding: 1rem;
+                margin: 0;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 6rem 1rem 3rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .main-content {
+                margin: -2rem 1rem 3rem;
+            }
+
+            .content-card {
+                padding: 2rem;
+            }
+
+            .info-section {
+                padding: 3rem 1rem;
+            }
+
+            .footer-content {
+                padding: 2rem 1rem;
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 1rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .hero {
+                padding: 5rem 1rem 2rem;
+            }
+
+            .content-card {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Scrollbar personnalisée */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--surface-secondary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+    </style>
 </head>
 
 <body>
-
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="../index.html">D.A.T</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="../index.html#section-machine">Nos Machines</a></li>
-                <li><a href="../html/contact.html">Contact</a></li>
-            </ul>
-            <!-- Menu hamburger -->
-            <div class="menu-toggle" id="menuToggle">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+    <header class="header">        
+        <a href="../index.html" class="logo">D . A . T</a>    
+        <div class="menu-icon" id="menu-icon">
+            ☰
+        </div>
+        
+        <nav class="navbar" id="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#section-machine">Nos Machines</a>
+            <a href="../index.html#section-premiere-partie">À Propos</a>
+            <a href="./nosmarques.html">Blog</a>
+            <a href="./contact.html">Contact</a>
         </nav>
     </header>
 
-    <!-- Script pour le menu hamburger -->
-    <script>
-        const menuToggle = document.getElementById('menuToggle');
-        const navLinks = document.querySelector('.nav-links');
-
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-        });
-    </script>
-
-    <!-- Contenu principal -->
-    <main class="mentions-legales">
-        <section class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">⚖️ Informations Légales</div>
             <h1>Mentions Légales</h1>
+            <p>Toutes les informations légales concernant DAT Café et l'utilisation de notre site web.</p>
+        </div>
+    </section>
 
-            <h2>1. Éditeur du site</h2>
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="content-card animate-on-scroll">
+            <h2>Éditeur du site</h2>
             <p><strong>Nom de l'entreprise :</strong> DAT Café</p>
             <p><strong>Statut juridique :</strong> SARL</p>
             <p><strong>Siège social :</strong> 2 Av Marcel Langer, 31600 Seysses, France</p>
@@ -64,63 +551,172 @@
             <p><strong>Numéro SIRET :</strong> 529 456 675 000 14</p>
             <p><strong>Directeur de publication :</strong> Guyot Sylvie</p>
 
-            <h2>2. Hébergement</h2>
+            <h2>Hébergement</h2>
             <p><strong>Hébergeur :</strong> Netlify</p>
             <p><strong>Adresse :</strong> 2325 3RD STREET, SUITE 215, SAN FRANCISCO, CA 94107 (USA)</p>
             <p><strong>Téléphone :</strong> +1 844-899-7312</p>
 
-            <h2>3. Propriété intellectuelle</h2>
-            <p>Le contenu de ce site (textes, images, logos, etc.) est protégé par le droit de la propriété intellectuelle et est la propriété exclusive de DAT Café, sauf mention contraire.</p>
+            <h2>Propriété intellectuelle</h2>
+            <p>Le contenu de ce site (textes, images, logos, etc.) est protégé par le droit de la propriété intellectuelle et est la propriété exclusive de DAT Café, sauf mention contraire. Toute reproduction, distribution, modification, adaptation, retransmission ou publication de ces différents éléments est strictement interdite sans l'accord exprès par écrit de DAT Café.</p>
 
-            <h2>4. Protection des données personnelles</h2>
-            <p>Les informations recueillies sur ce site sont destinées à améliorer nos services. Conformément au RGPD, vous pouvez exercer votre droit d’accès, de rectification et de suppression en nous contactant à l’adresse email mentionnée ci-dessus.</p>
+            <h2>Protection des données personnelles</h2>
+            <p>Les informations recueillies sur ce site sont destinées à améliorer nos services et à vous fournir les meilleures solutions de distribution automatique. Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, de portabilité et de suppression de vos données personnelles. Pour exercer ces droits, contactez-nous à l'adresse email mentionnée ci-dessus.</p>
 
-            <h2>5. Responsabilité</h2>
-            <p>DAT Café met tout en œuvre pour assurer l'exactitude des informations présentes sur le site, mais ne peut être tenu responsable des erreurs ou omissions. L'utilisation du site se fait sous la seule responsabilité de l'utilisateur.</p>
+            <h2>Responsabilité</h2>
+            <p>DAT Café met tout en œuvre pour assurer l'exactitude et la mise à jour des informations présentes sur le site. Cependant, nous ne pouvons garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition sur ce site. En conséquence, nous déclinons toute responsabilité pour toute imprécision, inexactitude ou omission portant sur des informations disponibles sur le site.</p>
 
-            <h2>6. Liens externes</h2>
-            <p>Le site peut contenir des liens vers des sites tiers. Nous ne pouvons être tenus responsables du contenu de ces sites.</p>
+            <h2>Liens externes</h2>
+            <p>Le site peut contenir des liens vers des sites web tiers. Ces liens sont fournis uniquement pour votre commodité. DAT Café n'exerce aucun contrôle sur le contenu de ces sites et ne peut être tenu responsable de leur contenu, de leur politique de confidentialité ou de leurs pratiques.</p>
 
-            <h2>7. Crédits et Développement</h2>
+            <h2>Crédits et Développement</h2>
             <p><strong>Développement du site :</strong> WebDevToulouse</p>
-            <p><strong>Adresse :</strong> [31 200 Toulouse]</p>
+            <p><strong>Adresse :</strong> 31200 Toulouse</p>
             <p><strong>Email :</strong> <a href="mailto:thomasguyot31@live.fr">thomasguyot31@live.fr</a></p>
-            <p><strong>Site web :</strong> <a href="https://www.webdevtoulouse.com" target="_blank">www.webdevtoulouse.com</a></p>
+            <p><strong>Site web :</strong> <a href="https://www.webdevtoulouse.com" target="_blank" rel="noopener noreferrer">www.webdevtoulouse.com</a></p>
 
-            <h2>8. Contact</h2>
-            <p>Pour toute question concernant ces mentions légales, veuillez nous contacter par email à <a href="mailto:dat.cafe@orange.fr">dat.cafe@orange.fr</a>.</p>
-        </section>
-    </main>
+            <h2>Contact</h2>
+            <p>Pour toute question concernant ces mentions légales ou l'utilisation de notre site, n'hésitez pas à nous contacter par email à <a href="mailto:dat.cafe@orange.fr">dat.cafe@orange.fr</a> ou par téléphone au <a href="tel:+33534480059">05.34.48.00.59</a>.</p>
+        </div>
+    </div>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="info-container">
+            <div class="info-card animate-on-scroll">
+                <div class="info-card-icon">🔒</div>
+                <h3>Données Sécurisées</h3>
+                <p>Vos informations personnelles sont protégées selon les standards RGPD</p>
+            </div>
+            <div class="info-card animate-on-scroll">
+                <div class="info-card-icon">⚖️</div>
+                <h3>Conformité Légale</h3>
+                <p>Toutes nos pratiques respectent la législation française en vigueur</p>
+            </div>
+            <div class="info-card animate-on-scroll">
+                <div class="info-card-icon">📞</div>
+                <h3>Support Disponible</h3>
+                <p>Notre équipe est à votre disposition pour toute question légale</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h3>À propos</h3>
-                <p>Nous proposons des distributeurs automatiques et des fontaines à eau de haute qualité à Toulouse et ses environs.</p>
+    <div class="pg-footer">
+        <footer class="footer" id="footer">
+          <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+            <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+          </svg>
+          <div class="footer-content">
+            <div class="footer-content-column">
+              <div class="footer-logo">
+                <a class="footer-logo-link" href="#">
+                  <h4>DAT.</h4>
+                </a>
+              </div> 
             </div>
-            <div class="footer-section links">
-                <h3>Liens utiles</h3>
-                <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="../index.html#section-machine">Nos Produits</a></li>
-                    <li><a href="../html/contact.html">Contact</a></li>
-                    <li><a href="../html/mentions-legales.html">Mentions Légales</a></li>
+            <div class="footer-content-column">
+              <div class="footer-menu">
+                  <h2 class="footer-menu-name">Legal</h2>
+                  <ul class="footer-menu-list">
+                      <li><a href="mentions-legales.html">Mentions légales</a></li>
+                      <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+                  </ul>
+              </div>
+            </div>
+            
+            <div class="footer-content-column">
+              <div class="footer-menu">
+                <h2 class="footer-menu-name">Liens Rapides</h2>
+                <ul class="footer-menu-list">
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../index.html#section-machine">Nos Machines</a></li>
+                  <li><a href="../index.html#section-premiere-partie">À propos</a></li>
+                  <li><a href="./nosmarques.html">Blog</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
                 </ul>
+              </div>
             </div>
-            <div class="footer-section contact">
-                <h3>Contact</h3>
-                <p>Email : <a href="mailto:dat.cafe@orange.fr">dat.cafe@orange.fr</a></p>
-                <p>Téléphone : <a href="tel:+33534480059">05.34.48.00.59</a></p>
-                <p>Adresse : 2 Av Marcel Langer, 31600 Seysses, France</p>
+            
+            <div class="footer-content-column">
+              <div class="footer-call-to-action">
+                <a class="footer-call-to-action-button" href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Revenir en haut</a>
+              </div>
+              <div class="footer-call-to-action">
+                <h2 class="footer-call-to-action-title">Nous appeler</h2>
+                <p class="footer-call-to-action-link-wrapper">
+                  <a class="footer-call-to-action-link" href="tel:0534480059">05.34.48.00.59</a>
+                </p>
+              </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2024 - 2025 datcafé.fr | Tous droits réservés |
-            <a href="https://www.webdevtoulouse.com/" target="_blank" rel="noopener noreferrer">Site réalisé par WebDevToulouse</a>
-        </div>
-    </footer>
+          </div>
+          
+          <div class="footer-copyright">
+            <div class="footer-copyright-wrapper">
+              <p class="footer-copyright-text">
+                <a class="footer-copyright-link" href="#">©2024 - 2025 | Tous droits réservés.</a>
+              </p>
+            </div>
+          </div>
+        </footer>
+    </div>
 
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Menu mobile
+            const menuIcon = document.getElementById('menu-icon');
+            const navbar = document.getElementById('navbar');
+
+            if (menuIcon && navbar) {
+                menuIcon.addEventListener('click', function () {
+                    navbar.classList.toggle('active');
+                });
+            }
+
+            // Animation au scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Effet navbar au scroll
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('.header');
+                if (window.scrollY > 100) {
+                    header.style.background = 'rgba(255, 255, 255, 0.95)';
+                    header.style.backdropFilter = 'blur(20px)';
+                } else {
+                    header.style.background = 'rgba(255, 255, 255, 0.9)';
+                    header.style.backdropFilter = 'blur(20px)';
+                }
+            });
+
+            // Navigation fluide
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
-
 </html>
