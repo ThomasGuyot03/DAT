@@ -33,7 +33,6 @@
             --text-muted: #94a3b8;
             --success: #10b981;
             --error: #ef4444;
-            --warning: #f59e0b;
             --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
             --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
             --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
@@ -340,237 +339,154 @@
             line-height: 1.6;
         }
 
-        /* Info Section */
-        .info-section {
-            padding: 4rem 2rem;
-            background: var(--surface);
-        }
-
-        .info-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .info-card {
-            background: var(--surface-secondary);
-            padding: 2rem;
-            border-radius: 16px;
-            text-align: center;
-            border: 1px solid var(--border);
-            transition: all 0.3s ease;
-        }
-
-        .info-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .info-card-icon {
-            width: 60px;
-            height: 60px;
-            background: var(--gradient);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1rem;
-            font-size: 1.5rem;
-            color: white;
-        }
-
-        .info-card h3 {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .info-card p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
         /* Footer moderne */
-        .pg-footer {
-            margin-top: 4rem;
-        }
+    .pg-footer {
+      margin-top: 4rem;
+    }
 
-        .footer {
-            background: var(--primary);
-            color: white;
-            position: relative;
-        }
+    .footer {
+      background: var(--primary);
+      color: white;
+      position: relative;
+    }
 
-        .footer-wave-svg {
-            background-color: transparent;
-            display: block;
-            height: 60px;
-            position: relative;
-            top: -1px;
-            width: 100%;
-        }
+    .footer-wave-svg {
+      background-color: transparent;
+      display: block;
+      height: 60px;
+      position: relative;
+      top: -1px;
+      width: 100%;
+    }
 
-        .footer-wave-path {
-            fill: var(--primary);
-        }
+    .footer-wave-path {
+      fill: var(--primary);
+    }
 
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 3rem 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
 
-        .footer-content-column h4 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
+    .footer-content-column h4 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
 
-        .footer-menu-name {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: white;
-        }
+    .footer-menu-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: white;
+    }
 
-        .footer-menu-list {
-            list-style: none;
-            padding: 0;
-        }
+    .footer-menu-list {
+      list-style: none;
+      padding: 0;
+    }
 
-        .footer-menu-list li {
-            margin-bottom: 0.5rem;
-        }
+    .footer-menu-list li {
+      margin-bottom: 0.5rem;
+    }
 
-        .footer-menu-list a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
+    .footer-menu-list a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
 
-        .footer-menu-list a:hover {
-            color: white;
-        }
+    .footer-menu-list a:hover {
+      color: white;
+    }
 
-        .footer-call-to-action-button {
-            background: var(--accent);
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 500;
-            display: inline-block;
-            transition: all 0.3s ease;
-            margin-bottom: 1rem;
-        }
+    .footer-call-to-action-button {
+      background: var(--accent);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-block;
+      transition: all 0.3s ease;
+      margin-bottom: 1rem;
+    }
 
-        .footer-call-to-action-button:hover {
-            background: var(--accent-hover);
-            transform: translateY(-1px);
-        }
+    .footer-call-to-action-button:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
 
-        .footer-call-to-action-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
+    .footer-call-to-action-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
 
-        .footer-call-to-action-link-wrapper a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-        }
+    .footer-call-to-action-link-wrapper a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
 
-        .footer-copyright {
-            background: rgba(0, 0, 0, 0.2);
-            padding: 1.5rem 2rem;
-            text-align: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
+    .footer-copyright {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
 
-        .footer-copyright-text {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 0.9rem;
-        }
+    .footer-copyright-text {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.9rem;
+    }
 
-        .footer-copyright-link {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-        }
+    .footer-copyright-link {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+    }
 
-        /* Animations */
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
+    .footer-socials {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
 
-        .animate-on-scroll.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    .footer-social-link {
+      align-items: center;   /* centre verticalement */
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.8);
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
 
-        /* Responsive Design */
-        @media (max-width: 1024px) {
+    .footer-social-link:hover {
+      color: #0A66C2; /* bleu LinkedIn */
+      transform: scale(1.1);
+    }
+
+        @media (max-width: 768px) {
             .navbar {
                 display: none;
                 position: absolute;
                 top: 100%;
                 left: 0;
-                width: 100%;
-                background: rgba(255, 255, 255, 0.95);
-                backdrop-filter: blur(20px);
+                right: 0;
+                background: var(--surface);
                 flex-direction: column;
-                padding: 1rem;
+                padding: 1rem 2rem;
                 border-top: 1px solid var(--border);
-                box-shadow: var(--shadow-lg);
             }
 
             .navbar.active {
                 display: flex;
             }
 
-            .navbar a {
-                width: 100%;
-                text-align: center;
-                padding: 1rem;
-                margin: 0;
-            }
-
             .menu-icon {
                 display: block;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero {
-                padding: 6rem 1rem 3rem;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            .form-container {
-                margin: -2rem 1rem 3rem;
-            }
-
-            .form-card {
-                padding: 2rem;
-            }
-
-            .info-section {
-                padding: 3rem 1rem;
             }
 
             .footer-content {
@@ -579,366 +495,261 @@
                 text-align: center;
             }
         }
-
-        @media (max-width: 480px) {
-            .header {
-                padding: 1rem;
-            }
-
-            .logo {
-                font-size: 1.5rem;
-            }
-
-            .hero {
-                padding: 5rem 1rem 2rem;
-            }
-
-            .form-card {
-                padding: 1.5rem;
-            }
-        }
-
-        /* Scrollbar personnalisée */
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: var(--surface-secondary);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: var(--border);
-            border-radius: 3px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: var(--text-muted);
-        }
     </style>
 </head>
-
 <body>
+    <!-- Navbar -->
     <header class="header">        
-        <a href="../index.html" class="logo">D . A . T</a>    
+        <a href="#" class="logo">D . A . T</a>    
         <div class="menu-icon" id="menu-icon">
             ☰
         </div>
         
         <nav class="navbar" id="navbar">
-            <a href="../index.html">Home</a>
-            <a href="../index.html#section-machine">Nos Machines</a>
-            <a href="../index.html#section-premiere-partie">À Propos</a>
-            <a href="./nosmarques.html">Blog</a>
-            <a href="./contact.html">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#section-machine">Nos Machines</a>
+            <a href="#section-premiere-partie">À Propos</a>
+            <a href="html/nosmarques.html">Blog</a>
+            <a href="html/contact.html">Contact</a>
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-badge">
-                🎯 Devis Personnalisé
-            </div>
-            <h1>Trouvez la <span>Solution Parfaite</span></h1>
-            <p>
-                Découvrez quelle machine correspond le mieux à vos besoins. 
-                Notre algorithme intelligent vous recommande la solution idéale selon votre entreprise.
-            </p>
+            <div class="hero-badge">Demandez votre devis</div>
+            <h1>Évaluez votre <span>éligibilité</span> pour une machine à café adaptée</h1>
+            <p>Remplissez le formulaire ci-dessous pour recevoir une recommandation personnalisée et un devis rapide, adapté à votre entreprise.</p>
         </div>
     </section>
 
-    <!-- Form Container -->
-    <div class="form-container">
-        <div class="form-card animate-on-scroll">
+    <!-- Formulaire -->
+    <section class="form-container">
+        <div class="form-card">
             <div class="form-header">
-                <h2>Demande de Devis</h2>
-                <p>Remplissez ce formulaire pour recevoir une recommandation personnalisée</p>
+                <h2>Formulaire de Devis</h2>
+                <p>Les champs marqués d'une astérisque (*) sont obligatoires</p>
             </div>
-
-            <form id="devisForm">
+            <form id="devis-form">
+                <div class="form-group">
+                    <label for="nom">Nom *</label>
+                    <input type="text" id="nom" name="nom" placeholder="Jean Dupont" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="contact@entreprise.fr" required>
+                </div>
+                <div class="form-group">
+                    <label for="telephone">Téléphone *</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="06 12 34 56 78" required>
+                </div>
                 <div class="form-group">
                     <label for="entreprise">Nom de l'entreprise *</label>
-                    <input type="text" id="entreprise" name="entreprise" placeholder="Ex: Mon Entreprise SARL" required>
+                    <input type="text" id="entreprise" name="entreprise" placeholder="Ex : Café Bleu SARL" required>
                 </div>
-
                 <div class="form-group">
                     <label for="lieu">Lieu de l'entreprise *</label>
-                    <input type="text" id="lieu" name="lieu" placeholder="Ex: Toulouse, Haute-Garonne" required>
+                    <input type="text" id="lieu" name="lieu" placeholder="Ex : Lyon 7e" required>
                 </div>
-
                 <div class="form-group">
                     <label for="employes">Nombre d'employés *</label>
-                    <input type="number" id="employes" name="employes" placeholder="Ex: 25" min="1" required>
+                    <input type="number" id="employes" name="employes" min="1" required>
                 </div>
-
                 <div class="form-group">
                     <label for="prestataire">Avez-vous déjà un prestataire café ? *</label>
                     <select id="prestataire" name="prestataire" required>
-                        <option value="">Sélectionnez une option</option>
-                        <option value="oui">Oui, nous avons déjà un prestataire</option>
-                        <option value="non">Non, nous cherchons notre premier prestataire</option>
+                        <option value="">-- Sélectionnez --</option>
+                        <option value="oui">Oui</option>
+                        <option value="non">Non</option>
                     </select>
                 </div>
 
-                <button type="submit" class="btn-submit" id="submitBtn">
+                <button type="button" class="btn-submit" onclick="envoyerEmail()">
+                    <span>Envoyer la demande</span>
                     <span class="loading" id="loading"></span>
-                    <span id="btnText">📧 Envoyer ma demande</span>
                 </button>
+                <div id="result" class="result-message"></div>
+                <div id="recommendation" class="recommendation-card"></div>
             </form>
-
-            <div id="resultat" class="result-message"></div>
-            <div id="recommendation" class="recommendation-card"></div>
-        </div>
-    </div>
-
-    <!-- Info Section -->
-    <section class="info-section">
-        <div class="info-container">
-            <div class="info-card animate-on-scroll">
-                <div class="info-card-icon">⚡</div>
-                <h3>Réponse Rapide</h3>
-                <p>Recevez votre devis personnalisé sous 24h ouvrées</p>
-            </div>
-            <div class="info-card animate-on-scroll">
-                <div class="info-card-icon">🎯</div>
-                <h3>Solution Sur Mesure</h3>
-                <p>Recommandation adaptée à vos besoins et effectifs</p>
-            </div>
-            <div class="info-card animate-on-scroll">
-                <div class="info-card-icon">🆓</div>
-                <h3>Dépôt Gratuit</h3>
-                <p>Machines en dépôt gratuit, sans frais cachés</p>
-            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <div class="pg-footer">
-        <footer class="footer" id="footer">
-          <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
-            <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
-          </svg>
-          <div class="footer-content">
-            <div class="footer-content-column">
-              <div class="footer-logo">
-                <a class="footer-logo-link" href="#">
-                  <h4>DAT.</h4>
-                </a>
-              </div> 
-            </div>
-            <div class="footer-content-column">
-              <div class="footer-menu">
-                  <h2 class="footer-menu-name">Legal</h2>
-                  <ul class="footer-menu-list">
-                      <li><a href="mentions-legales.html">Mentions légales</a></li>
-                      <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
-                  </ul>
-              </div>
-            </div>
-            
-            <div class="footer-content-column">
-              <div class="footer-menu">
-                <h2 class="footer-menu-name">Liens Rapides</h2>
-                <ul class="footer-menu-list">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="index.html#section-machine">Nos Machines</a></li>
-                  <li><a href="index.html#section-premiere-partie">À propos</a></li>
-                  <li><a href="nosmarques.html">Blog</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-            
-            <div class="footer-content-column">
-              <div class="footer-call-to-action">
-                <a class="footer-call-to-action-button" href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Revenir en haut</a>
-              </div>
-              <div class="footer-call-to-action">
-                <h2 class="footer-call-to-action-title">Nous appeler</h2>
-                <p class="footer-call-to-action-link-wrapper">
-                  <a class="footer-call-to-action-link" href="tel:0534480059">05.34.48.00.59</a>
-                </p>
-              </div>
-            </div>
+<div class="pg-footer">
+    <footer class="footer" id="footer">
+      <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+        <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+      </svg>
+  
+      <div class="footer-content">
+        <!-- Colonne Logo -->
+        <div class="footer-content-column">
+          <div class="footer-logo">
+            <a class="footer-logo-link" href="#">
+              <h4>DAT.</h4>
+            </a>
+          </div> 
+        </div>
+  
+        <!-- Colonne Legal -->
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name">Legal</h2>
+            <ul class="footer-menu-list">
+              <li><a href="html/mentions-legales.html">Mentions légales</a></li>
+              <li><a href="html/politique-confidentialite.html">Politique de confidentialité</a></li>
+            </ul>
           </div>
-          
-          <div class="footer-copyright">
-            <div class="footer-copyright-wrapper">
-              <p class="footer-copyright-text">
-                <a class="footer-copyright-link" href="#">©2024 - 2025 | Tous droits réservés.</a>
-              </p>
-            </div>
+        </div>
+        
+        <!-- Colonne Liens Rapides -->
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name">Liens Rapides</h2>
+            <ul class="footer-menu-list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#section-machine">Nos Machines</a></li>
+              <li><a href="#section-premiere-partie">À propos</a></li>
+              <li><a href="html/nosmarques.html">Blog</a></li>
+              <li><a href="html/contact.html">Contact</a></li>
+            </ul>
           </div>
-        </footer>
-    </div>
+        </div>
+  
+        <!-- Colonne Call to Action -->
+        <div class="footer-content-column">
+          <div class="footer-call-to-action">
+            <a class="footer-call-to-action-button" href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Revenir en haut</a>
+          </div>
+          <div class="footer-call-to-action">
+            <h2 class="footer-call-to-action-title">Nous appeler</h2>
+            <p class="footer-call-to-action-link-wrapper">
+              <a class="footer-call-to-action-link" href="tel:0534480059">05.34.48.00.59</a>
+            </p>
+          </div>
+        </div>
+  
+        <!-- Colonne Réseaux sociaux -->
+        <div class="footer-content-column">
+          <div class="footer-socials">
+            <h2 class="footer-menu-name">Suivez-nous</h2>
+            <a href="https://www.linkedin.com/company/d-a-t-distribution-automatique-toulousaine/" target="_blank" aria-label="LinkedIn" class="footer-social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 
+                0-5 2.239-5 5v14c0 2.761 2.239 
+                5 5 5h14c2.762 0 5-2.239 
+                5-5v-14c0-2.761-2.238-5-5-5zm-11 
+                19h-3v-10h3v10zm-1.5-11.268c-.966 
+                0-1.75-.79-1.75-1.764s.784-1.764 
+                1.75-1.764c.965 
+                0 1.75.79 1.75 1.764s-.785 
+                1.764-1.75 1.764zm13.5 
+                11.268h-3v-5.604c0-1.338-.027-3.064-1.867-3.064-1.868 
+                0-2.155 1.46-2.155 
+                2.968v5.7h-3v-10h2.881v1.367h.041c.401-.757 
+                1.379-1.555 2.838-1.555 3.033 
+                0 3.6 1.997 3.6 4.59v5.598z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Copyright -->
+      <div class="footer-copyright">
+        <div class="footer-copyright-wrapper">
+          <p class="footer-copyright-text">
+            <a class="footer-copyright-link" href="#">©2024 - 2025 | Tous droits réservés.</a>
+          </p>
+        </div>
+      </div>
+    </footer>
 
-    <!-- Scripts -->
+    <!-- EmailJS -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Menu mobile
-            const menuIcon = document.getElementById('menu-icon');
-            const navbar = document.getElementById('navbar');
+        (function(){ emailjs.init("JOTvNGFjrUQfQG57r"); })();
 
-            if (menuIcon && navbar) {
-                menuIcon.addEventListener('click', function () {
-                    navbar.classList.toggle('active');
-                });
+        const form = document.getElementById('devis-form');
+        const loadingEl = document.getElementById('loading');
+        const resultEl = document.getElementById('result');
+        const recommendationEl = document.getElementById('recommendation');
+
+        function setLoading(isLoading){
+            loadingEl.style.display = isLoading ? 'inline-block' : 'none';
+            form.querySelector('button').disabled = isLoading;
+        }
+
+        function showResult(msg, type){
+            resultEl.textContent = msg;
+            resultEl.className = 'result-message ' + type;
+            resultEl.style.display = 'block';
+        }
+
+        function showRecommendation(produit, desc){
+            recommendationEl.innerHTML = `<h3>Produit recommandé : ${produit}</h3><p>${desc}</p>`;
+            recommendationEl.style.display = 'block';
+        }
+
+        function envoyerEmail(){
+            const nom = document.getElementById('nom').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const telephone = document.getElementById('telephone').value.trim();
+            const entreprise = document.getElementById('entreprise').value.trim();
+            const lieu = document.getElementById('lieu').value.trim();
+            const employes = parseInt(document.getElementById('employes').value);
+            const prestataire = document.getElementById('prestataire').value;
+
+            if(!nom || !email || !telephone || !entreprise || !lieu || !employes || !prestataire){
+                showResult("⚠️ Merci de remplir tous les champs obligatoires.", "error");
+                return;
             }
 
-            // Animation au scroll
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
+            setLoading(true);
 
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, observerOptions);
+            let produitRecommande = "";
+            let description = "";
 
-            document.querySelectorAll('.animate-on-scroll').forEach(el => {
-                observer.observe(el);
+            if(employes <= 5){
+                produit = "Inovy Mini ou Inovy Compact";
+                description = "Compactes et efficaces, parfaites pour les petites structures.";
+            } else if(employes <= 10){
+                produit = "Inovy ou Royal Black";
+                description = "Idéales pour les équipes de taille moyenne, avec plus d’options café.";
+            } else if(employes <= 15){
+                produit = "Magic M1-2 ou Royal Black";
+                description = "Machines robustes pour les équipes importantes, café en grains frais.";
+            } else if(employes <= 80){
+                produit = "Concerto ou Concerto Touch";
+                description = "Performantes et élégantes, idéales pour les entreprises de taille moyenne.";
+            } else {
+                produit = "Maestro ou Maestro Keyboard";
+                description = "Machines haute capacité conçues pour les grandes structures.";
+            }
+
+            emailjs.send("Test0307", "template_ozppsop", {
+                nom: nom,                     // ajouté
+                email: email,                 // ajouté
+                telephone: telephone,         // ajouté
+                entreprise: entreprise,
+                lieu: lieu,
+                employes: employes,
+                prestataire: prestataire === "oui" ? "Oui" : "Non",
+                produitRecommande: produitRecommande
+            })
+
+            .then(()=>{
+                setLoading(false);
+                showResult("✅ Votre demande a bien été envoyée !", "success");
+                showRecommendation(produit, description);
+                form.reset();
+            })
+            .catch(err=>{
+                console.error(err);
+                setLoading(false);
+                showResult("❌ Une erreur est survenue. Veuillez réessayer.", "error");
             });
-
-            // Effet navbar au scroll
-            window.addEventListener('scroll', () => {
-                const header = document.querySelector('.header');
-                if (window.scrollY > 100) {
-                    header.style.background = 'rgba(255, 255, 255, 0.95)';
-                    header.style.backdropFilter = 'blur(20px)';
-                } else {
-                    header.style.background = 'rgba(255, 255, 255, 0.9)';
-                    header.style.backdropFilter = 'blur(20px)';
-                }
-            });
-
-            // Initialisation EmailJS
-            emailjs.init('JOTvNGFjrUQfQG57r');
-
-            // Gestion du formulaire
-            const form = document.getElementById('devisForm');
-            const submitBtn = document.getElementById('submitBtn');
-            const loading = document.getElementById('loading');
-            const btnText = document.getElementById('btnText');
-            const resultat = document.getElementById('resultat');
-            const recommendation = document.getElementById('recommendation');
-
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                envoyerEmail();
-            });
-
-            function envoyerEmail() {
-                const entreprise = document.getElementById('entreprise').value.trim();
-                const lieu = document.getElementById('lieu').value.trim();
-                const employes = parseInt(document.getElementById('employes').value);
-                const prestataire = document.getElementById('prestataire').value;
-
-                // Validation
-                if (!entreprise || !lieu || !employes || !prestataire) {
-                    showMessage("Veuillez remplir tous les champs obligatoires.", 'error');
-                    return;
-                }
-
-                if (employes < 1) {
-                    showMessage("Le nombre d'employés doit être supérieur à 0.", 'error');
-                    return;
-                }
-
-                // État de chargement
-                setLoadingState(true);
-
-                // Logique de recommandation
-                let produitRecommande = "";
-                let description = "";
-                
-                if (employes <= 5) {
-                    produitRecommande = "Inovy Mini ou Inovy Compact";
-                    description = "Parfait pour les petites équipes, ces machines compactes offrent un excellent café sans encombrer votre espace.";
-                } else if (employes <= 10) {
-                    produitRecommande = "Inovy ou Royal Black";
-                    description = "Idéal pour les équipes moyennes, avec plus de capacité et d'options de boissons.";
-                } else if (employes <= 15) {
-                    produitRecommande = "Magic M1-2 ou Royal Black";
-                    description = "Solutions robustes pour les équipes importantes, avec café fraîchement moulu.";
-                } else if (employes <= 80) {
-                    produitRecommande = "Concerto ou Concerto Touch";
-                    description = "Distributeurs automatiques parfaits pour les moyennes entreprises, avec interface moderne.";
-                } else {
-                    produitRecommande = "Maestro ou Maestro Keyboard";
-                    description = "Solutions haute capacité pour les grandes entreprises et collectivités.";
-                }
-
-                // Envoi via EmailJS
-                emailjs.send("Test0307", "template_ozppsop", {
-                    entreprise: entreprise,
-                    lieu: lieu,
-                    employes: employes,
-                    prestataire: prestataire === 'oui' ? 'Oui' : 'Non',
-                    produitRecommande: produitRecommande
-                })
-                .then(function(response) {
-                    console.log('E-mail envoyé avec succès !', response);
-                    setLoadingState(false);
-                    showMessage("✅ Votre demande a été envoyée avec succès ! Nous vous recontacterons sous 24h.", 'success');
-                    showRecommendation(produitRecommande, description);
-                    form.reset();
-                }, function(error) {
-                    console.error("Erreur lors de l'envoi de l'e-mail :", error);
-                    setLoadingState(false);
-                    showMessage("❌ Une erreur s'est produite lors de l'envoi. Veuillez réessayer ou nous contacter directement.", 'error');
-                });
-            }
-
-            function setLoadingState(isLoading) {
-                if (isLoading) {
-                    submitBtn.disabled = true;
-                    loading.style.display = 'block';
-                    btnText.textContent = 'Envoi en cours...';
-                } else {
-                    submitBtn.disabled = false;
-                    loading.style.display = 'none';
-                    btnText.textContent = '📧 Envoyer ma demande';
-                }
-            }
-
-            function showMessage(message, type) {
-                resultat.textContent = message;
-                resultat.className = `result-message ${type}`;
-                resultat.style.display = 'block';
-                
-                // Scroll vers le message
-                resultat.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }
-
-            function showRecommendation(produit, description) {
-                recommendation.innerHTML = `
-                    <h3>🎯 Notre Recommandation</h3>
-                    <p><strong>${produit}</strong></p>
-                    <p>${description}</p>
-                `;
-                recommendation.style.display = 'block';
-            }
-
-            // Navigation fluide
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-        });
+        }
     </script>
 </body>
 </html>
