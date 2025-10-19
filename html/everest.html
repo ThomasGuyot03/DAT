@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGS04MDMHT"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -9,153 +9,1037 @@
       gtag('js', new Date());
       gtag('config', 'G-VGS04MDMHT');
     </script>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Découvrez la Fontaine à Eau Everest, une solution haut de gamme pour vos besoins en eau. Installation gratuite à Toulouse, idéale pour bureaux et espaces de travail. Profitez d’une eau pure, froide ou chaude, sans frais d'achat.">
-    <meta name="keywords" content="fontaine à eau Everest, fontaine à eau Toulouse, installation fontaine à eau gratuite, eau pure Toulouse, fontaine professionnelle, distributeur eau Toulouse, fontaine à eau pour bureaux">
-    <meta name="author" content="DAT Café">
-    <meta name="robots" content="index, follow">
-    
-    <title>Fontaine à eau Everest | Distributeur Automatique à Toulouse</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" href="/Photo/Logo DAT.png" type="image/x-icon">
+    <title>Fontaine à Eau Everest | Distributeur d’Eau Professionnel à Toulouse</title>
+    <meta name="description" content="Découvrez la Fontaine à Eau Everest, une solution professionnelle élégante et performante pour les entreprises à Toulouse. Installation et maintenance offertes, idéale pour un accès continu à une eau fraîche et pure.">
+    <meta name="keywords" content="fontaine à eau, Fontaine à Eau Everest, distributeur d’eau, fontaine entreprise, fontaine professionnelle, eau fraîche, fontaine à eau Toulouse, fontaine bureautique, DAT Toulouse">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="../Photo/Logo DAT.png" type="image/x-icon">
+    <style>
+        /* CSS Variables for consistent theming */
+        :root {
+            --primary-color: #2563EB;
+            --primary-hover: #1D4ED8;
+            --secondary-color: #F59E0B;
+            --secondary-hover: #D97706;
+            --accent-color: #10B981;
+            --surface-color: #FFFFFF;
+            --surface-hover: #F8FAFC;
+            --text-primary: #1F2937;
+            --text-secondary: #6B7280;
+            --text-muted: #9CA3AF;
+            --border-color: #E5E7EB;
+            --border-hover: #D1D5DB;
+            --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --radius-sm: 0.375rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --radius-xl: 1rem;
+            --spacing-xs: 0.25rem;
+            --spacing-sm: 0.5rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 1.5rem;
+            --spacing-xl: 2rem;
+            --spacing-2xl: 3rem;
+            --primary: #1a1a1a;
+            --secondary: #6b7280;
+            --accent: #008ADE;
+            --accent-hover: #0066b3;
+            --surface: #ffffff;
+            --surface-secondary: #f8fafc;
+            --border: #e2e8f0;
+            --text-primary: #0f172a;
+            --text-secondary: #64748b;
+            --text-muted: #94a3b8;
+            --success: #10b981;
+            --error: #ef4444;
+            --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --gradient: linear-gradient(135deg, #008ADE 0%, #0066b3 100%);
+        }
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="/css/eversest.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="https://kit.fontawesome.com/d72f655667.js" crossorigin="anonymous"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+
+        /* Navigation moderne */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1rem 2rem;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .logo {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+      letter-spacing: -0.025em;
+    }
+
+    .logo:hover {
+      color: var(--accent);
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 1.5rem;
+      color: var(--primary);
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .menu-icon:hover {
+      background: var(--surface-secondary);
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .navbar a {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      color: var(--accent);
+      background: rgba(0, 138, 222, 0.1);
+    }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+
+        .hero-image {
+            max-width: 15%;
+            max-height: 90%;
+            object-fit: contain;
+            filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
+            transition: transform 0.6s ease;
+            margin-top: 5%;
+        }
+
+        .hero-image:hover {
+            transform: scale(1.05);
+        }
+
+        /* Text Section */
+        .text-section {
+            padding: var(--spacing-2xl) var(--spacing-lg);
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .text-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .text-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-xl);
+            background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .text-content p {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            margin-bottom: var(--spacing-lg);
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-lg) var(--spacing-2xl);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            background: white;
+            border-radius: var(--radius-xl);
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow-lg);
+            margin-top: var(--spacing-lg);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+            background: var(--surface-hover);
+        }
+
+        /* Section Two */
+        .section-deux {
+            padding: var(--spacing-2xl) var(--spacing-lg);
+            background: var(--surface-color);
+        }
+
+        .section-text-content {
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: var(--spacing-2xl);
+        }
+
+        .section-image {
+            width: 20%;
+            height: auto;
+            object-fit: cover;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+            transition: transform 0.4s ease;
+        }
+
+        .section-image:hover {
+            transform: scale(1.05);
+        }
+
+        .text-container {
+            flex: 1;
+        }
+
+        .text-container h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-lg);
+            color: var(--text-primary);
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-container p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Section Three */
+        .section-trois {
+            padding: var(--spacing-2xl) var(--spacing-lg);
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+
+        .section-trois-text-content {
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: var(--spacing-2xl);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .section-trois-image {
+            width: 30%;
+            height: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+        }
+
+        .section-trois-text-container {
+            flex: 1;
+        }
+
+        .section-trois-text-container h3 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-lg);
+            color: var(--text-primary);
+        }
+
+        .section-trois-text-container p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .section-trois-button-container {
+            text-align: center;
+        }
+
+        .section-trois-cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-lg) var(--spacing-2xl);
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: white;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 100%);
+            border-radius: var(--radius-xl);
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .section-trois-cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        /* Section Four - Features */
+        .section-quatre {
+            padding: var(--spacing-2xl) var(--spacing-lg);
+            background: var(--surface-color);
+        }
+
+        .section-quatre-content {
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-quatre-content h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-lg);
+            color: var(--text-primary);
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-quatre-content > p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-2xl);
+            line-height: 1.7;
+        }
+
+        .features-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-xl);
+        }
+
+        .feature-box {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-2xl);
+            box-shadow: var(--shadow-md);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+        }
+
+        .feature-box:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-color);
+        }
+
+        .feature-box h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: var(--spacing-lg);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+
+        .feature-box h3::before {
+            content: '⚙️';
+            font-size: 1.2rem;
+        }
+
+        .feature-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-box ul li {
+            padding: var(--spacing-sm) 0;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.6;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+
+        .feature-box ul li::before {
+            content: '✓';
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* Section Five - Other Machines */
+        .section-cinq {
+            padding: var(--spacing-2xl) var(--spacing-lg);
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 100%);
+        }
+
+        .section-cinq-content {
+            text-align: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-cinq-content h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-2xl);
+            color: white;
+        }
+
+        .machine-cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-xl);
+        }
+
+        .machine-card {
+            background: var(--surface-color);
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-xl);
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .machine-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .machine-card:hover::before {
+            opacity: 1;
+        }
+
+        .machine-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .image-container {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--spacing-lg);
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .machine-card-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.4s ease;
+        }
+
+        .machine-card:hover .machine-card-image {
+            transform: scale(1.1);
+        }
+
+        .machine-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-primary);
+        }
+
+        .machine-card p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+    /* Footer moderne */
+    .pg-footer {
+      margin-top: 4rem;
+    }
+
+    .footer {
+      background: var(--primary);
+      color: rgb(0, 0, 0);
+      position: relative;
+    }
+
+    .footer-wave-svg {
+      background-color: transparent;
+      display: block;
+      height: 60px;
+      position: relative;
+      top: -1px;
+      width: 100%;
+    }
+
+    .footer-wave-path {
+      fill: var(--primary);
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .footer-content-column h4 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .footer-menu-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .footer-menu-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-menu-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-menu-list a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-menu-list a:hover {
+      color: white;
+    }
+
+    .footer-call-to-action-button {
+      background: var(--accent);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-block;
+      transition: all 0.3s ease;
+      margin-bottom: 1rem;
+    }
+
+    .footer-call-to-action-button:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+
+    .footer-call-to-action-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: white;
+    }
+
+    .footer-call-to-action-link-wrapper a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer-copyright {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-copyright-text {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.9rem;
+    }
+
+    .footer-copyright-link {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+    }
+
+    .footer-socials {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .footer-social-link {
+      align-items: center;   /* centre verticalement */
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.8);
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .footer-social-link:hover {
+      color: #0A66C2; /* bleu LinkedIn */
+      transform: scale(1.1);
+    }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 100%);
+                padding: var(--spacing-lg);
+                box-shadow: var(--shadow-lg);
+                z-index: 999;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin-bottom: var(--spacing-sm);
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .menu-toggle.active div:nth-child(1) {
+                transform: rotate(45deg) translate(6px, 6px);
+            }
+
+            .menu-toggle.active div:nth-child(2) {
+                opacity: 0;
+            }
+
+            .menu-toggle.active div:nth-child(3) {
+                transform: rotate(-45deg) translate(6px, -6px);
+            }
+
+            .hero {
+                height: 60vh;
+                padding: var(--spacing-lg);
+            }
+
+            .text-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .text-content p {
+                font-size: 1.1rem;
+            }
+
+            .section-text-content,
+            .section-trois-text-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section-image,
+            .section-trois-image {
+                width: 80%;
+                margin-bottom: var(--spacing-lg);
+            }
+
+            .text-container,
+            .section-trois-text-container {
+                width: 100%;
+            }
+
+            .features-container {
+                grid-template-columns: 1fr;
+            }
+
+            .machine-cards-container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Focus styles for accessibility */
+        *:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        /* Animation for page load */
+        .machine-card,
+        .feature-box {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
+
 <body>
-    
-  <!-- Header -->
-  <header>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="../index.html">D.A.T</a>
+    <!-- Header -->
+    <header class="header">        
+        <a href="#" class="logo">D . A . T</a>    
+        <div class="menu-icon" id="menu-icon">
         </div>
-        <ul class="nav-links">
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="../index.html#section-machine">Nos Machines</a></li>
-            <li><a href="/html/contact.html">Contact</a></li>
-        </ul>
-        <!-- Menu hamburger -->
-        <div class="menu-toggle" id="menuToggle">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </nav>
-</header>
+        
+        <nav class="navbar" id="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#section-machine">Nos Machines</a>
+            <a href="../index.html#section-premiere-partie">À Propos</a>
+            <a href="./nosmarques.html">Blog</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
 
-<!-- Script pour le menu hamburger -->
-<script>
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.querySelector('.nav-links');
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="/Photo/fontaine-everest.png" alt="Fontaine à eau Everest, distributeur d’eau professionnelle pour entreprises à Toulouse" class="hero-image">
+    </section>
 
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        menuToggle.classList.toggle('active');
-    });
-</script>
-
-  <section class="hero">
-    <img src="/Photo/fontaine-everest.png" alt="Fontaine à eau Everest, solution haut de gamme pour bureaux et entreprises" class="hero-image">
-</section>
-
-<section class="text-section">
-    <div class="text-content">
-        <h1>Fontaine à eau Everest</h1>
-        <p>Bénéficiez d’une fontaine à eau haut de gamme sans frais d’achat !</p>
-        <p>Installation et maintenance offertes sur Toulouse et sa région.</p>
-        <a href="/html/contact.html" class="cta-button">Contactez-nous pour un devis gratuit</a>
-    </div>
-</section>
-
-<section class="section-deux">
-    <div class="section-text-content">
-        <img src="/Photo/fontaine-everest.png" alt="Fontaine à eau Everest, solution haut de gamme pour bureaux et entreprises" class="section-image">
-        <div class="text-container">
-            <h2>Notre Engagement</h2>
-            <p>✅ Une eau fraîche et pure en continu grâce à la fontaine à eau Everest. <br> ✅ Éliminez les bouteilles en plastique et optez pour une solution économique et écologique ! <br> ✅ Installation en dépôt gratuit à Toulouse, idéale pour bureaux, commerces et espaces de coworking.</p>
-        </div>
-    </div>
-</section>
-
-<section class="section-quatre">
-    <div class="section-quatre-content">
-        <h2>Caractéristiques de la Machine</h2>
-        <p>Découvrez les fonctionnalités et les spécifications techniques de notre fontaine à eau.</p>
-        <div class="features-container">
-            <div class="feature-box">
-                <h3>Caractéristiques Techniques</h3>
-                <ul>
-                    <li>Production d'Eau/h : 10 L</li>
-                    <li>Filtration avancée : Élimine impuretés et chlore</li>
-                    <li>Couleurs disponibles : Noir</li>
-                </ul>
-            </div>
-            <div class="feature-box">
-                <h3>Dimensions et Poids</h3>
-                <ul>
-                    <li>Dimensions : LxPxH - 32cm x 31cm x 105cm</li>
-                    <li>Poids : 12,47 kg</li>
-                    <li>Tension : 220-240V</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section-cinq">
-    <div class="section-cinq-content">
-        <h2>Nos Autres Machines</h2>
-        <div class="machine-cards-container">
-            <a href="page_machine_1.html" class="machine-card">
-                <img src="/Photo/inovy_compact_1.webp" alt="Machine Lavazza Inovy Compact, idéale pour 10 cafés par jour" class="machine-card-image">
-                <h3>Lavazza Inovy Compact</h3>
-                <p>Idéal à partir de 10 cafés par jour.</p>
-            </a>
-            <a href="page_machine_2.html" class="machine-card">
-                <img src="/Photo/inovy.webp" alt="Machine Lavazza Inovy, idéale pour 15 cafés par jour et grande consommation" class="machine-card-image">
-                <h3>Lavazza Inovy</h3>
-                <p>Idéal à partir de 15 cafés par jour.</p>
+    <!-- Main Content Section -->
+    <section class="text-section">
+        <div class="text-content">
+            <h1><strong>Fontaine à eau Everest</strong></h1>
+            <p>Bénéficiez d’une fontaine à eau haut de gamme sans frais d’achat ! Installation et maintenance offertes sur Toulouse et sa région.</p>
+            <a href="/html/contact.html" class="cta-button">
+                <i class="fas fa-phone"></i>
+                Contactez-nous
             </a>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-section about">
-            <h3>À propos</h3>
-            <p>Nous proposons des distributeurs automatiques et des machines à café de haute qualité pour entreprises et particuliers à Toulouse et dans les environs.</p>
+    <!-- Engagement Section -->
+    <section class="section-deux">
+        <div class="section-text-content">
+            <img src="../Photo/fontaine-everest.png" alt="Fontaine à eau Everest installée dans un espace de travail, idéale pour les entreprises" class="section-image">
+            <div class="text-container">
+                <h3>Notre Engagement</h3>
+                <p>Nous nous engageons à fournir les meilleurs distributeurs automatiques pour répondre à vos besoins. Notre équipe dévouée travaille sans relâche pour garantir la satisfaction de nos clients et vous accompagne dans le choix de la solution parfaite pour votre entreprise.</p>
+            </div>
         </div>
-        <div class="footer-section links">
-            <h3>Liens utiles</h3>
-            <ul>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="../index.html#section-machine">Nos machines</a></li>
-                <li><a href="../index.html#section-premiere-partie">À propos</a></li>
-                <li><a href="/html/contact.html">Contact</a></li>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-trois">
+        <div class="section-trois-text-content">
+            <img src="/Photo/logo-dat-sansfond.png" alt="Logo DAT - Distributeur Automatique de café" class="section-trois-image">
+            <div class="section-trois-text-container">
+                <h3>Trouvez la machine idéale pour votre entreprise</h3>
+                <p>Découvrez vos besoins pour votre entreprise et laissez-nous vous guider vers la solution parfaite</p>
+            </div>
+        </div>
+        <div class="section-trois-button-container">
+            <a href="/html/devis.html" class="section-trois-cta-button">
+                <i class="fas fa-search"></i>
+                Découvrez Votre Machine
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section-quatre">
+        <div class="section-quatre-content">
+            <h2>Caractéristiques de la Machine</h2>
+            <p>Découvrez les fonctionnalités et les spécifications techniques de notre distributeur à café de pointe.</p>
+            <div class="features-container">
+                <div class="feature-box">
+                    <h3>Caractéristiques Générales</h3>
+                    <ul>
+                        <li>Production d'Eau/h : 10 L</li>
+                        <li>Filtration avancée : Élimine impuretés et chlore</li>
+                        <li>Couleurs - Noir </li>
+                    </ul>
+                </div>
+                
+                <div class="feature-box">
+                    <h3>Spécifications Techniques</h3>
+                    <ul>
+                        <li>LxPxH - 320mm × 310mm × 1050mm</li>
+                        <li>Poids - 12,5 Kg</li>
+                        <li>Tension 220-240V</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Machines Section -->
+    <section class="section-cinq">
+        <div class="section-cinq-content">
+            <h2>Nos Autres Machines</h2>
+            <div class="machine-cards-container">
+                <a href="/html/concerto-touch.html" class="machine-card">
+                    <div class="image-container">
+                        <img src="/Photo/concerto-touch.webp" alt="Distributeur automatique Necta Concerto Touch, machine à café professionnelle avec écran tactile" class="machine-card-image">
+                    </div>
+                    <h3>Concerto Touch</h3>
+                    <p>À partir de 80 cafés par jour.</p>
+                </a>
+
+                <a href="/html/maestro.html" class="machine-card">
+                    <div class="image-container">
+                        <img src="/Photo/maestro-webp.webp" alt="Distributeur automatique Necta Maestro, machine à café professionnelle haut rendement" class="machine-card-image">
+                    </div>
+                    <h3>Maestro</h3>
+                    <p>À partir de 150 cafés par jour.</p>
+                </a>
+
+                <a href="/html/maestrokeyboard.html" class="machine-card">
+                    <div class="image-container">
+                        <img src="/Photo/Maestro-Keyboard.webp" alt="Distributeur automatique Necta Maestro Keyboard, version clavier adaptée aux grandes entreprises" class="machine-card-image">
+                    </div>
+                    <h3>Maestro Keyboard</h3>
+                    <p>À partir de 150 cafés par jour.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<div class="pg-footer">
+    <footer class="footer" id="footer">
+      <div class="footer-content">
+        <!-- Colonne Logo -->
+        <div class="footer-content-column">
+          <div class="footer-logo">
+            <a class="footer-logo-link" href="#">
+              <h4>DAT.</h4>
+            </a>
+          </div> 
+        </div>
+  
+        <!-- Colonne Legal -->
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name">Legal</h2>
+            <ul class="footer-menu-list">
+              <li><a href="html/mentions-legales.html">Mentions légales</a></li>
+              <li><a href="html/politique-confidentialite.html">Politique de confidentialité</a></li>
             </ul>
+          </div>
         </div>
-        <div class="footer-section contact">
-            <h3>Contact</h3>
-            <p>Email : <a href="mailto:dat.cafe@orange.fr">dat.cafe@orange.fr</a></p>
-            <p>Téléphone : <a href="tel:+33534480059">05.34.48.00.59</a></p>
-            <p>Adresse : 2 Av Marcel Langer, 31600 Seysses, France</p>
+        
+        <!-- Colonne Liens Rapides -->
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name">Liens Rapides</h2>
+            <ul class="footer-menu-list">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../index.html#section-machine">Nos Machines</a></li>
+              <li><a href="../index.html#section-premiere-partie">À propos</a></li>
+              <li><a href="./nosmarques.html">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
         </div>
-    </div>
-    <div class="footer-bottom">
-        &copy; 2024 - 2025 datcafé.fr | Tous droits réservés |
-        <a href="https://www.webdevtoulouse.com/" target="_blank" rel="noopener noreferrer">Site réalisé par WebDevToulouse</a>
-    </div>
-</footer>
+  
+        <!-- Colonne Call to Action -->
+        <div class="footer-content-column">
+          <div class="footer-call-to-action">
+            <a class="footer-call-to-action-button" href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Revenir en haut</a>
+          </div>
+          <div class="footer-call-to-action">
+            <h2 class="footer-call-to-action-title">Nous appeler</h2>
+            <p class="footer-call-to-action-link-wrapper">
+              <a class="footer-call-to-action-link" href="tel:0534480059">05.34.48.00.59</a>
+            </p>
+          </div>
+        </div>
+  
+        <!-- Colonne Réseaux sociaux -->
+        <div class="footer-content-column">
+          <div class="footer-socials">
+            <h2 class="footer-menu-name">Suivez-nous</h2>
+            <a href="https://www.linkedin.com/company/d-a-t-distribution-automatique-toulousaine/" target="_blank" aria-label="LinkedIn" class="footer-social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 
+                0-5 2.239-5 5v14c0 2.761 2.239 
+                5 5 5h14c2.762 0 5-2.239 
+                5-5v-14c0-2.761-2.238-5-5-5zm-11 
+                19h-3v-10h3v10zm-1.5-11.268c-.966 
+                0-1.75-.79-1.75-1.764s.784-1.764 
+                1.75-1.764c.965 
+                0 1.75.79 1.75 1.764s-.785 
+                1.764-1.75 1.764zm13.5 
+                11.268h-3v-5.604c0-1.338-.027-3.064-1.867-3.064-1.868 
+                0-2.155 1.46-2.155 
+                2.968v5.7h-3v-10h2.881v1.367h.041c.401-.757 
+                1.379-1.555 2.838-1.555 3.033 
+                0 3.6 1.997 3.6 4.59v5.598z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Copyright -->
+      <div class="footer-copyright">
+        <div class="footer-copyright-wrapper">
+          <p class="footer-copyright-text">
+            <a class="footer-copyright-link" href="#">©2024 - 2025 | Tous droits réservés.</a>
+          </p>
+        </div>
+      </div>
+    </footer>
 
+    <!-- JavaScript for mobile menu -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'linear-gradient(135deg, rgba(37, 99, 235, 0.95) 0%, rgba(29, 78, 216, 0.95) 100%)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)';
+                header.style.backdropFilter = 'none';
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.feature-box, .machine-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
